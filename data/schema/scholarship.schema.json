@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "scholarship.schema.json",
+  "title": "Scholarship listing",
+  "description": "One scholarship in data/scholarships.json (spec §7.2). Unknown = null or []. Unknown never disqualifies a student.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "title", "provider", "url", "source_url", "summary", "school_levels", "eligibility",
+    "focus_tags", "evidence", "trust", "is_sample", "extracted_at",
+    "amount_min", "amount_max", "amount_period", "num_awards", "deadline", "requirements",
+    "is_sweepstakes", "published_applicants", "selection", "est_pool", "est_pool_basis"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^(sch|smp-sch)-[a-z0-9-]+$", "description": "Stable slug. Real listings start with sch-, made-up ones with smp-sch-." },
+    "title": { "type": "string" },
+    "provider": { "type": "string", "description": "Who gives the money. Made-up listings use made-up provider names only." },
+    "url": { "type": "string", "description": "The listing's own page (where the student applies or reads the rules). Sample listings point to the placeholder page /sample-listing." },
+    "source_url": { "type": ["string", "null"], "description": "The page we extracted it from. null for sample listings." },
+    "summary": { "type": "string", "maxLength": 400, "description": "1–2 sentences, plain language." },
+    "school_levels": { "$ref": "#/$defs/school_levels" },
+    "eligibility": { "$ref": "#/$defs/eligibility" },
+    "focus_tags": { "type": "array", "items": { "type": "string" }, "description": "Lowercase hooks the ranker can match on: robotics, food-insecurity, first-gen, credit-union, immigrant, research …" },
+    "evidence": { "$ref": "#/$defs/evidence" },
+    "trust": { "$ref": "#/$defs/trust" },
+    "is_sample": { "type": "boolean", "description": "true = made up for the demo story. Shown with a 'Sample listing' tag." },
+    "extracted_at": { "type": "string", "format": "date" },
+
+    "amount_min": { "type": ["number", "null"] },
+    "amount_max": { "type": ["number", "null"] },
+    "amount_period": { "enum": ["one_time", "per_year", "total_multi_year", null], "description": "How to read the amount. total_multi_year = the max is spread over several years (e.g. JRF up to $35,000 over four years)." },
+    "num_awards": { "type": ["integer", "null"], "description": "Awards per cycle when stated. null = unknown (odds formula defaults to 1)." },
+    "deadline": { "type": ["string", "null"], "description": "YYYY-MM-DD, or \"rolling\". Never guess the year." },
+    "requirements": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["essay", "recommendations", "transcript", "interview", "application_fee"],
+      "properties": {
+        "essay": { "type": ["boolean", "null"] },
+        "recommendations": { "type": ["integer", "null"], "description": "Number of letters. 0 = none." },
+        "transcript": { "type": ["boolean", "null"] },
+        "interview": { "type": ["boolean", "null"] },
+        "application_fee": { "type": ["number", "null"], "description": "Dollars. Anything above 0 is a scam signal and the listing is excluded (§7.4)." },
+        "other": { "type": "array", "items": { "type": "string" }, "description": "Anything else that adds effort: CSS Profile, research proposal, FAFSA …" }
+      }
+    },
+    "is_sweepstakes": { "type": "boolean", "description": "Lead-gen 'no-essay' giveaways. Hidden by default in results (§5.2)." },
+    "published_applicants": { "type": ["integer", "null"], "description": "Applicant count the provider published. null when not published." },
+    "selection": { "enum": ["competitive", "entitlement", "first_come"], "description": "entitlement = everyone eligible who applies gets it (e.g. TAP). Show 'Open: if you qualify, you get it' instead of odds." },
+    "est_pool": { "type": ["integer", "null"], "description": "Hand estimate of applicants per cycle for the odds formula (§6.2). Equals published_applicants when that exists." },
+    "est_pool_basis": { "type": ["string", "null"], "description": "How est_pool was reached, so judges can see it isn't made up." }
+  },
+
+  "$defs": {
+    "school_levels": {
+      "type": "array",
+      "items": { "enum": ["HS", "college"] },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "class_year": {
+      "enum": ["hs_9", "hs_10", "hs_11", "hs_12", "college_1", "college_2", "college_3", "college_4", "college_5plus", "grad"]
+    },
+    "eligibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["class_years", "min_gpa", "citizenship", "majors", "identity_groups", "need_based", "nyc_only", "enrolled_at", "geo_scope", "geo_areas", "prerequisites"],
+      "properties": {
+        "class_years": { "type": "array", "items": { "$ref": "#/$defs/class_year" }, "description": "[] = any year within school_levels." },
+        "min_gpa": { "type": ["number", "null"], "description": "On a 4.0 scale. NYC 0–100 averages: 80 ≈ 3.0, 90 ≈ 3.7." },
+        "max_age": { "type": ["integer", "null"] },
+        "citizenship": {
+          "type": "array",
+          "items": { "enum": ["us_citizen", "permanent_resident", "daca", "undocumented", "international"] },
+          "description": "Statuses that may apply. [] = not stated (treat as open)."
+        },
+        "majors": { "type": "array", "items": { "type": "string" } },
+        "identity_groups": { "type": "array", "items": { "type": "string" }, "description": "Self-identified groups the listing is limited to, e.g. first-gen, immigrant-or-child-of-immigrant, lgbtq. Students only see these matched if they chose to share them." },
+        "need_based": { "type": ["boolean", "null"] },
+        "nyc_only": { "type": ["boolean", "null"], "description": "true = limited to NYC residents or NYC schools." },
+        "geo_scope": { "enum": ["borough", "city", "state", "region", "national", null], "description": "Widest area the listing is open to. Drives the default pool size (§6.2)." },
+        "geo_areas": { "type": "array", "items": { "type": "string" }, "description": "Named areas: Bronx, Brooklyn, Manhattan, Queens, Staten Island, NYC, NYS, NY/NJ/CT, US." },
+        "enrolled_at": { "type": "array", "items": { "type": "string" }, "description": "Schools a student must currently attend. [] = any school. Card shows e.g. 'NYU students only'." },
+        "prerequisites": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Things the student must have done to qualify (e.g. 'attended a hands-on engineering event'). These power the 'almost eligible' card: an opportunity's unlocks[] points here."
+        }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "description": "Short exact quotes from the source page for deadline, amount and eligibility. A field with no supporting quote stays empty.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["field", "quote"],
+        "properties": {
+          "field": { "type": "string", "description": "Which field this supports: deadline, amount, eligibility, requirements, location, dates, cost …" },
+          "quote": { "type": "string", "maxLength": 400 },
+          "page": { "type": "string", "description": "URL the quote came from, when it isn't source_url." }
+        }
+      }
+    },
+    "trust": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["badge", "checked_at", "note"],
+      "properties": {
+        "badge": { "enum": ["provider_confirmed", "web_verified", "counselor_listed", "unverified"], "description": "§7.7. provider_confirmed ✓, web_verified ✓, counselor_listed ●, unverified ⚠." },
+        "checked_at": { "type": ["string", "null"], "format": "date" },
+        "note": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

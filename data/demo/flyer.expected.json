@@ -1,0 +1,127 @@
+{
+  "_about": "What a correct Scout import of demo/flyer.png should return (spec §5.4, §7.3). Use it to test the import prompt: 2 scholarships + 2 opportunities, every deadline/amount/eligibility backed by a quote, nothing guessed. Hollis Park Youth Alliance is fictional, so every record is is_sample: true and links to the placeholder page. Fields the flyer doesn't state stay null/[] (e.g. no address, no citizenship rule).",
+  "scholarships": [
+    {
+      "id": "smp-sch-hollis-community-builder",
+      "title": "Community Builder Scholarship",
+      "provider": "Hollis Park Youth Alliance",
+      "url": "/sample-listing?id=smp-sch-hollis-community-builder",
+      "source_url": null,
+      "summary": "$1,200 for Queens high school seniors with a 2.5+ GPA who have done community service in their neighborhood. Four awards.",
+      "school_levels": ["HS"],
+      "eligibility": {
+        "class_years": ["hs_12"], "min_gpa": 2.5, "max_age": null, "citizenship": [], "majors": [], "identity_groups": [],
+        "need_based": null, "nyc_only": true, "geo_scope": "borough", "geo_areas": ["Queens"], "enrolled_at": [],
+        "prerequisites": ["community service in their neighborhood"]
+      },
+      "focus_tags": ["community-service", "volunteering", "neighborhood"],
+      "evidence": [
+        { "field": "amount", "quote": "$1,200" },
+        { "field": "eligibility", "quote": "For Queens high school seniors with a GPA of 2.5 or higher who have done community service in their neighborhood." },
+        { "field": "deadline", "quote": "Deadline: Friday, January 22, 2027" },
+        { "field": "requirements", "quote": "300-word essay: \"A problem on my block I helped fix\"" },
+        { "field": "requirements", "quote": "No application fee" }
+      ],
+      "trust": { "badge": "counselor_listed", "checked_at": "2026-10-23", "note": "Imported from a counselor-office flyer (demo). Sample listing." },
+      "is_sample": true,
+      "extracted_at": "2026-10-23",
+      "amount_min": 1200, "amount_max": 1200, "amount_period": "one_time", "num_awards": 4,
+      "deadline": "2027-01-22",
+      "requirements": { "essay": true, "recommendations": 1, "transcript": null, "interview": null, "application_fee": 0, "other": [] },
+      "is_sweepstakes": false, "published_applicants": null, "selection": "competitive",
+      "est_pool": 30, "est_pool_basis": "Borough default 40, shrunk for seniors with community service ≈ 30. 4 awards ≈ 1 in 8 (High)."
+    },
+    {
+      "id": "smp-sch-hollis-build-a-bot-mini-grant",
+      "title": "Build-a-Bot Mini-Grant",
+      "provider": "Hollis Park Youth Alliance",
+      "url": "/sample-listing?id=smp-sch-hollis-build-a-bot-mini-grant",
+      "source_url": null,
+      "summary": "$300 to start a robotics club at your school, for students who attended Build-a-Bot Saturday. Five grants.",
+      "school_levels": ["HS"],
+      "eligibility": {
+        "class_years": ["hs_9", "hs_10", "hs_11", "hs_12"], "min_gpa": null, "max_age": null, "citizenship": [], "majors": [], "identity_groups": [],
+        "need_based": null, "nyc_only": true, "geo_scope": "borough", "geo_areas": ["Queens"], "enrolled_at": [],
+        "prerequisites": ["attended Build-a-Bot Saturday"]
+      },
+      "focus_tags": ["robotics", "club-founder", "leadership"],
+      "evidence": [
+        { "field": "eligibility", "quote": "Everyone who attends can apply for the $300 Build-a-Bot Mini-Grant to start a robotics club at their school." },
+        { "field": "amount", "quote": "$300 Build-a-Bot Mini-Grant" },
+        { "field": "deadline", "quote": "Mini-grant deadline: Friday, January 15, 2027." }
+      ],
+      "trust": { "badge": "counselor_listed", "checked_at": "2026-10-23", "note": "Imported from a counselor-office flyer (demo). Sample listing." },
+      "is_sample": true,
+      "extracted_at": "2026-10-23",
+      "amount_min": 300, "amount_max": 300, "amount_period": "one_time", "num_awards": 5,
+      "deadline": "2027-01-15",
+      "requirements": { "essay": null, "recommendations": null, "transcript": null, "interview": null, "application_fee": null, "other": [] },
+      "is_sweepstakes": false, "published_applicants": null, "selection": "competitive",
+      "est_pool": 15, "est_pool_basis": "Only Build-a-Bot attendees (40 spots) can apply ≈ 15. 5 grants ≈ 1 in 3 (High)."
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "smp-opp-hollis-build-a-bot-saturday",
+      "title": "Build-a-Bot Saturday",
+      "provider": "Hollis Park Youth Alliance",
+      "url": "/sample-listing?id=smp-opp-hollis-build-a-bot-saturday",
+      "source_url": null,
+      "summary": "A free one-day robotics build for Queens students in grades 9–12, no experience needed. Free lunch and MetroCards.",
+      "school_levels": ["HS"],
+      "eligibility": {
+        "class_years": ["hs_9", "hs_10", "hs_11", "hs_12"], "min_gpa": null, "max_age": null, "citizenship": [], "majors": [], "identity_groups": [],
+        "need_based": null, "nyc_only": null, "geo_scope": null, "geo_areas": [], "enrolled_at": [], "prerequisites": []
+      },
+      "focus_tags": ["robotics", "engineering", "hands-on", "team"],
+      "evidence": [
+        { "field": "dates", "quote": "Saturday, December 12, 2026 · 10:00 AM – 3:00 PM" },
+        { "field": "location", "quote": "Hollis Park Community Center, Queens" },
+        { "field": "eligibility", "quote": "Grades 9–12, no experience needed." },
+        { "field": "cost", "quote": "Free lunch and MetroCards for every student." },
+        { "field": "deadline", "quote": "Register by Friday, December 4, 2026." },
+        { "field": "capacity", "quote": "40 spots, first come, first served." }
+      ],
+      "trust": { "badge": "counselor_listed", "checked_at": "2026-10-23", "note": "Imported from a counselor-office flyer (demo). Sample listing." },
+      "is_sample": true,
+      "extracted_at": "2026-10-23",
+      "type": "workshop",
+      "start_date": "2026-12-12", "end_date": "2026-12-12", "application_deadline": "2026-12-04",
+      "location": { "venue": "Hollis Park Community Center", "borough": "Queens", "address": null },
+      "is_online": false, "cost": 0, "covers": ["food", "travel"], "stipend_amount": null,
+      "apply_effort": ["short_form", "first_come"], "capacity": 40,
+      "unlocks": [
+        { "scholarship_id": "smp-sch-hollis-build-a-bot-mini-grant", "reason": "Attending is the only requirement for this $300 mini-grant." }
+      ]
+    },
+    {
+      "id": "smp-opp-hollis-young-writers-prize",
+      "title": "Young Writers Prize",
+      "provider": "Hollis Park Youth Alliance",
+      "url": "/sample-listing?id=smp-opp-hollis-young-writers-prize",
+      "source_url": null,
+      "summary": "A short-story contest for Queens students in grades 9–12. Three $500 winners read at a spring showcase.",
+      "school_levels": ["HS"],
+      "eligibility": {
+        "class_years": ["hs_9", "hs_10", "hs_11", "hs_12"], "min_gpa": null, "max_age": null, "citizenship": [], "majors": [], "identity_groups": [],
+        "need_based": null, "nyc_only": true, "geo_scope": "borough", "geo_areas": ["Queens"], "enrolled_at": [], "prerequisites": []
+      },
+      "focus_tags": ["writing", "creative-writing", "competition"],
+      "evidence": [
+        { "field": "eligibility", "quote": "Open to students in grades 9–12 who live in Queens." },
+        { "field": "requirements", "quote": "Submit one original short story, up to 1,500 words, any topic." },
+        { "field": "prizes", "quote": "$500" },
+        { "field": "deadline", "quote": "Deadline: Friday, March 5, 2027" },
+        { "field": "cost", "quote": "No application fee" }
+      ],
+      "trust": { "badge": "counselor_listed", "checked_at": "2026-10-23", "note": "Imported from a counselor-office flyer (demo). Sample listing. A contest, so it goes in Opportunities even though it pays cash." },
+      "is_sample": true,
+      "extracted_at": "2026-10-23",
+      "type": "competition",
+      "start_date": null, "end_date": null, "application_deadline": "2027-03-05",
+      "location": { "venue": null, "borough": "Queens", "address": null },
+      "is_online": false, "cost": 0, "covers": [], "stipend_amount": null,
+      "apply_effort": ["project"], "capacity": null, "unlocks": []
+    }
+  ]
+}

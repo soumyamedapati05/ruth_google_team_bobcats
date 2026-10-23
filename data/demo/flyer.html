@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hollis Park Winter Opportunities</title>
+<style>
+  @page { size: 8.5in 11in; margin: 0; }
+  :root {
+    --ink: #1d1b2f;
+    --paper: #fffaf0;
+    --teal: #0f766e;
+    --coral: #e8573f;
+    --gold: #f2b134;
+    --sky: #dbeafe;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--paper); color: var(--ink); }
+  body {
+    width: 8.5in; height: 11in; padding: 0.45in 0.5in 0.35in;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    display: flex; flex-direction: column; gap: 0.16in;
+  }
+  .office { font-size: 11pt; letter-spacing: .12em; text-transform: uppercase; color: var(--teal); font-weight: 700; }
+  h1 { font-size: 40pt; line-height: .95; margin: 0; font-weight: 900; letter-spacing: -.01em; }
+  h1 span { color: var(--coral); }
+  .sponsor { font-size: 12.5pt; margin-top: 4px; }
+  .sponsor b { color: var(--teal); }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.16in; flex: 1; }
+  .card { border: 3px solid var(--ink); border-radius: 14px; padding: 0.16in 0.18in; background: #fff; position: relative; }
+  .card h2 { margin: 0 0 4px; font-size: 17pt; line-height: 1.1; }
+  .tag { display: inline-block; font-size: 9pt; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; padding: 3px 8px; border-radius: 999px; margin-bottom: 6px; }
+  .money { background: var(--gold); }
+  .free { background: var(--teal); color: #fff; }
+  .amount { font-size: 26pt; font-weight: 900; color: var(--coral); line-height: 1; margin: 2px 0 6px; }
+  .card p, .card li { font-size: 10.5pt; line-height: 1.38; margin: 0 0 4px; }
+  .card ul { margin: 4px 0 0; padding-left: 18px; }
+  .due { margin-top: 8px; font-weight: 800; font-size: 11pt; border-top: 2px dashed var(--ink); padding-top: 6px; }
+  .wide { grid-column: 1 / -1; background: var(--sky); display: grid; grid-template-columns: 1.35fr 1fr; gap: .2in; }
+  .wide .bot { font-size: 64pt; line-height: 1; text-align: center; align-self: center; }
+  .callout { background: #fff; border: 2px solid var(--coral); border-radius: 10px; padding: 8px 10px; margin-top: 8px; }
+  .callout b { color: var(--coral); }
+  footer { font-size: 9.5pt; display: flex; justify-content: space-between; align-items: flex-end; gap: .2in; }
+  footer .contact b { color: var(--teal); }
+  .fiction { font-size: 8pt; color: #6b6878; text-align: right; max-width: 3.3in; }
+</style>
+</head>
+<body>
+  <div>
+    <div class="office">College &amp; Career Office · Posted for Queens students</div>
+    <h1>Winter <span>Opportunities</span></h1>
+    <div class="sponsor">Sponsored by <b>Hollis Park Youth Alliance</b>: scholarships and free events for Queens teens</div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="tag money">Scholarship</div>
+      <h2>Community Builder Scholarship</h2>
+      <div class="amount">$1,200</div>
+      <p><b>4 awards.</b> For Queens high school <b>seniors</b> with a GPA of 2.5 or higher who have done community service in their neighborhood.</p>
+      <ul>
+        <li>300-word essay: "A problem on my block I helped fix"</li>
+        <li>1 letter of recommendation</li>
+        <li>No application fee</li>
+      </ul>
+      <div class="due">Deadline: Friday, January 22, 2027</div>
+    </div>
+
+    <div class="card">
+      <div class="tag money">Writing prize</div>
+      <h2>Young Writers Prize</h2>
+      <div class="amount">$500</div>
+      <p><b>3 winners.</b> Open to students in <b>grades 9–12</b> who live in Queens. Submit one original short story, up to 1,500 words, any topic.</p>
+      <ul>
+        <li>Winners read their stories at our spring showcase</li>
+        <li>No application fee</li>
+      </ul>
+      <div class="due">Deadline: Friday, March 5, 2027</div>
+    </div>
+
+    <div class="card wide">
+      <div>
+        <div class="tag free">Free event</div>
+        <h2>Build-a-Bot Saturday</h2>
+        <p><b>Saturday, December 12, 2026 · 10:00 AM – 3:00 PM</b><br>
+        Hollis Park Community Center, Queens</p>
+        <p>Build and program a robot with your team in one day. <b>Grades 9–12, no experience needed.</b> Free lunch and MetroCards for every student.</p>
+        <p><b>40 spots, first come, first served.</b> Register by Friday, December 4, 2026.</p>
+        <div class="callout"><b>Bonus:</b> Everyone who attends can apply for the <b>$300 Build-a-Bot Mini-Grant</b> to start a robotics club at their school. <b>Mini-grant deadline: Friday, January 15, 2027.</b> 5 grants available.</div>
+      </div>
+      <div class="bot" aria-hidden="true">🤖</div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="contact">Questions or to apply: <b>opportunities@hollispark-youth.example</b><br>Ask your counselor for paper forms.</div>
+    <div class="fiction">Demo material for the Scout prototype. Hollis Park Youth Alliance is a fictional organization; these listings are not real.</div>
+  </footer>
+</body>
+</html>
