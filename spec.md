@@ -78,7 +78,7 @@ Profiles on most sites are also shallow (GPA, state, major), so a fencer who vol
 - **Optional paste:** personal statement, resume, activities list, or a few sentences. No document? Fall back to a chip picker.
 - **Gemini extraction** returns profile JSON: activities, sports, clubs, leadership, volunteering, awards, interests/major, background the student chose to share (first-gen, heritage), and connections where niche awards hide (parent's employer or union, church, Scouts/4-H/FFA).
 - **Confirm, don't type:** show editable chips. One click to remove or add.
-- **Ask only the gaps:** ZIP and grade (required), GPA range (optional), optional "any of these apply?" checklist.
+- **Ask only the gaps:** ZIP and grade (required: high school grade or college year), school name (optional; unlocks school-only listings), GPA range (optional), optional "any of these apply?" checklist.
 - **Privacy:** users may be minors. The raw document is discarded; only chips are kept. Every sensitive field is optional and says why we ask.
 
 ### 5.2 Results
@@ -101,7 +101,7 @@ The website has two views: the **student view** (§5.1–5.3) and the **Scout vi
 ## 6. Matching
 
 ### 6.1 Pipeline
-1. **Eligibility filter (code):** location, class year, GPA minimum, citizenship, deadline not passed. **Unknown fields never disqualify.**
+1. **Eligibility filter (code):** student group (high school vs. college, from `school_levels`), school (`enrolled_at`: a listing limited to one school only shows to students who said they attend it), location, class year, GPA minimum, citizenship, deadline not passed. **Unknown fields never disqualify.**
 2. **Gemini ranking:** send the filtered listings (~60 total, so no embeddings needed) plus the profile; get back a relevance score and a one-line "why you matched" per listing. This is what makes "fencing" match an "Olympic-sport athlete" award, and a parent's credit union job surface an employer scholarship.
 3. **Odds + expected value (code):** §6.2, then sort.
 
@@ -129,7 +129,7 @@ An earlier plan (synthetic applicants + trained, calibrated model) moves to the 
 
 Unknown = `null` or `[]`. **Unknown never disqualifies** a student. Every listing records where it came from.
 
-**Shared fields (both lists):** `id`, `title`, `provider`, `url` (the listing's own page), `source_url` (the page we extracted it from), `summary` (1–2 sentences), `school_levels` (`HS` / `college`), `eligibility` (`class_years`, `min_gpa`, `citizenship`, `majors`, `identity_groups`, `need_based`, `nyc_only`), `focus_tags`, `evidence` (short quotes from the page supporting the deadline and eligibility), `trust` (badge, §7.7), `is_sample` (true for made-up listings), `extracted_at`.
+**Shared fields (both lists):** `id`, `title`, `provider`, `url` (the listing's own page), `source_url` (the page we extracted it from), `summary` (1–2 sentences), `school_levels` (`HS` / `college`), `eligibility` (`class_years`, `min_gpa`, `citizenship`, `majors`, `identity_groups`, `need_based`, `nyc_only`, `enrolled_at`: list of schools a student must currently attend, empty = any school), `focus_tags`, `evidence` (short quotes from the page supporting the deadline and eligibility), `trust` (badge, §7.7), `is_sample` (true for made-up listings), `extracted_at`.
 
 **Scholarship-only:** `amount_min`, `amount_max`, `num_awards`, `deadline`, `requirements` (`essay`, `recommendations`, `transcript`, `interview`, `application_fee`), `is_sweepstakes`, `published_applicants`.
 
@@ -148,7 +148,7 @@ The dataset is built **inside the AI Studio app** with the Scout view importer (
 7. **Spot-check:** a second teammate re-checks ~15 random listings plus every demo listing. Report the result in the pitch ("a person checked 15 of 15 listings, X errors"). Fix wrong results by changing a rule or the prompt and re-importing, not by hand-editing.
 8. **Re-import right before the demo** so deadlines are current.
 
-**Optional bulk path:** if organizers confirm outside code is allowed, a Python script (`httpx` + `BeautifulSoup`, `Playwright` for JavaScript pages, the `google-genai` SDK) can run the same extraction in bulk, save a copy of every page, and check that each quote appears in it. Not needed for the prototype.
+**Optional bulk path (outside code is allowed by the hackathon rules):** a Python script (`httpx` + `BeautifulSoup`, `Playwright` for JavaScript pages, the `google-genai` SDK) can run the same extraction in bulk, save a copy of every page, and check that each quote appears in it. Use it if importing one source at a time is too slow; the Scout importer stays the main path and the demo feature.
 
 ### 7.4 Sourcing rules
 
@@ -160,22 +160,25 @@ The dataset is built **inside the AI Studio app** with the Scout view importer (
 
 **Scholarships: include only if**
 - A student can actually **apply** (not aid every admitted student is automatically considered for).
-- It's limited to NYC or NY students, or offered by an NYC institution or organization and open to NYC students.
+- It's limited to NYC or NY students, **or** offered by an NYC institution or organization (including national scholarships from NYC organizations) and open to NYC students.
 - There's a **current deadline** (after today) or a rolling one. Last year's dates only → skip.
 - No application fee, not a sweepstakes or "no-essay" giveaway, no SSN or bank details asked.
 
 **Opportunities: include only if**
 - It's a hackathon, campus visit / open house / info session, pre-college or summer program, workshop, company student event, or competition.
-- It's **in the five boroughs or online**, and **open to outside students** (HS or college); not current-students-only, alumni or donor events.
-- It's **free or has full financial aid.** (Most Columbia and Parsons pre-college programs are expensive, so many will be excluded.)
+- It's **in the five boroughs or online**, and open to **high school or college students**. Not alumni, donor, faculty or general-public-only events.
+- It's **free** (`cost` = 0). Paid events and programs are excluded, even with financial aid. (Most Columbia and Parsons pre-college programs charge tuition, so most will be excluded.)
 - The event date or application deadline is after today.
 
-**Undecided (see §13):** a cost limit for opportunities beyond free / full aid; scholarships only for students already enrolled at one school; national scholarships from NYC organizations.
+**Who's eligible, by group (both lists):** students enrolled in high school or in college can both be served, so every listing records which group it's for:
+- `school_levels`: `HS`, `college`, or both.
+- `enrolled_at`: if only current students of specific schools can apply (e.g. an NYU-students-only scholarship, a Columbia-students-only workshop), list those schools. These listings **are included**, labeled on the card ("NYU students only"), and shown only to students in that group.
+- `class_years`: specific grades or years when stated (e.g. HS seniors, college juniors).
 
 ### 7.5 Prototype dataset
 
 We have no counselor partner, so the team assembles the data from the sources above. **Use real listings wherever possible:**
-- **Opportunities (all real):** NYC hackathons, campus visit / open house pages, free pre-college and STEM programs, public university event calendars, company student-event pages. Filter to free or low-cost and open to outside students.
+- **Opportunities (all real):** NYC hackathons, campus visit / open house pages, free pre-college and STEM programs, public university event calendars, company student-event pages. Free only, open to high school or college students (labeled by group).
 - **Scholarships (~70% real):** NY State and NYC programs, CUNY, universities' "outside scholarships" pages, NYC community foundations, public NYC high school scholarship lists.
 - Keep only **upcoming deadlines (Nov 2026 to spring 2027)**.
 
@@ -298,9 +301,5 @@ For offline-only listings, trust comes from the source: counselor upload date, p
 
 - Names for Persons 3–5.
 - Whose AI Studio account drives the app.
-- Do the hackathon rules allow outside code (the optional Python bulk path, §7.3)?
-- Opportunities: free / full aid only, or also low-cost (e.g. under $50)?
-- Include scholarships only for students already enrolled at one school (labeled), or leave them out?
-- Include national scholarships from NYC organizations?
 - Does AI Studio Build mode support shared editing?
 - Name and branding.
