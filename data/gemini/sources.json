@@ -1,0 +1,608 @@
+[
+  {
+    "url": "https://admission.pace.edu/portal/visit?cmd=nycevents",
+    "kind": "opportunity",
+    "provider": "Pace University",
+    "domain": "admission.pace.edu",
+    "titles": [
+      "Pace University New York City Campus Tours"
+    ]
+  },
+  {
+    "url": "https://apply.stjohns.edu/register/OH_NOV2026",
+    "kind": "opportunity",
+    "provider": "St. John's University",
+    "domain": "apply.stjohns.edu",
+    "titles": [
+      "St. John's University Open House (November 14)"
+    ]
+  },
+  {
+    "url": "https://apply.sunymaritime.edu/register/?id=1ff30800-28d7-417f-ac13-5667f3a4c703",
+    "kind": "opportunity",
+    "provider": "SUNY Maritime College",
+    "domain": "apply.sunymaritime.edu",
+    "titles": [
+      "SUNY Maritime College Open House"
+    ]
+  },
+  {
+    "url": "https://bmccprodstroac.blob.core.windows.net/uploads/2026/10/College-Now-Spring-2027-Saturday-Academy.pdf",
+    "kind": "opportunity",
+    "provider": "Borough of Manhattan Community College (CUNY) College Now",
+    "domain": "bmccprodstroac.blob.core.windows.net",
+    "titles": [
+      "BMCC College Now - Spring 2027 Saturday Academy"
+    ]
+  },
+  {
+    "url": "https://citytech.cuny.edu/collegenow/faqs.aspx",
+    "kind": "opportunity",
+    "provider": "New York City College of Technology (CUNY) College Now",
+    "domain": "citytech.cuny.edu",
+    "titles": [
+      "City Tech College Now (Spring admission window)"
+    ]
+  },
+  {
+    "url": "https://connect.nyu.edu/portal/nyuvisit_tours",
+    "kind": "opportunity",
+    "provider": "New York University",
+    "domain": "connect.nyu.edu",
+    "titles": [
+      "Discover NYU: Tour and Information Session"
+    ]
+  },
+  {
+    "url": "https://cooper.edu/academics/outreach-and-pre-college/saturday-program/FAQs",
+    "kind": "opportunity",
+    "provider": "The Cooper Union",
+    "domain": "cooper.edu",
+    "titles": [
+      "The Cooper Union Saturday Program (Spring 2027 semester)"
+    ]
+  },
+  {
+    "url": "https://enroll.stonybrook.edu/register/?id=b13b11d4-e19a-4655-b12a-48c2b435ebed",
+    "kind": "opportunity",
+    "provider": "Stony Brook University",
+    "domain": "enroll.stonybrook.edu",
+    "titles": [
+      "SBU in NYC: Seawolf Workshop (Regular Decision and EOP)"
+    ]
+  },
+  {
+    "url": "https://events.cuny.edu/cec/2026-undergraduate-open-house/",
+    "kind": "opportunity",
+    "provider": "The City College of New York (CUNY)",
+    "domain": "events.cuny.edu",
+    "titles": [
+      "City College of New York 2026 Undergraduate Open House"
+    ]
+  },
+  {
+    "url": "https://events.cuny.edu/cec/fall-undergraduate-open-house-3/",
+    "kind": "opportunity",
+    "provider": "College of Staten Island (CUNY)",
+    "domain": "events.cuny.edu",
+    "titles": [
+      "College of Staten Island Fall Undergraduate Open House"
+    ]
+  },
+  {
+    "url": "https://events.cuny.edu/cec/virtual-transfer-thursday-engineering/",
+    "kind": "opportunity",
+    "provider": "College of Staten Island (CUNY)",
+    "domain": "events.cuny.edu",
+    "titles": [
+      "CSI Virtual Transfer Thursday – Engineering"
+    ]
+  },
+  {
+    "url": "https://events.cuny.edu/cec/virtual-transfer-thursday-business/",
+    "kind": "opportunity",
+    "provider": "College of Staten Island (CUNY)",
+    "domain": "events.cuny.edu",
+    "titles": [
+      "CSI Virtual Transfer Thursday – Business"
+    ]
+  },
+  {
+    "url": "https://events.cuny.edu/cec/college-is-possible-non-diploma-credential-programs/",
+    "kind": "opportunity",
+    "provider": "INCLUDEnyc / CUNY",
+    "domain": "events.cuny.edu",
+    "titles": [
+      "College is Possible: Non-Diploma Credential Programs"
+    ]
+  },
+  {
+    "url": "https://go.fitnyc.edu/register/?id=b6d03070-236f-41e3-9d17-86a7ebbc9392",
+    "kind": "opportunity",
+    "provider": "Fashion Institute of Technology (SUNY)",
+    "domain": "go.fitnyc.edu",
+    "titles": [
+      "FIT Open House: School of Art and Design & School of Liberal Arts and Sciences"
+    ]
+  },
+  {
+    "url": "https://go.fitnyc.edu/register/?id=5f35693a-25c7-440e-ae6d-f85a58cd7885",
+    "kind": "opportunity",
+    "provider": "Fashion Institute of Technology (SUNY)",
+    "domain": "go.fitnyc.edu",
+    "titles": [
+      "FIT Open House: Jay and Patty Baker School of Business and Technology"
+    ]
+  },
+  {
+    "url": "https://go.fitnyc.edu/register/?id=1edfa016-bad1-42a3-ab27-03792fe3ffa7",
+    "kind": "opportunity",
+    "provider": "Fashion Institute of Technology (SUNY)",
+    "domain": "go.fitnyc.edu",
+    "titles": [
+      "FIT Undergraduate Information Session and Campus Tour"
+    ]
+  },
+  {
+    "url": "https://hesc.ny.gov/get-help/find-event/event-calendar/complete-your-fafsatap-hesc-12?featured_date=4191",
+    "kind": "opportunity",
+    "provider": "NYS Higher Education Services Corporation (HESC)",
+    "domain": "hesc.ny.gov",
+    "titles": [
+      "Complete your FAFSA/TAP with HESC! (virtual)"
+    ]
+  },
+  {
+    "url": "https://hunter.cuny.edu/students/admissions/undergraduate/visit",
+    "kind": "opportunity",
+    "provider": "Hunter College (CUNY)",
+    "domain": "hunter.cuny.edu",
+    "titles": [
+      "Hunter College Admissions Information Session & Campus Tour"
+    ]
+  },
+  {
+    "url": "https://hunter.cuny.edu/students/opportunities/college-now/program-information",
+    "kind": "opportunity",
+    "provider": "Hunter College (CUNY) College Now",
+    "domain": "hunter.cuny.edu",
+    "titles": [
+      "Hunter College Now - Spring 2027"
+    ]
+  },
+  {
+    "url": "https://mdphd.weill.cornell.edu/undergraduate-summer-program/gateways-admissions",
+    "kind": "opportunity",
+    "provider": "Tri-Institutional MD-PhD Program (Weill Cornell Medicine, Rockefeller University, Memorial Sloan Kettering)",
+    "domain": "mdphd.weill.cornell.edu",
+    "titles": [
+      "Gateways to the Laboratory Summer Program 2027"
+    ]
+  },
+  {
+    "url": "https://nfte.com/?p=67845",
+    "kind": "opportunity",
+    "provider": "Network for Teaching Entrepreneurship (NFTE), New York, NY",
+    "domain": "nfte.com",
+    "titles": [
+      "NFTE World Series of Innovation 2026-27 (Impact League, ages 13-24)"
+    ]
+  },
+  {
+    "url": "https://undergrad.admissions.columbia.edu/visit/campus",
+    "kind": "opportunity",
+    "provider": "Columbia University Undergraduate Admissions",
+    "domain": "undergrad.admissions.columbia.edu",
+    "titles": [
+      "Columbia University Undergraduate Campus Tours"
+    ]
+  },
+  {
+    "url": "https://www.bklynlibrary.org/nyc-history-day",
+    "kind": "opportunity",
+    "provider": "Center for Brooklyn History, Brooklyn Public Library",
+    "domain": "www.bklynlibrary.org",
+    "titles": [
+      "New York City History Day 2027"
+    ]
+  },
+  {
+    "url": "https://www.congressionalappchallenge.us/students/rules/",
+    "kind": "opportunity",
+    "provider": "Internet Education Foundation / U.S. House of Representatives",
+    "domain": "www.congressionalappchallenge.us",
+    "titles": [
+      "2026 Congressional App Challenge (NYC congressional districts)"
+    ]
+  },
+  {
+    "url": "https://www.fordham.edu/undergraduate-admission/visit/",
+    "kind": "opportunity",
+    "provider": "Fordham University",
+    "domain": "www.fordham.edu",
+    "titles": [
+      "Fordham University Information Session with Tour"
+    ]
+  },
+  {
+    "url": "https://www.janestreet.com/jobs/programs-endpoint.json",
+    "kind": "opportunity",
+    "provider": "Jane Street",
+    "domain": "www.janestreet.com",
+    "titles": [
+      "Jane Street INSIGHT (New York)",
+      "Jane Street FOCUS (New York)",
+      "Jane Street FTTP – First-Year Trading and Technology Program (New York)"
+    ]
+  },
+  {
+    "url": "https://www.jjay.cuny.edu/academics/undergraduate-programs/academic-success-programs/high-school-students/college-now/apply-college-now",
+    "kind": "opportunity",
+    "provider": "John Jay College of Criminal Justice (CUNY) College Now",
+    "domain": "www.jjay.cuny.edu",
+    "titles": [
+      "John Jay College Now - Spring 2027"
+    ]
+  },
+  {
+    "url": "https://www.mskcc.org/education-training/high-school-college/summer-student",
+    "kind": "opportunity",
+    "provider": "Memorial Sloan Kettering Cancer Center",
+    "domain": "www.mskcc.org",
+    "titles": [
+      "MSK Summer Student Program 2027 (high school juniors)"
+    ]
+  },
+  {
+    "url": "https://www.nypl.org/education/teens/college-career-pathways",
+    "kind": "opportunity",
+    "provider": "The New York Public Library",
+    "domain": "www.nypl.org",
+    "titles": [
+      "NYPL One-on-One College & Career Readiness Counseling"
+    ]
+  },
+  {
+    "url": "https://www.pace.edu/admission-and-aid/plan-visit/undergraduate-open-house",
+    "kind": "opportunity",
+    "provider": "Pace University",
+    "domain": "www.pace.edu",
+    "titles": [
+      "Pace University New York City Open House",
+      "Pace University Virtual Open House"
+    ]
+  },
+  {
+    "url": "https://www.rockefeller.edu/outreach/ssrp/faqs/",
+    "kind": "opportunity",
+    "provider": "RockEDU, The Rockefeller University",
+    "domain": "www.rockefeller.edu",
+    "titles": [
+      "Summer Science Research Program (SSRP) 2027"
+    ]
+  },
+  {
+    "url": "https://www.schools.nyc.gov/learning/student-journey/college-and-career-planning/choosing-the-right-college",
+    "kind": "opportunity",
+    "provider": "NYC Public Schools",
+    "domain": "www.schools.nyc.gov",
+    "titles": [
+      "NYC Public Schools Live 1-on-1 College and Career Advising"
+    ]
+  },
+  {
+    "url": "https://www.seo-usa.org/scholars/faqs/",
+    "kind": "opportunity",
+    "provider": "Sponsors for Educational Opportunity (SEO)",
+    "domain": "www.seo-usa.org",
+    "titles": [
+      "SEO Scholars New York (Class of 2030 application)"
+    ]
+  },
+  {
+    "url": "https://www.spaceappschallenge.org/2026/local-events/new-york/",
+    "kind": "opportunity",
+    "provider": "SWARM NYC with NYU (local host of NASA Space Apps Challenge)",
+    "domain": "www.spaceappschallenge.org",
+    "titles": [
+      "NASA Space Apps Challenge NYC 2026"
+    ]
+  },
+  {
+    "url": "https://www.stjohns.edu/openhouse",
+    "kind": "opportunity",
+    "provider": "St. John's University",
+    "domain": "www.stjohns.edu",
+    "titles": [
+      "St. John's University Fall Open House (October 25)"
+    ]
+  },
+  {
+    "url": "https://bellezeller.org/website/undergraduate-application/",
+    "kind": "scholarship",
+    "provider": "Belle Zeller Scholarship Trust Fund",
+    "domain": "bellezeller.org",
+    "titles": [
+      "Belle Zeller Scholarship (Undergraduate)"
+    ]
+  },
+  {
+    "url": "https://ccny.academicworks.com/opportunities/11583",
+    "kind": "scholarship",
+    "provider": "City College of New York (CCNY) School of Education",
+    "domain": "ccny.academicworks.com",
+    "titles": [
+      "The Immigrant to Immigrant Scholarship Fund"
+    ]
+  },
+  {
+    "url": "https://ccny.academicworks.com/opportunities/11022",
+    "kind": "scholarship",
+    "provider": "City College of New York (CCNY) Department of English",
+    "domain": "ccny.academicworks.com",
+    "titles": [
+      "Isaacs, Betty Lewis and Julius Scholarship"
+    ]
+  },
+  {
+    "url": "https://ccny.academicworks.com/opportunities/12653",
+    "kind": "scholarship",
+    "provider": "City College of New York (CCNY) Division of Humanities and the Arts",
+    "domain": "ccny.academicworks.com",
+    "titles": [
+      "Carmela and Milton Ackman Endowed Scholarship"
+    ]
+  },
+  {
+    "url": "https://ccny.academicworks.com/opportunities/12131",
+    "kind": "scholarship",
+    "provider": "City College of New York (CCNY) Division of Humanities and the Arts",
+    "domain": "ccny.academicworks.com",
+    "titles": [
+      "The Paper Endowed Scholarship Fund for Social Justice"
+    ]
+  },
+  {
+    "url": "https://ccny.academicworks.com/opportunities/10786",
+    "kind": "scholarship",
+    "provider": "City College of New York (CCNY) Division of Humanities and the Arts",
+    "domain": "ccny.academicworks.com",
+    "titles": [
+      "Sydney and Helen Jacoff Scholarship Fund"
+    ]
+  },
+  {
+    "url": "https://columbuscitizens.org/scholarships/college-scholarships/",
+    "kind": "scholarship",
+    "provider": "Columbus Citizens Foundation (8 E 69th St, New York, NY)",
+    "domain": "columbuscitizens.org",
+    "titles": [
+      "Columbus Citizens Foundation College Scholarship (2027-28)"
+    ]
+  },
+  {
+    "url": "https://equitable.com/foundation/equitable-excellence-scholarship",
+    "kind": "scholarship",
+    "provider": "Equitable Foundation (Equitable, 1345 Avenue of the Americas, New York, NY)",
+    "domain": "equitable.com",
+    "titles": [
+      "Equitable Excellence Scholarship (2027)"
+    ]
+  },
+  {
+    "url": "https://hostos.academicworks.com/opportunities/5516",
+    "kind": "scholarship",
+    "provider": "Hostos Community College (CUNY)",
+    "domain": "hostos.academicworks.com",
+    "titles": [
+      "Bronx Rising Initiative Scholarship"
+    ]
+  },
+  {
+    "url": "https://hostos.academicworks.com/opportunities/5537",
+    "kind": "scholarship",
+    "provider": "Hostos Community College (CUNY)",
+    "domain": "hostos.academicworks.com",
+    "titles": [
+      "The Honorable Hector L. Diaz Scholarship"
+    ]
+  },
+  {
+    "url": "https://hostos.academicworks.com/opportunities/5557",
+    "kind": "scholarship",
+    "provider": "Hostos Community College (CUNY)",
+    "domain": "hostos.academicworks.com",
+    "titles": [
+      "Aspira Capital Management and Wright Foundation Scholarship for Students Pursuing Degrees in STEM"
+    ]
+  },
+  {
+    "url": "https://hostos.academicworks.com/opportunities/5525",
+    "kind": "scholarship",
+    "provider": "Hostos Community College (CUNY)",
+    "domain": "hostos.academicworks.com",
+    "titles": [
+      "Frances M. Webb Endowed Scholarship for Student-Parents"
+    ]
+  },
+  {
+    "url": "https://jackierobinson.org/apply/",
+    "kind": "scholarship",
+    "provider": "Jackie Robinson Foundation (New York, NY)",
+    "domain": "jackierobinson.org",
+    "titles": [
+      "Jackie Robinson Foundation Scholarship"
+    ]
+  },
+  {
+    "url": "https://nycua.org/uniting/scholarship-program/college-scholarship-program-applicants",
+    "kind": "scholarship",
+    "provider": "New York Credit Union Association (statewide; applicants apply through their member credit union)",
+    "domain": "nycua.org",
+    "titles": [
+      "NYCUA Statewide Credit Union College Scholarship (2027)"
+    ]
+  },
+  {
+    "url": "https://pdsoros.org/apply/eligibility",
+    "kind": "scholarship",
+    "provider": "Paul & Daisy Soros Fellowships for New Americans (New York, NY)",
+    "domain": "pdsoros.org",
+    "titles": [
+      "Paul & Daisy Soros Fellowships for New Americans (2027)"
+    ]
+  },
+  {
+    "url": "https://qc-cuny.academicworks.com/opportunities/7565",
+    "kind": "scholarship",
+    "provider": "Queens College (CUNY)",
+    "domain": "qc-cuny.academicworks.com",
+    "titles": [
+      "Donald I. Brownstein/John McDermott Scholarship in Humanities"
+    ]
+  },
+  {
+    "url": "https://qc-cuny.academicworks.com/opportunities/7678",
+    "kind": "scholarship",
+    "provider": "Queens College (CUNY)",
+    "domain": "qc-cuny.academicworks.com",
+    "titles": [
+      "Foster Care Initiative Scholarship"
+    ]
+  },
+  {
+    "url": "https://qc-cuny.academicworks.com/opportunities/7691",
+    "kind": "scholarship",
+    "provider": "Queens College (CUNY) Student Affairs",
+    "domain": "qc-cuny.academicworks.com",
+    "titles": [
+      "Ibrahim Scholarship"
+    ]
+  },
+  {
+    "url": "https://stjohns.academicworks.com/",
+    "kind": "scholarship",
+    "provider": "St. John's University (Queens)",
+    "domain": "stjohns.academicworks.com",
+    "titles": [
+      "St. John's University General Scholarship Application (endowed scholarships)"
+    ]
+  },
+  {
+    "url": "https://stjohns.academicworks.com/opportunities/13565",
+    "kind": "scholarship",
+    "provider": "St. John's University (Queens)",
+    "domain": "stjohns.academicworks.com",
+    "titles": [
+      "Frank DellaFera Scholarship"
+    ]
+  },
+  {
+    "url": "https://www.aiany.org/architecture/competitions-grants/filter/scholarships/",
+    "kind": "scholarship",
+    "provider": "AIA New York | Center for Architecture (536 LaGuardia Place, New York, NY)",
+    "domain": "www.aiany.org",
+    "titles": [
+      "Walter A. Hunt, Jr. Scholarship (architecture)"
+    ]
+  },
+  {
+    "url": "https://www.brooklyn.edu/admissions-aid/financial-aid-scholarships/scholarships/apply",
+    "kind": "scholarship",
+    "provider": "Brooklyn College (CUNY) Office of Scholarships",
+    "domain": "www.brooklyn.edu",
+    "titles": [
+      "Brooklyn College Undergraduate General Scholarship Application (Continuing Students)"
+    ]
+  },
+  {
+    "url": "https://www.daughters1894.org/scholarships",
+    "kind": "scholarship",
+    "provider": "The Daughters of the Cincinnati (271 Madison Ave, New York, NY)",
+    "domain": "www.daughters1894.org",
+    "titles": [
+      "Daughters of the Cincinnati Military Stars Scholarship (2027)"
+    ]
+  },
+  {
+    "url": "https://www.hesc.ny.gov/find-aid/nys-grants-scholarships/nys-science-technology-engineering-and-mathematics-stem-incentive",
+    "kind": "scholarship",
+    "provider": "NYS Higher Education Services Corporation (HESC)",
+    "domain": "www.hesc.ny.gov",
+    "titles": [
+      "NYS Science, Technology, Engineering and Mathematics (STEM) Incentive Program"
+    ]
+  },
+  {
+    "url": "https://www.hesc.ny.gov/find-aid/nys-grants-scholarships/tuition-assistance-program-tap",
+    "kind": "scholarship",
+    "provider": "NYS Higher Education Services Corporation (HESC)",
+    "domain": "www.hesc.ny.gov",
+    "titles": [
+      "Tuition Assistance Program (TAP)"
+    ]
+  },
+  {
+    "url": "https://www.hesc.ny.gov/find-aid/nys-grants-scholarships/nys-memorial-scholarship",
+    "kind": "scholarship",
+    "provider": "NYS Higher Education Services Corporation (HESC)",
+    "domain": "www.hesc.ny.gov",
+    "titles": [
+      "NYS Memorial Scholarship"
+    ]
+  },
+  {
+    "url": "https://www.hesc.ny.gov/find-aid/nys-grants-scholarships/world-trade-center-memorial-scholarship",
+    "kind": "scholarship",
+    "provider": "NYS Higher Education Services Corporation (HESC)",
+    "domain": "www.hesc.ny.gov",
+    "titles": [
+      "NYS World Trade Center Memorial Scholarship"
+    ]
+  },
+  {
+    "url": "https://www.hesc.ny.gov/find-aid/nys-grants-scholarships/aid-native-americans",
+    "kind": "scholarship",
+    "provider": "NYS Higher Education Services Corporation (HESC) / NYS Education Department",
+    "domain": "www.hesc.ny.gov",
+    "titles": [
+      "Aid to Native Americans"
+    ]
+  },
+  {
+    "url": "https://www.overseaspressclubfoundation.org/scholar-awards-program",
+    "kind": "scholarship",
+    "provider": "Overseas Press Club Foundation (40 W 45th St, New York, NY)",
+    "domain": "www.overseaspressclubfoundation.org",
+    "titles": [
+      "Overseas Press Club Foundation Scholar Awards (2027)"
+    ]
+  },
+  {
+    "url": "https://www.scholarshipplus.org/splus/apply/",
+    "kind": "scholarship",
+    "provider": "Scholarship Plus (New York City nonprofit)",
+    "domain": "www.scholarshipplus.org",
+    "titles": [
+      "Scholarship Plus"
+    ]
+  },
+  {
+    "url": "https://www.spencered.org/scholarships",
+    "kind": "scholarship",
+    "provider": "Spencer Educational Foundation (New York, NY)",
+    "domain": "www.spencered.org",
+    "titles": [
+      "Spencer Educational Foundation Undergraduate Scholarship (2027)"
+    ]
+  },
+  {
+    "url": "https://www.womensforumny.org/?p=42920",
+    "kind": "scholarship",
+    "provider": "Women's Forum of New York (One East 53rd St, New York, NY)",
+    "domain": "www.womensforumny.org",
+    "titles": [
+      "Women's Forum of New York Education Fund Award (2027)"
+    ]
+  }
+]

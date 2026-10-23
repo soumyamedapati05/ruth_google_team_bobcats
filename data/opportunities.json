@@ -6,7 +6,10 @@
     "url": "https://www.spaceappschallenge.org/2026/local-events/new-york/",
     "source_url": "https://www.spaceappschallenge.org/2026/local-events/new-york/",
     "summary": "A free weekend hackathon in Downtown Brooklyn where teams build solutions to NASA's 2026 challenges. Open to all ages; no science background needed. Under-18s come with a parent or guardian.",
-    "school_levels": ["HS", "college"],
+    "school_levels": [
+      "HS",
+      "college"
+    ],
     "eligibility": {
       "class_years": [],
       "min_gpa": null,
@@ -17,34 +20,76 @@
       "need_based": false,
       "nyc_only": false,
       "geo_scope": "national",
-      "geo_areas": ["NYC"],
+      "geo_areas": [
+        "NYC"
+      ],
       "enrolled_at": [],
       "prerequisites": []
     },
-    "focus_tags": ["hackathon", "coding", "space", "nasa", "data-science", "team"],
-    "evidence": [
-      { "field": "dates", "quote": "NASA's Space Apps Challenge NYC NOV 13 - 15 Brooklyn, New York, US In-Person", "page": "https://www.mlh.com/seasons/2027/events" },
-      { "field": "location", "quote": "370 Jay St, Brooklyn, NY 11201", "page": "https://luma.com/1dmo9dwu" },
-      { "field": "cost", "quote": "There is no cost to participate in the NASA Space Apps Challenge.", "page": "https://www.spaceappschallenge.org/resources/participant-faqs/" },
-      { "field": "eligibility", "quote": "The NASA Space Apps Challenge is open to all ages!", "page": "https://www.spaceappschallenge.org/resources/participant-faqs/" },
-      { "field": "eligibility", "quote": "If under the age of 18, participants must be registered for the event by a parent or legal guardian and must be accompanied by a parent or legal guardian at all times during the event.", "page": "https://www.spaceappschallenge.org/resources/participant-faqs/" }
+    "focus_tags": [
+      "hackathon",
+      "coding",
+      "space",
+      "nasa",
+      "data-science",
+      "team"
     ],
-    "trust": { "badge": "web_verified", "checked_at": "2026-10-23", "note": "The official local-event page loads with JavaScript, so dates and venue came from the organizer's Luma page (and MLH for cross-checking). Re-check the venue floor before the demo." },
+    "evidence": [
+      {
+        "field": "dates",
+        "quote": "NASA's Space Apps Challenge NYC NOV 13 - 15 Brooklyn, New York, US In-Person",
+        "page": "https://www.mlh.com/seasons/2027/events"
+      },
+      {
+        "field": "location",
+        "quote": "370 Jay St, Brooklyn, NY 11201",
+        "page": "https://luma.com/1dmo9dwu"
+      },
+      {
+        "field": "cost",
+        "quote": "There is no cost to participate in the NASA Space Apps Challenge.",
+        "page": "https://www.spaceappschallenge.org/resources/participant-faqs/"
+      },
+      {
+        "field": "eligibility",
+        "quote": "The NASA Space Apps Challenge is open to all ages!",
+        "page": "https://www.spaceappschallenge.org/resources/participant-faqs/"
+      },
+      {
+        "field": "eligibility",
+        "quote": "If under the age of 18, participants must be registered for the event by a parent or legal guardian and must be accompanied by a parent or legal guardian at all times during the event.",
+        "page": "https://www.spaceappschallenge.org/resources/participant-faqs/"
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "The official local-event page loads with JavaScript, so dates and venue came from the organizer's Luma page (and MLH for cross-checking). Re-check the venue floor before the demo."
+    },
     "is_sample": false,
     "extracted_at": "2026-10-23",
     "type": "hackathon",
     "start_date": "2026-11-13",
     "end_date": "2026-11-15",
     "application_deadline": null,
-    "location": { "venue": "CUSP, NYU Tandon School of Engineering", "borough": "Brooklyn", "address": "370 Jay St, Brooklyn, NY 11201" },
+    "location": {
+      "venue": "CUSP, NYU Tandon School of Engineering",
+      "borough": "Brooklyn",
+      "address": "370 Jay St, Brooklyn, NY 11201"
+    },
     "is_online": false,
     "cost": 0,
     "covers": [],
     "stipend_amount": null,
-    "apply_effort": ["short_form"],
+    "apply_effort": [
+      "short_form"
+    ],
     "capacity": null,
     "unlocks": [
-      { "scholarship_id": "smp-sch-gowanus-hackathon-builder", "reason": "Finishing a Space Apps project counts as the completed hackathon this award requires." }
+      {
+        "scholarship_id": "smp-sch-gowanus-hackathon-builder",
+        "reason": "Finishing a Space Apps project counts as the completed hackathon this award requires."
+      }
     ]
   },
   {
@@ -54,9 +99,13 @@
     "url": "https://www.societyforscience.org/regeneron-sts/",
     "source_url": "https://www.societyforscience.org/regeneron-sts/frequently-asked-questions/",
     "summary": "The top U.S. research competition for high school seniors. Submit an independent research project online. 300 scholars win $2,000 (plus $2,000 for their school); the top award is $250,000.",
-    "school_levels": ["HS"],
+    "school_levels": [
+      "HS"
+    ],
     "eligibility": {
-      "class_years": ["hs_12"],
+      "class_years": [
+        "hs_12"
+      ],
       "min_gpa": null,
       "max_age": null,
       "citizenship": [],
@@ -65,20 +114,49 @@
       "need_based": false,
       "nyc_only": false,
       "geo_scope": "national",
-      "geo_areas": ["US"],
+      "geo_areas": [
+        "US"
+      ],
       "enrolled_at": [],
       "prerequisites": []
     },
-    "focus_tags": ["research", "science", "stem", "competition"],
-    "evidence": [
-      { "field": "deadline", "quote": "from June 1 to November 5, 2026" },
-      { "field": "deadline", "quote": "on November 5 at 8PM ET, no exceptions" },
-      { "field": "eligibility", "quote": "Any student who is living in and attending their last year of secondary school in the US and its territories may apply" },
-      { "field": "eligibility", "quote": "regardless of citizenship" },
-      { "field": "prizes", "quote": "Three hundred scholars are awarded $2,000" },
-      { "field": "prizes", "quote": "The top award is $250,000." }
+    "focus_tags": [
+      "research",
+      "science",
+      "stem",
+      "competition"
     ],
-    "trust": { "badge": "web_verified", "checked_at": "2026-10-23", "note": "Online application. The FAQ mentions no entry fee; confirm during spot-check." },
+    "evidence": [
+      {
+        "field": "deadline",
+        "quote": "from June 1 to November 5, 2026"
+      },
+      {
+        "field": "deadline",
+        "quote": "on November 5 at 8PM ET, no exceptions"
+      },
+      {
+        "field": "eligibility",
+        "quote": "Any student who is living in and attending their last year of secondary school in the US and its territories may apply"
+      },
+      {
+        "field": "eligibility",
+        "quote": "regardless of citizenship"
+      },
+      {
+        "field": "prizes",
+        "quote": "Three hundred scholars are awarded $2,000"
+      },
+      {
+        "field": "prizes",
+        "quote": "The top award is $250,000."
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Online application. The FAQ mentions no entry fee; confirm during spot-check."
+    },
     "is_sample": false,
     "extracted_at": "2026-10-23",
     "type": "competition",
@@ -90,7 +168,12 @@
     "cost": 0,
     "covers": [],
     "stipend_amount": null,
-    "apply_effort": ["essay", "rec", "transcript", "project"],
+    "apply_effort": [
+      "essay",
+      "rec",
+      "transcript",
+      "project"
+    ],
     "capacity": null,
     "unlocks": []
   },
@@ -101,9 +184,13 @@
     "url": "https://www.mskcc.org/education-training/high-school-college/hopp-summer-student",
     "source_url": "https://www.mskcc.org/education-training/high-school-college/hopp-summer-student",
     "summary": "Eight paid weeks doing cancer research in an MSK lab on the Upper East Side, with a $1,200 stipend. For high school juniors with strong science grades who live within 25 miles. Applications open December 1, 2026.",
-    "school_levels": ["HS"],
+    "school_levels": [
+      "HS"
+    ],
     "eligibility": {
-      "class_years": ["hs_11"],
+      "class_years": [
+        "hs_11"
+      ],
       "min_gpa": 3.5,
       "max_age": null,
       "citizenship": [],
@@ -112,33 +199,77 @@
       "need_based": false,
       "nyc_only": false,
       "geo_scope": "region",
-      "geo_areas": ["NY/NJ/CT within 25 miles of MSK"],
+      "geo_areas": [
+        "NY/NJ/CT within 25 miles of MSK"
+      ],
       "enrolled_at": [],
       "prerequisites": []
     },
-    "focus_tags": ["research", "biology", "medicine", "cancer", "paid", "summer"],
-    "evidence": [
-      { "field": "deadline", "quote": "Applications for 2027 Summer Student Program will open on December 1, 2026." },
-      { "field": "deadline", "quote": "All application materials must be submitted by 8:00 a.m. EST on February 5, 2027." },
-      { "field": "dates", "quote": "The 8-week program begins on June 29 and ends August 20, 2027." },
-      { "field": "eligibility", "quote": "Currently enrolled as a high school junior" },
-      { "field": "eligibility", "quote": "Must be 16 or older by June 2027" },
-      { "field": "eligibility", "quote": "A 3.5 grade point average in science subjects" },
-      { "field": "cost", "quote": "Students receive a stipend of $1,200 for the summer." }
+    "focus_tags": [
+      "research",
+      "biology",
+      "medicine",
+      "cancer",
+      "paid",
+      "summer"
     ],
-    "trust": { "badge": "web_verified", "checked_at": "2026-10-23", "note": "min_gpa is the science-subject GPA, not overall. No housing or transportation provided." },
+    "evidence": [
+      {
+        "field": "deadline",
+        "quote": "Applications for 2027 Summer Student Program will open on December 1, 2026."
+      },
+      {
+        "field": "deadline",
+        "quote": "All application materials must be submitted by 8:00 a.m. EST on February 5, 2027."
+      },
+      {
+        "field": "dates",
+        "quote": "The 8-week program begins on June 29 and ends August 20, 2027."
+      },
+      {
+        "field": "eligibility",
+        "quote": "Currently enrolled as a high school junior"
+      },
+      {
+        "field": "eligibility",
+        "quote": "Must be 16 or older by June 2027"
+      },
+      {
+        "field": "eligibility",
+        "quote": "A 3.5 grade point average in science subjects"
+      },
+      {
+        "field": "cost",
+        "quote": "Students receive a stipend of $1,200 for the summer."
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "min_gpa is the science-subject GPA, not overall. No housing or transportation provided."
+    },
     "is_sample": false,
     "extracted_at": "2026-10-23",
     "type": "program",
     "start_date": "2027-06-29",
     "end_date": "2027-08-20",
     "application_deadline": "2027-02-05",
-    "location": { "venue": "Memorial Sloan Kettering Cancer Center, Main Campus", "borough": "Manhattan", "address": "Upper East Side, Manhattan" },
+    "location": {
+      "venue": "Memorial Sloan Kettering Cancer Center, Main Campus",
+      "borough": "Manhattan",
+      "address": "Upper East Side, Manhattan"
+    },
     "is_online": false,
     "cost": 0,
-    "covers": ["stipend"],
+    "covers": [
+      "stipend"
+    ],
     "stipend_amount": 1200,
-    "apply_effort": ["essay", "rec", "transcript"],
+    "apply_effort": [
+      "essay",
+      "rec",
+      "transcript"
+    ],
     "capacity": null,
     "unlocks": []
   },
@@ -149,9 +280,16 @@
     "url": "https://cooper.edu/academics/outreach-and-pre-college/saturday-program",
     "source_url": "https://cooper.edu/academics/outreach-and-pre-college/saturday-program",
     "summary": "Free Saturday visual art and architecture classes for NYC public and charter high school students, especially those whose schools lack a full art program. No experience needed.",
-    "school_levels": ["HS"],
+    "school_levels": [
+      "HS"
+    ],
     "eligibility": {
-      "class_years": ["hs_9", "hs_10", "hs_11", "hs_12"],
+      "class_years": [
+        "hs_9",
+        "hs_10",
+        "hs_11",
+        "hs_12"
+      ],
       "min_gpa": null,
       "max_age": null,
       "citizenship": [],
@@ -160,33 +298,68 @@
       "need_based": true,
       "nyc_only": true,
       "geo_scope": "city",
-      "geo_areas": ["NYC"],
-      "enrolled_at": ["NYC public or charter high school"],
+      "geo_areas": [
+        "NYC"
+      ],
+      "enrolled_at": [
+        "NYC public or charter high school"
+      ],
       "prerequisites": []
     },
-    "focus_tags": ["art", "architecture", "design", "portfolio", "weekend"],
-    "evidence": [
-      { "field": "cost", "quote": "free, high-quality visual arts instruction" },
-      { "field": "eligibility", "quote": "We welcome individuals that have little to no experience in the visual arts." },
-      { "field": "dates", "quote": "Spring 2027 Semester January 30 – Week 1" },
-      { "field": "dates", "quote": "April 10 - Week 10 (Last Session)" }
+    "focus_tags": [
+      "art",
+      "architecture",
+      "design",
+      "portfolio",
+      "weekend"
     ],
-    "trust": { "badge": "web_verified", "checked_at": "2026-10-23", "note": "Spring 2027 application dates aren't posted. The FAQ says spring registration opens in October. Re-check in November and add application_deadline." },
+    "evidence": [
+      {
+        "field": "cost",
+        "quote": "free, high-quality visual arts instruction"
+      },
+      {
+        "field": "eligibility",
+        "quote": "We welcome individuals that have little to no experience in the visual arts."
+      },
+      {
+        "field": "dates",
+        "quote": "Spring 2027 Semester January 30 – Week 1"
+      },
+      {
+        "field": "dates",
+        "quote": "April 10 - Week 10 (Last Session)"
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Spring 2027 application dates aren't posted. The FAQ says spring registration opens in October. Re-check in November and add application_deadline."
+    },
     "is_sample": false,
     "extracted_at": "2026-10-23",
     "type": "program",
     "start_date": "2027-01-30",
     "end_date": "2027-04-10",
     "application_deadline": null,
-    "location": { "venue": "The Cooper Union", "borough": "Manhattan", "address": "30 Cooper Square, New York, NY 10003" },
+    "location": {
+      "venue": "The Cooper Union",
+      "borough": "Manhattan",
+      "address": "30 Cooper Square, New York, NY 10003"
+    },
     "is_online": false,
     "cost": 0,
     "covers": [],
     "stipend_amount": null,
-    "apply_effort": ["short_form"],
+    "apply_effort": [
+      "short_form"
+    ],
     "capacity": null,
     "unlocks": [
-      { "scholarship_id": "smp-sch-ellery-arts-portfolio", "reason": "Completing a Saturday Program term counts as the free pre-college art course this award requires, and builds your portfolio." }
+      {
+        "scholarship_id": "smp-sch-ellery-arts-portfolio",
+        "reason": "Completing a Saturday Program term counts as the free pre-college art course this award requires, and builds your portfolio."
+      }
     ]
   },
   {
@@ -196,9 +369,15 @@
     "url": "https://www.fordham.edu/undergraduate-admission/visit/open-house/",
     "source_url": "https://www.fordham.edu/undergraduate-admission/visit/open-house/",
     "summary": "Free admissions info sessions and student-led tours at Rose Hill (Bronx) and Lincoln Center (Manhattan), offered nearly every day until November 20.",
-    "school_levels": ["HS"],
+    "school_levels": [
+      "HS"
+    ],
     "eligibility": {
-      "class_years": ["hs_10", "hs_11", "hs_12"],
+      "class_years": [
+        "hs_10",
+        "hs_11",
+        "hs_12"
+      ],
       "min_gpa": null,
       "max_age": null,
       "citizenship": [],
@@ -207,27 +386,47 @@
       "need_based": false,
       "nyc_only": false,
       "geo_scope": "national",
-      "geo_areas": ["US"],
+      "geo_areas": [
+        "US"
+      ],
       "enrolled_at": [],
       "prerequisites": []
     },
-    "focus_tags": ["campus-visit", "college-admissions", "tour"],
-    "evidence": [
-      { "field": "dates", "quote": "information sessions or tours nearly every day through November 20" }
+    "focus_tags": [
+      "campus-visit",
+      "college-admissions",
+      "tour"
     ],
-    "trust": { "badge": "unverified", "checked_at": "2026-10-23", "note": "The page redirects automated fetches to a login, so the quote comes from the search engine's copy of the official page. Open it in a browser during spot-check and confirm before upgrading the badge." },
+    "evidence": [
+      {
+        "field": "dates",
+        "quote": "information sessions or tours nearly every day through November 20"
+      }
+    ],
+    "trust": {
+      "badge": "unverified",
+      "checked_at": "2026-10-23",
+      "note": "The page redirects automated fetches to a login, so the quote comes from the search engine's copy of the official page. Open it in a browser during spot-check and confirm before upgrading the badge."
+    },
     "is_sample": false,
     "extracted_at": "2026-10-23",
     "type": "campus_visit",
     "start_date": "2026-10-23",
     "end_date": "2026-11-20",
     "application_deadline": "rolling",
-    "location": { "venue": "Fordham University, Rose Hill campus (also Lincoln Center)", "borough": "Bronx", "address": "441 E Fordham Rd, Bronx, NY 10458" },
+    "location": {
+      "venue": "Fordham University, Rose Hill campus (also Lincoln Center)",
+      "borough": "Bronx",
+      "address": "441 E Fordham Rd, Bronx, NY 10458"
+    },
     "is_online": false,
     "cost": 0,
     "covers": [],
     "stipend_amount": null,
-    "apply_effort": ["short_form", "first_come"],
+    "apply_effort": [
+      "short_form",
+      "first_come"
+    ],
     "capacity": null,
     "unlocks": []
   },
@@ -238,7 +437,10 @@
     "url": "https://www.ccny.cuny.edu/calendar/2026-undergraduate-open-house",
     "source_url": "https://www.ccny.cuny.edu/calendar/2026-undergraduate-open-house",
     "summary": "Tour CCNY's Harlem campus and meet faculty and staff. Pick a 10 AM or 11 AM check-in slot.",
-    "school_levels": ["HS", "college"],
+    "school_levels": [
+      "HS",
+      "college"
+    ],
     "eligibility": {
       "class_years": [],
       "min_gpa": null,
@@ -249,33 +451,58 @@
       "need_based": false,
       "nyc_only": false,
       "geo_scope": "national",
-      "geo_areas": ["US"],
+      "geo_areas": [
+        "US"
+      ],
       "enrolled_at": [],
       "prerequisites": []
     },
-    "focus_tags": ["campus-visit", "cuny", "college-admissions", "transfer"],
-    "evidence": [
-      { "field": "dates", "quote": "Sat, Oct 24, 2026" },
-      { "field": "location", "quote": "160 Convent Avenue New York, NY 10031" },
-      { "field": "registration", "quote": "Reserve your spot today!" }
+    "focus_tags": [
+      "campus-visit",
+      "cuny",
+      "college-admissions",
+      "transfer"
     ],
-    "trust": { "badge": "web_verified", "checked_at": "2026-10-23", "note": "Happens Oct 24, 2026, so the automatic date check will drop it afterward. No fee is mentioned; registration is free." },
+    "evidence": [
+      {
+        "field": "dates",
+        "quote": "Sat, Oct 24, 2026"
+      },
+      {
+        "field": "location",
+        "quote": "160 Convent Avenue New York, NY 10031"
+      },
+      {
+        "field": "registration",
+        "quote": "Reserve your spot today!"
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Happens Oct 24, 2026, so the automatic date check will drop it afterward. No fee is mentioned; registration is free."
+    },
     "is_sample": false,
     "extracted_at": "2026-10-23",
     "type": "campus_visit",
     "start_date": "2026-10-24",
     "end_date": "2026-10-24",
     "application_deadline": null,
-    "location": { "venue": "The City College of New York", "borough": "Manhattan", "address": "160 Convent Avenue, New York, NY 10031" },
+    "location": {
+      "venue": "The City College of New York",
+      "borough": "Manhattan",
+      "address": "160 Convent Avenue, New York, NY 10031"
+    },
     "is_online": false,
     "cost": 0,
     "covers": [],
     "stipend_amount": null,
-    "apply_effort": ["short_form"],
+    "apply_effort": [
+      "short_form"
+    ],
     "capacity": null,
     "unlocks": []
   },
-
   {
     "id": "smp-opp-riverside-engineering-day",
     "title": "Riverside Engineering Discovery Day",
@@ -283,9 +510,16 @@
     "url": "/sample-listing?id=smp-opp-riverside-engineering-day",
     "source_url": null,
     "summary": "A free Sunday of hands-on engineering for Bronx high school students: build a bridge, wire a circuit, program a robot. Lunch included.",
-    "school_levels": ["HS"],
+    "school_levels": [
+      "HS"
+    ],
     "eligibility": {
-      "class_years": ["hs_9", "hs_10", "hs_11", "hs_12"],
+      "class_years": [
+        "hs_9",
+        "hs_10",
+        "hs_11",
+        "hs_12"
+      ],
       "min_gpa": null,
       "max_age": null,
       "citizenship": [],
@@ -294,30 +528,60 @@
       "need_based": false,
       "nyc_only": true,
       "geo_scope": "borough",
-      "geo_areas": ["Bronx"],
+      "geo_areas": [
+        "Bronx"
+      ],
       "enrolled_at": [],
       "prerequisites": []
     },
-    "focus_tags": ["engineering", "robotics", "stem", "hands-on", "maker"],
+    "focus_tags": [
+      "engineering",
+      "robotics",
+      "stem",
+      "hands-on",
+      "maker"
+    ],
     "evidence": [],
-    "trust": { "badge": "unverified", "checked_at": null, "note": "Sample listing (made up for the demo). The 'almost eligible' card: unlocks 3 scholarships worth $4,500." },
+    "trust": {
+      "badge": "unverified",
+      "checked_at": null,
+      "note": "Sample listing (made up for the demo). The 'almost eligible' card: unlocks 3 scholarships worth $4,500."
+    },
     "is_sample": true,
     "extracted_at": "2026-10-23",
     "type": "workshop",
     "start_date": "2026-11-15",
     "end_date": "2026-11-15",
     "application_deadline": "2026-11-10",
-    "location": { "venue": "Riverside Community Center (fictional)", "borough": "Bronx", "address": null },
+    "location": {
+      "venue": "Riverside Community Center (fictional)",
+      "borough": "Bronx",
+      "address": null
+    },
     "is_online": false,
     "cost": 0,
-    "covers": ["food"],
+    "covers": [
+      "food"
+    ],
     "stipend_amount": null,
-    "apply_effort": ["short_form", "first_come"],
+    "apply_effort": [
+      "short_form",
+      "first_come"
+    ],
     "capacity": 60,
     "unlocks": [
-      { "scholarship_id": "smp-sch-riverside-young-engineers", "reason": "Counts as the hands-on engineering event this $2,000 award requires." },
-      { "scholarship_id": "smp-sch-brightwater-stem-pathways", "reason": "Counts as a STEM outreach day this school year, the one thing this $1,500 award asks for that you haven't done." },
-      { "scholarship_id": "smp-sch-bronx-river-builders", "reason": "You'll leave with a project you built at a build event, which this $1,000 award asks you to show." }
+      {
+        "scholarship_id": "smp-sch-riverside-young-engineers",
+        "reason": "Counts as the hands-on engineering event this $2,000 award requires."
+      },
+      {
+        "scholarship_id": "smp-sch-brightwater-stem-pathways",
+        "reason": "Counts as a STEM outreach day this school year, the one thing this $1,500 award asks for that you haven't done."
+      },
+      {
+        "scholarship_id": "smp-sch-bronx-river-builders",
+        "reason": "You'll leave with a project you built at a build event, which this $1,000 award asks you to show."
+      }
     ]
   },
   {
@@ -327,9 +591,16 @@
     "url": "/sample-listing?id=smp-opp-kestrel-money-workshop",
     "source_url": null,
     "summary": "A free two-hour Saturday workshop for NYC teens on budgeting, saving and paying for college. Snacks provided.",
-    "school_levels": ["HS"],
+    "school_levels": [
+      "HS"
+    ],
     "eligibility": {
-      "class_years": ["hs_9", "hs_10", "hs_11", "hs_12"],
+      "class_years": [
+        "hs_9",
+        "hs_10",
+        "hs_11",
+        "hs_12"
+      ],
       "min_gpa": null,
       "max_age": null,
       "citizenship": [],
@@ -338,28 +609,1708 @@
       "need_based": false,
       "nyc_only": true,
       "geo_scope": "city",
-      "geo_areas": ["NYC"],
+      "geo_areas": [
+        "NYC"
+      ],
       "enrolled_at": [],
       "prerequisites": []
     },
-    "focus_tags": ["financial-literacy", "credit-union", "workshop"],
+    "focus_tags": [
+      "financial-literacy",
+      "credit-union",
+      "workshop"
+    ],
     "evidence": [],
-    "trust": { "badge": "unverified", "checked_at": null, "note": "Sample listing (made up for the demo)." },
+    "trust": {
+      "badge": "unverified",
+      "checked_at": null,
+      "note": "Sample listing (made up for the demo)."
+    },
     "is_sample": true,
     "extracted_at": "2026-10-23",
     "type": "workshop",
     "start_date": "2026-12-05",
     "end_date": "2026-12-05",
     "application_deadline": "2026-12-01",
-    "location": { "venue": "Kestrel Credit Union League training room (fictional)", "borough": "Queens", "address": null },
+    "location": {
+      "venue": "Kestrel Credit Union League training room (fictional)",
+      "borough": "Queens",
+      "address": null
+    },
     "is_online": false,
     "cost": 0,
-    "covers": ["food"],
+    "covers": [
+      "food"
+    ],
     "stipend_amount": null,
-    "apply_effort": ["short_form", "first_come"],
+    "apply_effort": [
+      "short_form",
+      "first_come"
+    ],
     "capacity": 40,
     "unlocks": [
-      { "scholarship_id": "smp-sch-kestrel-financial-futures", "reason": "Completing this workshop is the requirement for this $750 scholarship." }
+      {
+        "scholarship_id": "smp-sch-kestrel-financial-futures",
+        "reason": "Completing this workshop is the requirement for this $750 scholarship."
+      }
     ]
+  },
+  {
+    "id": "opp-college-of-staten-island-fall-undergraduate-open",
+    "title": "College of Staten Island Fall Undergraduate Open House",
+    "provider": "College of Staten Island",
+    "url": "https://events.cuny.edu/cec/fall-undergraduate-open-house-3/",
+    "source_url": "https://events.cuny.edu/cec/fall-undergraduate-open-house-3/",
+    "summary": "The College of Staten Island hosts an undergraduate open house featuring presentations, workshops, tours, and a student services fair covering academics, financial aid, and student life.",
+    "school_levels": [
+      "HS",
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "max_age": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": true,
+      "geo_scope": "city",
+      "geo_areas": [
+        "NYC"
+      ],
+      "enrolled_at": [],
+      "prerequisites": []
+    },
+    "focus_tags": [
+      "admissions",
+      "college-tour"
+    ],
+    "evidence": [
+      {
+        "field": "dates",
+        "quote": "October 24, 2026"
+      },
+      {
+        "field": "cost",
+        "quote": "Admission: Free"
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Extracted by Gemini (gemini-flash-latest) from the official page; every quote confirmed word for word on the live page by scripts/build_lists.py."
+    },
+    "is_sample": false,
+    "extracted_at": "2026-10-23",
+    "type": "campus_visit",
+    "start_date": "2026-10-24",
+    "end_date": "2026-10-24",
+    "application_deadline": null,
+    "location": {
+      "venue": "Building 1P, Atrium",
+      "borough": "Staten Island",
+      "address": "2800 Victory Boulevard, Staten Island"
+    },
+    "is_online": false,
+    "cost": 0,
+    "covers": [],
+    "stipend_amount": null,
+    "apply_effort": [],
+    "capacity": null,
+    "unlocks": []
+  },
+  {
+    "id": "opp-st-john-s-university-fall-open-house-october-25",
+    "title": "St. John's University Fall Open House (October 25)",
+    "provider": "St. John's University",
+    "url": "https://www.stjohns.edu/openhouse",
+    "source_url": "https://www.stjohns.edu/openhouse",
+    "summary": "Prospective students can take a campus tour led by a Student Ambassador and learn about study abroad, scholarships, and admission requirements at St. John's University.",
+    "school_levels": [
+      "HS",
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "max_age": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": true,
+      "geo_scope": "city",
+      "geo_areas": [
+        "NYC"
+      ],
+      "enrolled_at": [],
+      "prerequisites": []
+    },
+    "focus_tags": [
+      "admissions",
+      "campus-tour"
+    ],
+    "evidence": [
+      {
+        "field": "dates",
+        "quote": "Fall 2026 Open House In addition to touring campus, we have so much to share about study abroad, scholarships, admission requirements, and so much more! Sunday, October 25"
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Extracted by Gemini (gemini-flash-latest) from the official page; every quote confirmed word for word on the live page by scripts/build_lists.py. Cost not stated on the page; college admissions visits are normally free."
+    },
+    "is_sample": false,
+    "extracted_at": "2026-10-23",
+    "type": "campus_visit",
+    "start_date": "2026-10-25",
+    "end_date": "2026-10-25",
+    "application_deadline": null,
+    "location": {
+      "venue": "St. John's University",
+      "borough": "Queens",
+      "address": "8000 Utopia Parkway, Queens, NY 11439"
+    },
+    "is_online": false,
+    "cost": 0,
+    "covers": [],
+    "stipend_amount": null,
+    "apply_effort": [
+      "short_form"
+    ],
+    "capacity": null,
+    "unlocks": []
+  },
+  {
+    "id": "opp-2026-congressional-app-challenge-nyc-congression",
+    "title": "2026 Congressional App Challenge (NYC congressional districts)",
+    "provider": "Congressional App Challenge",
+    "url": "https://www.congressionalappchallenge.us/students/rules/",
+    "source_url": "https://www.congressionalappchallenge.us/students/rules/",
+    "summary": "Middle and high school students can participate individually or in teams of up to four to code and submit an application using any programming language and platform. Eligible students compete in the congressional district where they reside or attend school.",
+    "school_levels": [
+      "HS"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "max_age": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": true,
+      "geo_scope": "city",
+      "geo_areas": [
+        "NYC"
+      ],
+      "enrolled_at": [],
+      "prerequisites": []
+    },
+    "focus_tags": [
+      "app-development",
+      "coding",
+      "computer-science",
+      "stem"
+    ],
+    "evidence": [
+      {
+        "field": "deadline",
+        "quote": "October 26 – Deadline for students to register and submit their app online"
+      },
+      {
+        "field": "eligibility",
+        "quote": "To be eligible to participate in the Congressional App Challenge, you must be a middle or high school student at the time of app submission."
+      },
+      {
+        "field": "year",
+        "quote": "2026 IMPORTANT DATES"
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Extracted by Gemini (gemini-flash-latest) from the official page; every quote confirmed word for word on the live page by scripts/build_lists.py. Manual check: Year confirmed by the '2026 IMPORTANT DATES' heading above the Oct 26 deadline. The official rules list no entry fee; the page doesn't use the word 'free'. Closes Oct 26, 2026. No fee is mentioned in the official rules. Middle school students are also eligible, but school_levels only supports HS and college. Launch month is May 2026 without an exact day stated."
+    },
+    "is_sample": false,
+    "extracted_at": "2026-10-23",
+    "type": "competition",
+    "start_date": null,
+    "end_date": null,
+    "application_deadline": "2026-10-26",
+    "location": null,
+    "is_online": true,
+    "cost": 0,
+    "covers": [],
+    "stipend_amount": null,
+    "apply_effort": [],
+    "capacity": null,
+    "unlocks": []
+  },
+  {
+    "id": "opp-college-is-possible-non-diploma-credential-progr",
+    "title": "College is Possible: Non-Diploma Credential Programs",
+    "provider": "The University",
+    "url": "https://events.cuny.edu/cec/college-is-possible-non-diploma-credential-programs/",
+    "source_url": "https://events.cuny.edu/cec/college-is-possible-non-diploma-credential-programs/",
+    "summary": "This event highlights educational programs on college campuses for students with developmental and/or intellectual disabilities who use Alternate Assessment and will leave high school with a non-diploma credential. Families are welcome to attend this virtual session.",
+    "school_levels": [
+      "HS"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "max_age": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [
+        "students with developmental and/or intellectual disabilities"
+      ],
+      "need_based": null,
+      "nyc_only": true,
+      "geo_scope": "city",
+      "geo_areas": [
+        "NYC"
+      ],
+      "enrolled_at": [],
+      "prerequisites": []
+    },
+    "focus_tags": [
+      "college-transition",
+      "disabilities",
+      "special-education"
+    ],
+    "evidence": [
+      {
+        "field": "dates",
+        "quote": "October 27, 2026"
+      },
+      {
+        "field": "cost",
+        "quote": "Admission: Free"
+      },
+      {
+        "field": "eligibility",
+        "quote": "students with developmental and/or intellectual disabilities who use Alternate Assessment and will leave high school with a non-diploma credential."
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Extracted by Gemini (gemini-flash-latest) from the official page; every quote confirmed word for word on the live page by scripts/build_lists.py."
+    },
+    "is_sample": false,
+    "extracted_at": "2026-10-23",
+    "type": "workshop",
+    "start_date": "2026-10-27",
+    "end_date": "2026-10-27",
+    "application_deadline": null,
+    "location": null,
+    "is_online": true,
+    "cost": 0,
+    "covers": [],
+    "stipend_amount": null,
+    "apply_effort": [],
+    "capacity": null,
+    "unlocks": []
+  },
+  {
+    "id": "opp-fit-open-house-jay-and-patty-baker-school-of-bus",
+    "title": "FIT Open House: Jay and Patty Baker School of Business and Technology",
+    "provider": "Fashion Institute of Technology",
+    "url": "https://go.fitnyc.edu/register/?id=5f35693a-25c7-440e-ae6d-f85a58cd7885",
+    "source_url": "https://go.fitnyc.edu/register/?id=5f35693a-25c7-440e-ae6d-f85a58cd7885",
+    "summary": "The Fashion Institute of Technology is hosting an on-campus open house for the Jay and Patty Baker School of Business and Technology. Attendees can learn about majors ranging from Advertising and Marketing Communications to Fashion Business Management and Textile Development.",
+    "school_levels": [
+      "HS",
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "max_age": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": true,
+      "geo_scope": "city",
+      "geo_areas": [
+        "NYC"
+      ],
+      "enrolled_at": [],
+      "prerequisites": []
+    },
+    "focus_tags": [
+      "business",
+      "entrepreneurship",
+      "fashion",
+      "marketing"
+    ],
+    "evidence": [
+      {
+        "field": "dates",
+        "quote": "Sunday, November 8, 2026 at 12:00 PM until 4:30 PM Eastern Standard Time"
+      },
+      {
+        "field": "eligibility",
+        "quote": "I'm currently in high school or have recently graduated. I'm planning to transfer from another college/university."
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Extracted by Gemini (gemini-flash-latest) from the official page; every quote confirmed word for word on the live page by scripts/build_lists.py. Cost not stated on the page; college admissions visits are normally free. Cost is not explicitly stated on the page."
+    },
+    "is_sample": false,
+    "extracted_at": "2026-10-23",
+    "type": "campus_visit",
+    "start_date": "2026-11-08",
+    "end_date": "2026-11-08",
+    "application_deadline": null,
+    "location": {
+      "venue": "Feldman Center, lobby",
+      "borough": "Manhattan",
+      "address": "Seventh Avenue at 27th Street, New York, NY 10001"
+    },
+    "is_online": false,
+    "cost": 0,
+    "covers": [],
+    "stipend_amount": null,
+    "apply_effort": [
+      "short_form"
+    ],
+    "capacity": null,
+    "unlocks": []
+  },
+  {
+    "id": "opp-fit-open-house-school-of-art-and-design-school-o",
+    "title": "FIT Open House: School of Art and Design & School of Liberal Arts and Sciences",
+    "provider": "Fashion Institute of Technology",
+    "url": "https://go.fitnyc.edu/register/?id=b6d03070-236f-41e3-9d17-86a7ebbc9392",
+    "source_url": "https://go.fitnyc.edu/register/?id=b6d03070-236f-41e3-9d17-86a7ebbc9392",
+    "summary": "The Fashion Institute of Technology hosts an in-person open house highlighting academic programs across the School of Art and Design and the School of Liberal Arts and Sciences.",
+    "school_levels": [
+      "HS",
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "max_age": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": true,
+      "geo_scope": "city",
+      "geo_areas": [
+        "NYC"
+      ],
+      "enrolled_at": [],
+      "prerequisites": []
+    },
+    "focus_tags": [
+      "art",
+      "design",
+      "fashion",
+      "liberal-arts"
+    ],
+    "evidence": [
+      {
+        "field": "dates",
+        "quote": "Sunday, November 8, 2026 at 8:00 AM until 2:00 PM Eastern Standard Time UTC -05:00"
+      },
+      {
+        "field": "eligibility",
+        "quote": "I'm currently in high school or have recently graduated. I'm planning to transfer from another college/university."
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Extracted by Gemini (gemini-flash-latest) from the official page; every quote confirmed word for word on the live page by scripts/build_lists.py. Cost not stated on the page; college admissions visits are normally free."
+    },
+    "is_sample": false,
+    "extracted_at": "2026-10-23",
+    "type": "campus_visit",
+    "start_date": "2026-11-08",
+    "end_date": "2026-11-08",
+    "application_deadline": null,
+    "location": {
+      "venue": "Fashion Institute of Technology, Feldman Center, lobby",
+      "borough": "Manhattan",
+      "address": "Seventh Avenue at 27th Street, New York, NY 10001"
+    },
+    "is_online": false,
+    "cost": 0,
+    "covers": [],
+    "stipend_amount": null,
+    "apply_effort": [
+      "short_form"
+    ],
+    "capacity": null,
+    "unlocks": []
+  },
+  {
+    "id": "opp-virtual-transfer-thursday-engineering",
+    "title": "Virtual Transfer Thursday – Engineering",
+    "provider": "College of Staten Island",
+    "url": "https://events.cuny.edu/cec/virtual-transfer-thursday-engineering/",
+    "source_url": "https://events.cuny.edu/cec/virtual-transfer-thursday-engineering/",
+    "summary": "Prospective transfer students can learn about College of Staten Island's ABET-accredited BS programs in Engineering Science and Electrical Engineering. Faculty will discuss program options, undergraduate research, transfer planning, and recommended coursework.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "max_age": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": true,
+      "geo_scope": "city",
+      "geo_areas": [
+        "NYC"
+      ],
+      "enrolled_at": [],
+      "prerequisites": []
+    },
+    "focus_tags": [
+      "electrical-engineering",
+      "engineering",
+      "transfer"
+    ],
+    "evidence": [
+      {
+        "field": "dates",
+        "quote": "November 12, 2026"
+      },
+      {
+        "field": "cost",
+        "quote": "Free"
+      },
+      {
+        "field": "eligibility",
+        "quote": "Faculty will review program options, transfer planning, and the coursework students should consider completing before transfer."
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Extracted by Gemini (gemini-flash-latest) from the official page; every quote confirmed word for word on the live page by scripts/build_lists.py."
+    },
+    "is_sample": false,
+    "extracted_at": "2026-10-23",
+    "type": "campus_visit",
+    "start_date": "2026-11-12",
+    "end_date": "2026-11-12",
+    "application_deadline": null,
+    "location": {
+      "venue": "College of Staten Island",
+      "borough": "Staten Island",
+      "address": "Virtual event"
+    },
+    "is_online": true,
+    "cost": 0,
+    "covers": [],
+    "stipend_amount": null,
+    "apply_effort": [],
+    "capacity": null,
+    "unlocks": []
+  },
+  {
+    "id": "opp-pace-university-virtual-open-house",
+    "title": "Pace University Virtual Open House",
+    "provider": "Pace University",
+    "url": "https://www.pace.edu/admission-and-aid/plan-visit/undergraduate-open-house",
+    "source_url": "https://www.pace.edu/admission-and-aid/plan-visit/undergraduate-open-house",
+    "summary": "Pace University hosts a virtual open house for prospective undergraduate students to learn about academic majors, financial aid, and admissions.",
+    "school_levels": [
+      "HS",
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "max_age": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": true,
+      "geo_scope": "city",
+      "geo_areas": [
+        "NYC"
+      ],
+      "enrolled_at": [],
+      "prerequisites": []
+    },
+    "focus_tags": [
+      "admissions",
+      "college-preview",
+      "open-house"
+    ],
+    "evidence": [
+      {
+        "field": "dates",
+        "quote": "Virtual Open House, November 14, 2026 at 11:00 a.m."
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Extracted by Gemini (gemini-flash-latest) from the official page; every quote confirmed word for word on the live page by scripts/build_lists.py. Cost not stated on the page; college admissions visits are normally free."
+    },
+    "is_sample": false,
+    "extracted_at": "2026-10-23",
+    "type": "campus_visit",
+    "start_date": "2026-11-14",
+    "end_date": "2026-11-14",
+    "application_deadline": null,
+    "location": null,
+    "is_online": true,
+    "cost": 0,
+    "covers": [],
+    "stipend_amount": null,
+    "apply_effort": [],
+    "capacity": null,
+    "unlocks": []
+  },
+  {
+    "id": "opp-suny-maritime-college-open-house",
+    "title": "SUNY Maritime College Open House",
+    "provider": "SUNY Maritime College",
+    "url": "https://apply.sunymaritime.edu/register/?id=1ff30800-28d7-417f-ac13-5667f3a4c703",
+    "source_url": "https://apply.sunymaritime.edu/register/?id=1ff30800-28d7-417f-ac13-5667f3a4c703",
+    "summary": "SUNY Maritime College invites prospective students to tour its 55-acre waterfront campus, state-of-the-art facilities, and training ship.",
+    "school_levels": [
+      "HS",
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "max_age": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": true,
+      "geo_scope": "city",
+      "geo_areas": [
+        "NYC"
+      ],
+      "enrolled_at": [],
+      "prerequisites": []
+    },
+    "focus_tags": [
+      "admissions",
+      "maritime"
+    ],
+    "evidence": [
+      {
+        "field": "dates",
+        "quote": "Saturday, November 14, 2026 at 8:00 AM Eastern Standard Time UTC -05:00"
+      },
+      {
+        "field": "eligibility",
+        "quote": "*Student Type Freshman Transfer Graduate"
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Extracted by Gemini (gemini-flash-latest) from the official page; every quote confirmed word for word on the live page by scripts/build_lists.py. Cost not stated on the page; college admissions visits are normally free."
+    },
+    "is_sample": false,
+    "extracted_at": "2026-10-23",
+    "type": "campus_visit",
+    "start_date": "2026-11-14",
+    "end_date": "2026-11-14",
+    "application_deadline": null,
+    "location": {
+      "venue": "SUNY Maritime College",
+      "borough": "Bronx",
+      "address": "6 Pennyfield Ave, Bronx, NY 10465"
+    },
+    "is_online": false,
+    "cost": 0,
+    "covers": [],
+    "stipend_amount": null,
+    "apply_effort": [
+      "short_form"
+    ],
+    "capacity": null,
+    "unlocks": []
+  },
+  {
+    "id": "opp-st-john-s-university-open-house-november-14",
+    "title": "St. John's University Open House (November 14)",
+    "provider": "St. John's University",
+    "url": "https://apply.stjohns.edu/register/OH_NOV2026",
+    "source_url": "https://apply.stjohns.edu/register/OH_NOV2026",
+    "summary": "Prospective first-year undergraduate and transfer students can visit St. John's University to meet current students, faculty, and administrators.",
+    "school_levels": [
+      "HS",
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "max_age": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": true,
+      "geo_scope": "city",
+      "geo_areas": [
+        "NYC"
+      ],
+      "enrolled_at": [],
+      "prerequisites": []
+    },
+    "focus_tags": [
+      "admissions",
+      "campus-tour"
+    ],
+    "evidence": [
+      {
+        "field": "dates",
+        "quote": "Saturday, November 14, 2026 at 10:00 AM until 1:00 PM Eastern Standard Time"
+      },
+      {
+        "field": "eligibility",
+        "quote": "Student Type * First Year Undergraduate Transfer"
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Extracted by Gemini (gemini-flash-latest) from the official page; every quote confirmed word for word on the live page by scripts/build_lists.py. Cost not stated on the page; college admissions visits are normally free."
+    },
+    "is_sample": false,
+    "extracted_at": "2026-10-23",
+    "type": "campus_visit",
+    "start_date": "2026-11-14",
+    "end_date": "2026-11-14",
+    "application_deadline": null,
+    "location": {
+      "venue": "St John's University, Carnesecca Arena",
+      "borough": "Queens",
+      "address": "8000 Utopia Pkwy, Queens, NY 11439"
+    },
+    "is_online": false,
+    "cost": 0,
+    "covers": [],
+    "stipend_amount": null,
+    "apply_effort": [
+      "short_form"
+    ],
+    "capacity": null,
+    "unlocks": []
+  },
+  {
+    "id": "opp-csi-virtual-transfer-thursday-business",
+    "title": "CSI Virtual Transfer Thursday – Business",
+    "provider": "College of Staten Island",
+    "url": "https://events.cuny.edu/cec/virtual-transfer-thursday-business/",
+    "source_url": "https://events.cuny.edu/cec/virtual-transfer-thursday-business/",
+    "summary": "Prospective students can meet faculty from the Lucille and Jay Chazanoff School of Business to explore academic options in accounting, business, economics, and information systems. The session covers degree concentrations and curriculum that support students' professional goals.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "max_age": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": true,
+      "geo_scope": "city",
+      "geo_areas": [
+        "NYC"
+      ],
+      "enrolled_at": [],
+      "prerequisites": []
+    },
+    "focus_tags": [
+      "accounting",
+      "business",
+      "economics",
+      "finance",
+      "marketing",
+      "transfer"
+    ],
+    "evidence": [
+      {
+        "field": "dates",
+        "quote": "November 19, 2026"
+      },
+      {
+        "field": "cost",
+        "quote": "Admission: Free"
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Extracted by Gemini (gemini-flash-latest) from the official page; every quote confirmed word for word on the live page by scripts/build_lists.py. The event takes place virtually from 6:00 PM to 7:30 PM."
+    },
+    "is_sample": false,
+    "extracted_at": "2026-10-23",
+    "type": "campus_visit",
+    "start_date": "2026-11-19",
+    "end_date": "2026-11-19",
+    "application_deadline": null,
+    "location": {
+      "venue": "College of Staten Island",
+      "borough": "Staten Island",
+      "address": "Virtual event"
+    },
+    "is_online": true,
+    "cost": 0,
+    "covers": [],
+    "stipend_amount": null,
+    "apply_effort": [],
+    "capacity": null,
+    "unlocks": []
+  },
+  {
+    "id": "opp-hunter-college-now-spring-2027",
+    "title": "Hunter College Now - Spring 2027",
+    "provider": "Hunter College",
+    "url": "https://hunter.cuny.edu/students/opportunities/college-now/program-information",
+    "source_url": "https://hunter.cuny.edu/students/opportunities/college-now/program-information",
+    "summary": "Hunter College Now offers free college-credit courses for high school students in grades 10 through 12 during the spring semester. Courses are held in-person, hybrid, or online across a wide range of academic subjects.",
+    "school_levels": [
+      "HS"
+    ],
+    "eligibility": {
+      "class_years": [
+        "hs_10",
+        "hs_11",
+        "hs_12"
+      ],
+      "min_gpa": null,
+      "max_age": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": true,
+      "geo_scope": "city",
+      "geo_areas": [
+        "NYC"
+      ],
+      "enrolled_at": [],
+      "prerequisites": []
+    },
+    "focus_tags": [
+      "academics",
+      "college-credit",
+      "dual-enrollment"
+    ],
+    "evidence": [
+      {
+        "field": "dates",
+        "quote": "Program will run from January 28 th – May 27 th."
+      },
+      {
+        "field": "cost",
+        "quote": "the course will be completely free! One college class costs around $1,500 and we are paying that for you"
+      },
+      {
+        "field": "eligibility",
+        "quote": "College Now courses during the spring are open to current 10th, 11th and 12th grade students who meet the following requirements."
+      },
+      {
+        "field": "year",
+        "quote": "Please join us for the Hunter College Now Spring 2027 program!"
+      },
+      {
+        "field": "deadline",
+        "quote": "The priority deadline for Spring applications is Friday, December 4th.",
+        "page": "https://hunter.cuny.edu/students/opportunities/college-now/how-to-apply"
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Extracted by Gemini (gemini-flash-latest) from the official page; every quote confirmed word for word on the live page by scripts/build_lists.py. Manual check: The same page names the 'Spring 2027' program, which fixes the year for Jan 28 to May 27. The how-to-apply page gives a priority deadline of Friday, December 4 (Dec 4, 2026 is a Friday). Program dates are stated as January 28th – May 27th without an explicit year on the dates, so start_date and end_date are left null."
+    },
+    "is_sample": false,
+    "extracted_at": "2026-10-23",
+    "type": "program",
+    "start_date": "2027-01-28",
+    "end_date": "2027-05-27",
+    "application_deadline": "2026-12-04",
+    "location": {
+      "venue": "Hunter College",
+      "borough": "Manhattan",
+      "address": "695 Park Ave NY, NY 10065"
+    },
+    "is_online": false,
+    "cost": 0,
+    "covers": [],
+    "stipend_amount": null,
+    "apply_effort": [],
+    "capacity": null,
+    "unlocks": []
+  },
+  {
+    "id": "opp-seo-scholars-new-york-class-of-2030-application",
+    "title": "SEO Scholars New York (Class of 2030 application)",
+    "provider": "SEO Scholars",
+    "url": "https://scholars.seo-usa.org/apply-new-york/",
+    "source_url": "http://scholars.seo-usa.org/apply-new-york/",
+    "summary": "SEO Scholars is a free eight-year academic program that prepares New York City public high school students for college admissions and graduation. Programming includes Saturday Academy, weekday after-school sessions, and summer academies.",
+    "school_levels": [
+      "HS"
+    ],
+    "eligibility": {
+      "class_years": [
+        "hs_9"
+      ],
+      "min_gpa": null,
+      "max_age": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": true,
+      "geo_scope": "city",
+      "geo_areas": [
+        "NYC"
+      ],
+      "enrolled_at": [],
+      "prerequisites": []
+    },
+    "focus_tags": [
+      "academic-enrichment",
+      "college-prep",
+      "mentoring",
+      "sat-prep"
+    ],
+    "evidence": [
+      {
+        "field": "deadline",
+        "quote": "Final Deadline is December 4"
+      },
+      {
+        "field": "cost",
+        "quote": "SEO Scholars is a free program! Everything we provide to our Scholars is free",
+        "page": "https://www.seo-usa.org/scholars/faqs/"
+      },
+      {
+        "field": "eligibility",
+        "quote": "New York City public high school students who are currently in the 9th grade in any of the 5 boroughs",
+        "page": "https://www.seo-usa.org/scholars/faqs/"
+      },
+      {
+        "field": "open_now",
+        "quote": "The application for the Class of 2030 is NOW OPEN!"
+      },
+      {
+        "field": "location",
+        "quote": "Saturday and Summer Academy are held at Baruch College and LIU Brooklyn.",
+        "page": "https://www.seo-usa.org/scholars/faqs/"
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Extracted by Gemini (gemini-flash-latest) from the official page; every quote confirmed word for word on the live page by scripts/build_lists.py. Manual check: SEO's New York page says the Class of 2030 application is open now with a final deadline of December 4 (and priority deadline November 13), so the current deadline is Dec 4, 2026. The general FAQ's 'December 14' is not New York-specific. Serves students from all five boroughs. Application deadline closes on December 14th without a stated year. Eligible students must have a GPA of 70% or 2.0; students attending private, parochial, specialized, or extended-day charter schools are not eligible."
+    },
+    "is_sample": false,
+    "extracted_at": "2026-10-23",
+    "type": "program",
+    "start_date": null,
+    "end_date": null,
+    "application_deadline": "2026-12-04",
+    "location": {
+      "venue": "Baruch College (Manhattan) and LIU Brooklyn",
+      "borough": "Manhattan",
+      "address": null
+    },
+    "is_online": false,
+    "cost": 0,
+    "covers": [],
+    "stipend_amount": null,
+    "apply_effort": [
+      "essay",
+      "rec",
+      "interview"
+    ],
+    "capacity": null,
+    "unlocks": []
+  },
+  {
+    "id": "opp-nfte-world-series-of-innovation-2026-27-impact-l",
+    "title": "NFTE World Series of Innovation 2026-27 (Impact League, ages 13-24)",
+    "provider": "Network for Teaching Entrepreneurship (NFTE)",
+    "url": "https://nfte.com/?p=67845",
+    "source_url": "https://nfte.com/?p=67845",
+    "summary": "The World Series of Innovation is a free online global challenge inviting youth to solve real-world problems aligned with the UN Sustainable Development Goals. Competitors participate individually or in teams for cash prizes ranging from $300 to $1,500.",
+    "school_levels": [
+      "HS",
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "max_age": 24,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": true,
+      "geo_scope": "city",
+      "geo_areas": [
+        "NYC"
+      ],
+      "enrolled_at": [],
+      "prerequisites": []
+    },
+    "focus_tags": [
+      "entrepreneurship",
+      "innovation"
+    ],
+    "evidence": [
+      {
+        "field": "deadline",
+        "quote": "submissions due by Dec. 13, 2026"
+      },
+      {
+        "field": "cost",
+        "quote": "free online global innovation challenge"
+      },
+      {
+        "field": "eligibility",
+        "quote": "WSI Impact League (Ages 13-24)"
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Extracted by Gemini (gemini-flash-latest) from the official page; every quote confirmed word for word on the live page by scripts/build_lists.py. Participants compete for cash prizes ranging from $300 to $1,500. Competition winners will be announced in spring 2027."
+    },
+    "is_sample": false,
+    "extracted_at": "2026-10-23",
+    "type": "competition",
+    "start_date": null,
+    "end_date": null,
+    "application_deadline": "2026-12-13",
+    "location": null,
+    "is_online": true,
+    "cost": 0,
+    "covers": [],
+    "stipend_amount": null,
+    "apply_effort": [],
+    "capacity": null,
+    "unlocks": []
+  },
+  {
+    "id": "opp-fit-undergraduate-information-session-and-campus",
+    "title": "FIT Undergraduate Information Session and Campus Tour",
+    "provider": "Fashion Institute of Technology",
+    "url": "https://go.fitnyc.edu/register/?id=1edfa016-bad1-42a3-ab27-03792fe3ffa7",
+    "source_url": "https://go.fitnyc.edu/register/?id=1edfa016-bad1-42a3-ab27-03792fe3ffa7",
+    "summary": "Prospective students learn about FIT's majors, programs, and the SUNY application process, followed by a student-led tour of the campus and residence halls.",
+    "school_levels": [
+      "HS",
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "max_age": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": true,
+      "geo_scope": "city",
+      "geo_areas": [
+        "NYC"
+      ],
+      "enrolled_at": [],
+      "prerequisites": []
+    },
+    "focus_tags": [
+      "art",
+      "design",
+      "fashion"
+    ],
+    "evidence": [
+      {
+        "field": "dates",
+        "quote": "Tuesday, December 15, 2026 at 12:00 PM until 2:00 PM Eastern Standard Time"
+      },
+      {
+        "field": "eligibility",
+        "quote": "I'm currently in high school or have recently graduated. I'm planning to transfer from another college/university."
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Extracted by Gemini (gemini-flash-latest) from the official page; every quote confirmed word for word on the live page by scripts/build_lists.py. Cost not stated on the page; college admissions visits are normally free."
+    },
+    "is_sample": false,
+    "extracted_at": "2026-10-23",
+    "type": "campus_visit",
+    "start_date": "2026-12-15",
+    "end_date": "2026-12-15",
+    "application_deadline": null,
+    "location": {
+      "venue": "Fashion Institute of Technology",
+      "borough": "Manhattan",
+      "address": "227 W 27th St, New York, NY 10001"
+    },
+    "is_online": false,
+    "cost": 0,
+    "covers": [],
+    "stipend_amount": null,
+    "apply_effort": [
+      "short_form"
+    ],
+    "capacity": null,
+    "unlocks": []
+  },
+  {
+    "id": "opp-bmcc-college-now-spring-2027-saturday-academy",
+    "title": "BMCC College Now - Spring 2027 Saturday Academy",
+    "provider": "BMCC",
+    "url": "https://www.bmcc.cuny.edu/academics/success-programs/college-now/",
+    "source_url": "https://bmccprodstroac.blob.core.windows.net/uploads/2026/10/College-Now-Spring-2027-Saturday-Academy.pdf",
+    "summary": "BMCC College Now Spring 2027 Saturday Academy program.",
+    "school_levels": [
+      "HS"
+    ],
+    "eligibility": {
+      "class_years": [
+        "hs_10",
+        "hs_11",
+        "hs_12"
+      ],
+      "min_gpa": null,
+      "max_age": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": true,
+      "geo_scope": "city",
+      "geo_areas": [
+        "NYC"
+      ],
+      "enrolled_at": [],
+      "prerequisites": []
+    },
+    "focus_tags": [],
+    "evidence": [
+      {
+        "field": "deadline",
+        "quote": "Application Deadline: December 31th, 2026"
+      },
+      {
+        "field": "cost",
+        "quote": "While taking free college credit courses",
+        "page": "https://www.bmcc.cuny.edu/academics/success-programs/college-now/"
+      },
+      {
+        "field": "eligibility",
+        "quote": "Sophomores, Juniors, and Seniors"
+      },
+      {
+        "field": "dates",
+        "quote": "1/9/27 - 5/26/27"
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Extracted by Gemini (gemini-flash-latest) from the official page; every quote confirmed word for word on the live page by scripts/build_lists.py. Manual check: Gemini couldn't read the PDF; dates, deadline and eligibility read from the PDF text, and 'free' from BMCC's College Now page. Page content consists of raw/binary PDF stream data from which textual details could not be extracted; dates, costs, and eligibility requirements could not be quoted."
+    },
+    "is_sample": false,
+    "extracted_at": "2026-10-23",
+    "type": "program",
+    "start_date": "2027-01-09",
+    "end_date": "2027-05-26",
+    "application_deadline": "2026-12-31",
+    "location": {
+      "venue": "BMCC, 70 Murray Street",
+      "borough": "Manhattan",
+      "address": null
+    },
+    "is_online": false,
+    "cost": 0,
+    "covers": [],
+    "stipend_amount": null,
+    "apply_effort": [],
+    "capacity": null,
+    "unlocks": []
+  },
+  {
+    "id": "opp-summer-science-research-program-ssrp-2027",
+    "title": "Summer Science Research Program (SSRP) 2027",
+    "provider": "The Rockefeller University",
+    "url": "https://www.rockefeller.edu/outreach/ssrp/faqs/",
+    "source_url": "https://www.rockefeller.edu/outreach/ssrp/faqs/",
+    "summary": "SSRP is a seven-week, full-time on-campus summer research program at The Rockefeller University for high school juniors and seniors. Participating students gain research skills and experience in science, with transit cards provided and need-based stipends available.",
+    "school_levels": [
+      "HS"
+    ],
+    "eligibility": {
+      "class_years": [
+        "hs_11",
+        "hs_12"
+      ],
+      "min_gpa": null,
+      "max_age": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": true,
+      "geo_scope": "city",
+      "geo_areas": [
+        "NYC"
+      ],
+      "enrolled_at": [],
+      "prerequisites": []
+    },
+    "focus_tags": [
+      "research",
+      "science",
+      "stem"
+    ],
+    "evidence": [
+      {
+        "field": "deadline",
+        "quote": "open until 5:00pm EST on Monday, January 4, 2027."
+      },
+      {
+        "field": "cost",
+        "quote": "there is no fee to apply, and the program itself is provided free-of-charge."
+      },
+      {
+        "field": "eligibility",
+        "quote": "students must be at least 16 years old by the start of the program (June 21, 2027)"
+      },
+      {
+        "field": "grade",
+        "quote": "Students must also be currently enrolled as a junior or senior in high school at the time of their application."
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Extracted by Gemini (gemini-flash-latest) from the official page; every quote confirmed word for word on the live page by scripts/build_lists.py. Manual check: Gemini joined two sentences with '...'; replaced with the two exact sentences. Program is a seven-week full-time commitment (35 hours/week). OMNY cards are provided for NYC transit travel, and need-based stipends are available."
+    },
+    "is_sample": false,
+    "extracted_at": "2026-10-23",
+    "type": "program",
+    "start_date": "2027-06-21",
+    "end_date": "2027-06-21",
+    "application_deadline": "2027-01-04",
+    "location": {
+      "venue": "RockEDU Science Outreach Laboratory at The Rockefeller University",
+      "borough": "Manhattan",
+      "address": "1230 York Avenue, New York, NY 10065"
+    },
+    "is_online": false,
+    "cost": 0,
+    "covers": [
+      "travel",
+      "stipend"
+    ],
+    "stipend_amount": null,
+    "apply_effort": [
+      "rec",
+      "interview"
+    ],
+    "capacity": null,
+    "unlocks": []
+  },
+  {
+    "id": "opp-city-tech-college-now-spring-admission-window",
+    "title": "City Tech College Now (Spring admission window)",
+    "provider": "City Tech",
+    "url": "https://citytech.cuny.edu/collegenow/faqs.aspx",
+    "source_url": "https://citytech.cuny.edu/collegenow/faqs.aspx",
+    "summary": "City Tech's College Now program allows NYC public high school students to take free college-credit courses and college prep workshops during the spring semester. Courses are held on campus and accepted on a first-come, first-reviewed basis.",
+    "school_levels": [
+      "HS"
+    ],
+    "eligibility": {
+      "class_years": [
+        "hs_10",
+        "hs_11",
+        "hs_12"
+      ],
+      "min_gpa": null,
+      "max_age": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": true,
+      "geo_scope": "city",
+      "geo_areas": [
+        "NYC"
+      ],
+      "enrolled_at": [],
+      "prerequisites": []
+    },
+    "focus_tags": [
+      "college-credit",
+      "dual-enrollment"
+    ],
+    "evidence": [
+      {
+        "field": "deadline",
+        "quote": "SPRING Admission begins October 1 Admission ends January 31"
+      },
+      {
+        "field": "cost",
+        "quote": "Participation is FREE . Tuition and textbooks are covered by College Now."
+      },
+      {
+        "field": "eligibility",
+        "quote": "To be eligible for College Now college-credit courses, students must: Be a current 10th, 11th, or 12th grader"
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Extracted by Gemini (gemini-flash-latest) from the official page; every quote confirmed word for word on the live page by scripts/build_lists.py. Manual check: The page gives a yearly spring admission window (Oct 1 to Jan 31) without a year; the window open now closes Jan 31, 2027. Spring admission window is stated as beginning October 1 and ending January 31, but no year is specified on the page."
+    },
+    "is_sample": false,
+    "extracted_at": "2026-10-23",
+    "type": "program",
+    "start_date": null,
+    "end_date": null,
+    "application_deadline": "2027-01-31",
+    "location": {
+      "venue": "City Tech",
+      "borough": "Brooklyn",
+      "address": "300 Jay Street, Brooklyn, NY 11201"
+    },
+    "is_online": false,
+    "cost": 0,
+    "covers": [],
+    "stipend_amount": null,
+    "apply_effort": [
+      "first_come",
+      "short_form"
+    ],
+    "capacity": null,
+    "unlocks": []
+  },
+  {
+    "id": "opp-new-york-city-history-day-2027",
+    "title": "New York City History Day 2027",
+    "provider": "Brooklyn Public Library",
+    "url": "https://www.bklynlibrary.org/nyc-history-day",
+    "source_url": "https://www.bklynlibrary.org/nyc-history-day",
+    "summary": "New York City History Day is a competition where students in grades 6–12 conduct original historical research and create projects under the theme 'Innovation in History: Impact, Influence, Change'. Winners can advance to New York State and National History Day contests.",
+    "school_levels": [
+      "HS"
+    ],
+    "eligibility": {
+      "class_years": [
+        "hs_9",
+        "hs_10",
+        "hs_11",
+        "hs_12"
+      ],
+      "min_gpa": null,
+      "max_age": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": true,
+      "geo_scope": "city",
+      "geo_areas": [
+        "NYC"
+      ],
+      "enrolled_at": [],
+      "prerequisites": []
+    },
+    "focus_tags": [
+      "history"
+    ],
+    "evidence": [
+      {
+        "field": "deadline",
+        "quote": "Registration closes February 3, 2027 at 9 PM."
+      },
+      {
+        "field": "cost",
+        "quote": "NYCHD is FREE for all New York City students!"
+      },
+      {
+        "field": "eligibility",
+        "quote": "students in grades 6-12 create projects based on original historical research and analysis."
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Extracted by Gemini (gemini-flash-latest) from the official page; every quote confirmed word for word on the live page by scripts/build_lists.py. Virtual judging for papers and websites runs February 11 - February 28, 2027. In-person contest judging for documentaries, exhibits, and performances is held on February 28, 2027, followed by an award ceremony on March 4, 2027."
+    },
+    "is_sample": false,
+    "extracted_at": "2026-10-23",
+    "type": "competition",
+    "start_date": "2027-02-28",
+    "end_date": "2027-02-28",
+    "application_deadline": "2027-02-03",
+    "location": {
+      "venue": "Central Library",
+      "borough": "Brooklyn",
+      "address": "10 Grand Army Plaza"
+    },
+    "is_online": false,
+    "cost": 0,
+    "covers": [],
+    "stipend_amount": null,
+    "apply_effort": [],
+    "capacity": null,
+    "unlocks": []
+  },
+  {
+    "id": "opp-john-jay-college-now-spring-2027",
+    "title": "John Jay College Now - Spring 2027",
+    "provider": "John Jay College of Criminal Justice",
+    "url": "https://www.jjay.cuny.edu/academics/undergraduate-programs/academic-success-programs/high-school-students/college-now/spring-program",
+    "source_url": "https://www.jjay.cuny.edu/academics/undergraduate-programs/academic-success-programs/high-school-students/college-now/spring-program",
+    "summary": "John Jay College Now offers free college transition courses online and in person for NYC Department of Education high school students. Admission operates on a first-come, first-served basis.",
+    "school_levels": [
+      "HS"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "max_age": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": true,
+      "geo_scope": "city",
+      "geo_areas": [
+        "NYC"
+      ],
+      "enrolled_at": [],
+      "prerequisites": []
+    },
+    "focus_tags": [
+      "academics",
+      "college-readiness"
+    ],
+    "evidence": [
+      {
+        "field": "dates",
+        "quote": "Dates: Monday February 22nd, 2027 to May 8th, 2027"
+      },
+      {
+        "field": "cost",
+        "quote": "College Now (CN) is a FREE college transition program",
+        "page": "https://www.jjay.cuny.edu/academics/undergraduate-programs/academic-success-programs/high-school-students/college-now/apply-college-now"
+      },
+      {
+        "field": "eligibility",
+        "quote": "College Now (CN) is a FREE college transition program for the New York City Department of Education high school students.",
+        "page": "https://www.jjay.cuny.edu/academics/undergraduate-programs/academic-success-programs/high-school-students/college-now/apply-college-now"
+      },
+      {
+        "field": "deadline",
+        "quote": "Registration Closes: Friday, February 19th 2027"
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Extracted by Gemini (gemini-flash-latest) from the official page; every quote confirmed word for word on the live page by scripts/build_lists.py. Manual check: Dates and registration deadline are on John Jay's Spring Program page, with years stated. No specific start, end, or deadline dates are stated for Spring 2027, though applications are marked as open. Both online weekday and in-person Saturday class options are available."
+    },
+    "is_sample": false,
+    "extracted_at": "2026-10-23",
+    "type": "program",
+    "start_date": "2027-02-22",
+    "end_date": "2027-05-08",
+    "application_deadline": "2027-02-19",
+    "location": {
+      "venue": "John Jay College of Criminal Justice",
+      "borough": "Manhattan",
+      "address": "524 West 59th Street, New York, NY 10019"
+    },
+    "is_online": false,
+    "cost": 0,
+    "covers": [],
+    "stipend_amount": null,
+    "apply_effort": [
+      "first_come"
+    ],
+    "capacity": null,
+    "unlocks": []
+  },
+  {
+    "id": "opp-hunter-college-admissions-information-session-ca",
+    "title": "Hunter College Admissions Information Session & Campus Tour",
+    "provider": "Hunter College",
+    "url": "https://hunter.cuny.edu/students/admissions/undergraduate/visit",
+    "source_url": "https://hunter.cuny.edu/students/admissions/undergraduate/visit",
+    "summary": "This event features a 30-minute admissions information session covering academic programs, resources, scholarships, and applications, followed by a 45-minute tour of the main campus. It is designed for both freshman and transfer applicants.",
+    "school_levels": [
+      "HS",
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "max_age": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": true,
+      "geo_scope": "city",
+      "geo_areas": [
+        "NYC"
+      ],
+      "enrolled_at": [],
+      "prerequisites": []
+    },
+    "focus_tags": [
+      "admissions",
+      "campus-tour"
+    ],
+    "evidence": [
+      {
+        "field": "eligibility",
+        "quote": "Session is suitable for both freshman and transfer applicants."
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Extracted by Gemini (gemini-flash-latest) from the official page; every quote confirmed word for word on the live page by scripts/build_lists.py. Cost not stated on the page; college admissions visits are normally free. Specific session dates and costs are not listed on the page; prospective students must book a session online."
+    },
+    "is_sample": false,
+    "extracted_at": "2026-10-23",
+    "type": "campus_visit",
+    "start_date": null,
+    "end_date": null,
+    "application_deadline": "rolling",
+    "location": {
+      "venue": "Hunter College Main Campus",
+      "borough": "Manhattan",
+      "address": "695 Park Ave, New York, NY 10065"
+    },
+    "is_online": false,
+    "cost": 0,
+    "covers": [],
+    "stipend_amount": null,
+    "apply_effort": [],
+    "capacity": null,
+    "unlocks": []
+  },
+  {
+    "id": "opp-nyc-public-schools-live-1-on-1-college-and-caree",
+    "title": "NYC Public Schools Live 1-on-1 College and Career Advising",
+    "provider": "NYC Public Schools",
+    "url": "https://www.schools.nyc.gov/learning/student-journey/college-and-career-planning/choosing-the-right-college",
+    "source_url": "https://www.schools.nyc.gov/learning/student-journey/college-and-career-planning/choosing-the-right-college",
+    "summary": "NYC high school students and their families can receive free live one-on-one college and career advising to help plan for life after high school. Advising is available Tuesday through Friday evenings by logging in with NYC Public School account information.",
+    "school_levels": [
+      "HS"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "max_age": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": true,
+      "geo_scope": "city",
+      "geo_areas": [
+        "NYC"
+      ],
+      "enrolled_at": [
+        "NYC Public Schools"
+      ],
+      "prerequisites": []
+    },
+    "focus_tags": [
+      "career-planning",
+      "college-advising"
+    ],
+    "evidence": [
+      {
+        "field": "dates",
+        "quote": "T his service is available every Tuesday through Friday, from 5:00pm - 8:00pm."
+      },
+      {
+        "field": "cost",
+        "quote": "can use free college and career advising tools, including text reminders and live one-on-one counseling"
+      },
+      {
+        "field": "eligibility",
+        "quote": "NYC high school students and their families can use free college and career advising tools"
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Extracted by Gemini (gemini-flash-latest) from the official page; every quote confirmed word for word on the live page by scripts/build_lists.py. Sessions are held every Tuesday through Friday from 5:00pm to 8:00pm. Students log in using their NYC Public School account information."
+    },
+    "is_sample": false,
+    "extracted_at": "2026-10-23",
+    "type": "program",
+    "start_date": null,
+    "end_date": null,
+    "application_deadline": "rolling",
+    "location": null,
+    "is_online": true,
+    "cost": 0,
+    "covers": [],
+    "stipend_amount": null,
+    "apply_effort": [],
+    "capacity": null,
+    "unlocks": []
+  },
+  {
+    "id": "opp-one-on-one-college-career-readiness-counseling",
+    "title": "One-on-One College & Career Readiness Counseling",
+    "provider": "The New York Public Library",
+    "url": "https://www.nypl.org/education/teens/college-career-pathways",
+    "source_url": "https://www.nypl.org/education/teens/college-career-pathways",
+    "summary": "The New York Public Library offers one-on-one counseling sessions where teens can get customized assistance with college- or career-related questions. Sessions are offered virtually and in person at hub library branches.",
+    "school_levels": [
+      "HS"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "max_age": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": true,
+      "geo_scope": "city",
+      "geo_areas": [
+        "NYC"
+      ],
+      "enrolled_at": [],
+      "prerequisites": []
+    },
+    "focus_tags": [
+      "career-readiness",
+      "college-readiness",
+      "counseling"
+    ],
+    "evidence": [
+      {
+        "field": "cost",
+        "quote": "Discover a wide array of free college and career readiness programs for teens across the Library"
+      },
+      {
+        "field": "eligibility",
+        "quote": "where teens can get customized assistance with any college- or career-related questions."
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Extracted by Gemini (gemini-flash-latest) from the official page; every quote confirmed word for word on the live page by scripts/build_lists.py. Sessions are available virtually and in person across 40 hub branches in the Bronx, Manhattan, and Staten Island."
+    },
+    "is_sample": false,
+    "extracted_at": "2026-10-23",
+    "type": "program",
+    "start_date": null,
+    "end_date": null,
+    "application_deadline": "rolling",
+    "location": null,
+    "is_online": true,
+    "cost": 0,
+    "covers": [],
+    "stipend_amount": null,
+    "apply_effort": [],
+    "capacity": null,
+    "unlocks": []
+  },
+  {
+    "id": "opp-pace-university-new-york-city-campus-tours",
+    "title": "Pace University New York City Campus Tours",
+    "provider": "Pace University",
+    "url": "https://admission.pace.edu/portal/visit?cmd=nycevents",
+    "source_url": "https://admission.pace.edu/portal/visit?cmd=nycevents",
+    "summary": "Take an in-person tour of Pace University's urban campus in downtown Manhattan, which includes a 30-minute information session.",
+    "school_levels": [
+      "HS",
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "max_age": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": true,
+      "geo_scope": "city",
+      "geo_areas": [
+        "NYC"
+      ],
+      "enrolled_at": [],
+      "prerequisites": []
+    },
+    "focus_tags": [
+      "admissions",
+      "campus-tour"
+    ],
+    "evidence": [
+      {
+        "field": "dates",
+        "quote": "Monday through Saturday Recurring"
+      }
+    ],
+    "trust": {
+      "badge": "web_verified",
+      "checked_at": "2026-10-23",
+      "note": "Extracted by Gemini (gemini-flash-latest) from the official page; every quote confirmed word for word on the live page by scripts/build_lists.py. Cost not stated on the page; college admissions visits are normally free. Tours run Monday through Saturday on a recurring schedule."
+    },
+    "is_sample": false,
+    "extracted_at": "2026-10-23",
+    "type": "campus_visit",
+    "start_date": null,
+    "end_date": null,
+    "application_deadline": "rolling",
+    "location": {
+      "venue": "New York City Campus",
+      "borough": "Manhattan",
+      "address": null
+    },
+    "is_online": false,
+    "cost": 0,
+    "covers": [],
+    "stipend_amount": null,
+    "apply_effort": [],
+    "capacity": null,
+    "unlocks": []
   }
 ]

@@ -8,8 +8,9 @@ Owner: Rachel. Last import: **2026-10-23**. Spec sections: §5.3, §5.4, §6.2, 
 |---|---|---|
 | `schema/scholarship.schema.json` | Scholarship schema (§7.2) plus shared `$defs` | Person 5 (import prompt), Person 3 (filter), driver |
 | `schema/opportunity.schema.json` | Opportunity schema (§7.2) | same |
-| `scholarships.json` | 18 listings: **6 real**, 12 samples (1 is a sweepstakes, to show the hide-by-default filter) | the app |
-| `opportunities.json` | 8 listings: **6 real**, 2 samples | the app |
+| `scholarships.json` | 44 listings: **32 real** (6 hand-curated + 26 Gemini-extracted), 12 samples (1 is a sweepstakes, to show the hide-by-default filter) | the app |
+| `opportunities.json` | 32 listings: **30 real** (6 hand-curated + 24 Gemini-extracted), 2 samples | the app |
+| `gemini/` | The Gemini extraction run the 50 merged listings came from: raw lists, `needs_review.json`, `rejects.json`, manual corrections (`reviewed.json`) | data, re-runs |
 | `contract/*.sample5.json` | The 30-minute contract: 5 listings of each kind | everyone, first 30 min |
 | `sources.csv` | Source list for the Google Sheet: 12 imported, 30+ **watch**, 9 excluded (with the rule they break) | Rachel, spot-checker |
 | `spot-check.csv` | Every real listing with its quotes and blank ✓ columns for the second teammate | spot-checker |
@@ -21,13 +22,13 @@ Owner: Rachel. Last import: **2026-10-23**. Spec sections: §5.3, §5.4, §6.2, 
 
 ## Read this first: what's real tonight (demo: Oct 23, 2026)
 
-The spec targets ~40 scholarships (~70% real) and ~25 opportunities (all real). Tonight we have **6 real scholarships and 6 real opportunities**, all from official pages with quotes.
+The spec targets ~40 scholarships (~70% real) and ~25 opportunities (all real). Tonight we have **32 real scholarships and 30 real opportunities**, all from official pages with quotes. 12 are hand-curated (below); 50 were extracted by Gemini and merged in (see "Merged Gemini listings").
 
-The reason is timing, not effort. In late October most NYC-local awards (UFT Shanker, New Visions, Live Out Loud, Delta Sigma Theta Bronx, credit-union scholarships, Harlem YMCA…) still show their *2026* cycle. Their 2027 forms open between mid-November and January. We kept the sourcing rule ("last year's dates only → skip"), so these 31 programs are on the **watch list** in `sources.csv`, each with a `recheck_on` date, not in the data.
+The reason is timing, not effort. In late October most NYC-local awards (UFT Shanker, New Visions, Live Out Loud, Delta Sigma Theta Bronx, credit-union scholarships, Harlem YMCA…) still show their *2026* cycle. Their 2027 forms open between mid-November and January. We kept the sourcing rule ("last year's dates only → skip"), so these 31 programs are on the **watch list** in `sources.csv`, each with a `recheck_on` date, not in the data. That's also why the real scholarships skew to college students (mostly CUNY campus awards): most high school senior awards open in January–March.
 
-**Don't use the spec's planned judge answer** ("the opportunities and most scholarships are real"); it isn't true tonight. Say this instead:
+Judge answer for tonight:
 
-> "Every listing marked real comes from the sponsor's own page, and a script confirmed 45 of its 55 quotes word-for-word on the live pages; we checked the rest by hand. Six scholarships and six opportunities are real and current. It's October, so most NYC local scholarships haven't opened their 2027 forms yet. The local award cards you see are labeled samples showing how they'll look. Thirty-one real programs are queued to import the day they open, and nine we found were excluded on purpose: fees, paid programs, expired."
+> "We have 62 real, current NYC listings, 32 scholarships and 30 free opportunities, every one from the sponsor's own page with quotes, and scripts confirmed the quotes on the live pages (one listing, Fordham, is marked unverified because its page needs a login). Gemini extracted 50 of them; code and a person checked them. It's October, so many high school scholarships haven't opened their 2027 forms yet; the local award cards in the demo story are labeled samples, and 31 real programs are queued to import the day they open."
 
 ## Real vs. sample
 
@@ -160,3 +161,16 @@ Failures print with the reason and exit 1. Status today: **26 passed, 0 failed**
 3. **Score Gemini's flyer import:** save the JSON the app returns for the flyer, run `node data/scripts/score-import.mjs <file>`, and put the result on your slide (e.g. "Gemini: 4/4 listings, 39/40 fields, every quote on the flyer").
 4. **Confirm the persona with Person 5:** Bronx senior, robotics, food bank, first-gen, parent at a credit union. Several samples are Bronx-only or seniors-only.
 5. **Your slide:** "Where the data comes from". Show official sources only, quotes on every claim, a person approves, the test numbers, and 31 programs queued for when 2027 forms open. Use the judge answer at the top of this file word-for-word.
+
+
+## Merged Gemini listings
+
+50 real listings (26 scholarships, 24 opportunities) came from a separate Gemini extraction run (`data/gemini/`, README there) and were merged in by `scripts/merge_into_data.py`:
+
+- **Provenance:** sources found by research agents following §7.4; fields extracted by Gemini (`prompts/extract_listings.md`); every quote checked word for word on the live page by `scripts/build_lists.py`. `trust.note` says so on each listing, plus any manual correction.
+- **Manual corrections:** 9 high school programs (College Now ×4, SEO Scholars, Cooper Union, SSRP, MSK, Congressional App Challenge) needed dates with years or cost confirmed by hand; each is logged with its quote and reason in `data/gemini/reviewed.json`. These were checked by Claude against the official pages, **not yet by a teammate**: they still need the step-7 spot-check.
+- **Overlaps kept as Rachel's:** Jackie Robinson, Belle Zeller, Soros, TAP, CCNY open house, Cooper Union, MSK (her versions have amounts, pool estimates and unlocks).
+- **Pool estimates** follow the method above (single-school award 40, city 300, state 800, national 5,000, halved per extra restriction); each `est_pool_basis` says how it was reached and that it's an estimate. The three HESC memorial / Native American awards are `selection: "entitlement"`.
+- **Campus visits** rarely state a cost on the page; those cards have no cost quote and say so in `trust.note` (admissions visits are free by convention). `check.mjs` warns on these by design.
+- **`test-results/quotes.md`:** the 3 "NOT FOUND" are BMCC's PDF flyer (this Node script can't read PDFs; `scripts/build_lists.py` reads it with `pdftotext` and finds all three). Most "not checkable" rows are sites that block this script's fetch (HESC, CUNY AcademicWorks, Rockefeller); `scripts/build_lists.py` read those pages and confirmed every quote.
+- **No unlocks yet** on the merged opportunities. Good candidates for "almost eligible" links: College Now (college credit), SSRP / MSK (research experience), NYC History Day and the Congressional App Challenge (competition entries).

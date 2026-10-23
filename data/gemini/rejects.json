@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Scholarship Plus",
+    "url": "https://www.scholarshipplus.org/splus/apply/",
+    "reason": "page unreachable or needs a browser",
+    "stage": "research",
+    "file": "gemini_scholarships_orgs.json"
+  },
+  {
+    "title": "Fordham University Information Session with Tour",
+    "url": "https://www.fordham.edu/undergraduate-admission/visit/",
+    "reason": "page unreachable or needs a browser",
+    "stage": "research",
+    "file": "gemini_opps_events.json"
+  },
+  {
+    "title": "Gateways to the Laboratory Summer Program 2027",
+    "url": "https://mdphd.weill.cornell.edu/undergraduate-summer-program/gateways-admissions",
+    "reason": "page unreachable or needs a browser",
+    "stage": "research",
+    "file": "gemini_opps_programs.json"
+  }
+]

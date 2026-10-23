@@ -1,0 +1,169 @@
+[
+  {
+    "title": "2026 Congressional App Challenge (NYC congressional districts)",
+    "note": "Year confirmed by the '2026 IMPORTANT DATES' heading above the Oct 26 deadline. The official rules list no entry fee; the page doesn't use the word 'free'. Closes Oct 26, 2026.",
+    "set": {
+      "cost": 0,
+      "cost_note": "No fee is mentioned in the official rules.",
+      "evidence": {
+        "year": "2026 IMPORTANT DATES"
+      }
+    },
+    "reviewed_by": "Claude (manual check against official pages)",
+    "reviewed_on": "2026-10-23"
+  },
+  {
+    "title": "The Cooper Union Saturday Program (Spring 2027 semester)",
+    "note": "Spring 2027 dates are on the main program page (Jan 30 to Apr 10, 2027). Spring registration opens in October; the page gives no spring application deadline.",
+    "set": {
+      "source_url": "https://cooper.edu/academics/outreach-and-pre-college/saturday-program",
+      "url": "https://cooper.edu/academics/outreach-and-pre-college/saturday-program",
+      "start_date": "2027-01-30",
+      "end_date": "2027-04-10",
+      "evidence": {
+        "date": "Spring 2027 Semester January 30 – Week 1",
+        "end_date": "April 10 - Week 10 (Last Session)",
+        "cost": "has offered free art and architecture classes to New York City public high school students"
+      },
+      "evidence_pages": {
+        "eligibility": "https://cooper.edu/academics/outreach-and-pre-college/saturday-program/FAQs"
+      }
+    },
+    "reviewed_by": "Claude (manual check against official pages)",
+    "reviewed_on": "2026-10-23"
+  },
+  {
+    "title": "Summer Science Research Program (SSRP) 2027",
+    "note": "Gemini joined two sentences with '...'; replaced with the two exact sentences.",
+    "set": {
+      "evidence": {
+        "eligibility": "students must be at least 16 years old by the start of the program (June 21, 2027)",
+        "grade": "Students must also be currently enrolled as a junior or senior in high school at the time of their application."
+      }
+    },
+    "reviewed_by": "Claude (manual check against official pages)",
+    "reviewed_on": "2026-10-23"
+  },
+  {
+    "title": "MSK Summer Student Program 2027",
+    "note": "Not just free: students are paid a $1,200 summer stipend. Housing and transportation are not provided.",
+    "set": {
+      "cost": 0,
+      "covers": [
+        "stipend"
+      ],
+      "evidence": {
+        "cost": "Students receive a stipend of $1,200 for the summer."
+      }
+    },
+    "reviewed_by": "Claude (manual check against official pages)",
+    "reviewed_on": "2026-10-23"
+  },
+  {
+    "title": "SEO Scholars New York (Class of 2030 application)",
+    "note": "SEO's New York page says the Class of 2030 application is open now with a final deadline of December 4 (and priority deadline November 13), so the current deadline is Dec 4, 2026. The general FAQ's 'December 14' is not New York-specific. Serves students from all five boroughs.",
+    "set": {
+      "source_url": "http://scholars.seo-usa.org/apply-new-york/",
+      "url": "http://scholars.seo-usa.org/apply-new-york/",
+      "application_deadline": "2026-12-04",
+      "location": {
+        "citywide": true
+      },
+      "evidence": {
+        "date": "Final Deadline is December 4",
+        "open_now": "The application for the Class of 2030 is NOW OPEN!"
+      },
+      "evidence_pages": {
+        "cost": "https://www.seo-usa.org/scholars/faqs/",
+        "eligibility": "https://www.seo-usa.org/scholars/faqs/"
+      }
+    },
+    "reviewed_by": "Claude (manual check against official pages)",
+    "reviewed_on": "2026-10-23"
+  },
+  {
+    "title": "Hunter College Now - Spring 2027",
+    "note": "The same page names the 'Spring 2027' program, which fixes the year for Jan 28 to May 27. The how-to-apply page gives a priority deadline of Friday, December 4 (Dec 4, 2026 is a Friday).",
+    "set": {
+      "start_date": "2027-01-28",
+      "end_date": "2027-05-27",
+      "application_deadline": "2026-12-04",
+      "evidence": {
+        "year": "Please join us for the Hunter College Now Spring 2027 program!",
+        "deadline": "The priority deadline for Spring applications is Friday, December 4th."
+      },
+      "evidence_pages": {
+        "deadline": "https://hunter.cuny.edu/students/opportunities/college-now/how-to-apply"
+      }
+    },
+    "reviewed_by": "Claude (manual check against official pages)",
+    "reviewed_on": "2026-10-23"
+  },
+  {
+    "title": "John Jay College Now - Spring 2027",
+    "note": "Dates and registration deadline are on John Jay's Spring Program page, with years stated.",
+    "set": {
+      "source_url": "https://www.jjay.cuny.edu/academics/undergraduate-programs/academic-success-programs/high-school-students/college-now/spring-program",
+      "url": "https://www.jjay.cuny.edu/academics/undergraduate-programs/academic-success-programs/high-school-students/college-now/spring-program",
+      "start_date": "2027-02-22",
+      "end_date": "2027-05-08",
+      "application_deadline": "2027-02-19",
+      "evidence": {
+        "date": "Dates: Monday February 22nd, 2027 to May 8th, 2027",
+        "deadline": "Registration Closes: Friday, February 19th 2027"
+      },
+      "evidence_pages": {
+        "cost": "https://www.jjay.cuny.edu/academics/undergraduate-programs/academic-success-programs/high-school-students/college-now/apply-college-now",
+        "eligibility": "https://www.jjay.cuny.edu/academics/undergraduate-programs/academic-success-programs/high-school-students/college-now/apply-college-now"
+      }
+    },
+    "reviewed_by": "Claude (manual check against official pages)",
+    "reviewed_on": "2026-10-23"
+  },
+  {
+    "title": "BMCC College Now - Spring 2027 Saturday Academy",
+    "note": "Gemini couldn't read the PDF; dates, deadline and eligibility read from the PDF text, and 'free' from BMCC's College Now page.",
+    "set": {
+      "url": "https://www.bmcc.cuny.edu/academics/success-programs/college-now/",
+      "start_date": "2027-01-09",
+      "end_date": "2027-05-26",
+      "application_deadline": "2026-12-31",
+      "cost": 0,
+      "school_levels": [
+        "HS"
+      ],
+      "eligibility": {
+        "class_years": [
+          "HS 10",
+          "HS 11",
+          "HS 12"
+        ]
+      },
+      "location": {
+        "venue": "BMCC, 70 Murray Street",
+        "borough": "Manhattan"
+      },
+      "evidence": {
+        "date": "Application Deadline: December 31th, 2026",
+        "dates": "1/9/27 - 5/26/27",
+        "eligibility": "Sophomores, Juniors, and Seniors",
+        "cost": "While taking free college credit courses"
+      },
+      "evidence_pages": {
+        "cost": "https://www.bmcc.cuny.edu/academics/success-programs/college-now/"
+      }
+    },
+    "reviewed_by": "Claude (manual check against official pages)",
+    "reviewed_on": "2026-10-23"
+  },
+  {
+    "title": "City Tech College Now (Spring admission window)",
+    "note": "The page gives a yearly spring admission window (Oct 1 to Jan 31) without a year; the window open now closes Jan 31, 2027.",
+    "set": {
+      "application_deadline": "2027-01-31",
+      "recurring": true
+    },
+    "reviewed_by": "Claude (manual check against official pages)",
+    "reviewed_on": "2026-10-23"
+  }
+]

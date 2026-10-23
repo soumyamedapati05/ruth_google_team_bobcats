@@ -1,0 +1,521 @@
+[
+  {
+    "kind": "scholarship",
+    "title": "Daughters of the Cincinnati Military Stars Scholarship (2027)",
+    "provider": "Daughters of the Cincinnati",
+    "url": "https://www.daughters1894.org/scholarships",
+    "summary": "The Military Stars scholarship provides up to $20,000 over four years of undergraduate study for high school senior daughters of career commissioned officers in the U.S. Armed Forces. Awards are based on academic merit and demonstrated financial need.",
+    "school_levels": [
+      "HS"
+    ],
+    "eligibility": {
+      "class_years": [
+        "HS 12"
+      ],
+      "min_gpa": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [
+        "women",
+        "military dependents"
+      ],
+      "need_based": true,
+      "nyc_only": false,
+      "residency": null,
+      "enrolled_at": []
+    },
+    "focus_tags": [
+      "military"
+    ],
+    "amount_min": null,
+    "amount_max": 20000,
+    "num_awards": null,
+    "deadline": null,
+    "rolling": false,
+    "requirements": {
+      "essay": true,
+      "recommendations": true,
+      "transcript": true,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "Applications are due by March 1st of the student’s senior year in high school.",
+      "amount": "Scholarship recipients may receive up to $20,000 , distributed over four years of undergraduate study, up to $5,000 a year",
+      "eligibility": "applicants must be high school seniors and the daughters of career commissioned officers in the United States Armed Forces"
+    },
+    "notes": "The deadline is given as March 1st without an explicit calendar year (the 2027 application opens November 1, 2026).",
+    "source_url": "https://www.daughters1894.org/scholarships",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "review_reasons": [
+      "no deadline on the page (or no year) and not rolling"
+    ]
+  },
+  {
+    "kind": "opportunity",
+    "type": "campus_visit",
+    "title": "Pace University New York City Open House",
+    "provider": "Pace University",
+    "url": "https://www.pace.edu/admission-and-aid/plan-visit/undergraduate-open-house",
+    "summary": "Pace University's undergraduate open house at the NYC campus features campus and residential tours, faculty interactions, and information about financial aid and admissions. In-person attendees who enroll full-time for the fall can receive a renewable $2,000 grant.",
+    "school_levels": [
+      "HS",
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_age": null,
+      "max_age": null,
+      "gender": [],
+      "identity_groups": [],
+      "residency": null,
+      "enrolled_at": []
+    },
+    "focus_tags": [
+      "admissions",
+      "open house",
+      "college preview"
+    ],
+    "start_date": "2026-10-25",
+    "end_date": "2026-10-25",
+    "application_deadline": null,
+    "recurring": false,
+    "location": {
+      "venue": "NYC Campus",
+      "borough": null,
+      "address": null
+    },
+    "is_online": false,
+    "cost": null,
+    "covers": [],
+    "apply_effort": [],
+    "capacity": null,
+    "evidence": {
+      "date": "New York City Open House, October 25, 2026 at 10:00 a.m.",
+      "cost": null,
+      "eligibility": "enroll in a full-time undergraduate program for the fall."
+    },
+    "notes": "Attendees who attend in-person and enroll in a full-time undergraduate program for the fall receive a renewable $2,000 grant.",
+    "source_url": "https://www.pace.edu/admission-and-aid/plan-visit/undergraduate-open-house",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "cost_note": "Cost not stated on the page; college admissions visits are normally free.",
+    "evidence_check": "all_found",
+    "review_reasons": [
+      "borough not identified (borough=None)"
+    ]
+  },
+  {
+    "kind": "opportunity",
+    "type": "campus_visit",
+    "title": "Columbia University Undergraduate Campus Tours",
+    "provider": "Columbia Undergraduate Admissions",
+    "url": "https://undergrad.admissions.columbia.edu/visit/campus",
+    "summary": "Columbia University offers one-hour outdoor walking campus tours led by current undergraduate students. Tours cover academic and student life at Columbia College and Columbia Engineering, and prior registration is required.",
+    "school_levels": [
+      "HS",
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_age": null,
+      "max_age": null,
+      "gender": [],
+      "identity_groups": [],
+      "residency": null,
+      "enrolled_at": []
+    },
+    "focus_tags": [
+      "admissions",
+      "campus tour",
+      "engineering"
+    ],
+    "start_date": null,
+    "end_date": null,
+    "application_deadline": null,
+    "recurring": true,
+    "location": {
+      "venue": "Columbia Visitors Center, Hepburn Lounge, Uris Hall",
+      "borough": "Manhattan",
+      "address": "3022 Broadway, New York, New York 10027"
+    },
+    "is_online": false,
+    "cost": null,
+    "covers": [],
+    "apply_effort": [
+      "short_form"
+    ],
+    "capacity": null,
+    "evidence": {
+      "date": null,
+      "cost": null,
+      "eligibility": null
+    },
+    "notes": "Specific tour dates and times are scheduled via the Campus Visit Calendar. Prior registration is required.",
+    "source_url": "https://undergrad.admissions.columbia.edu/visit/campus",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "cost_note": "Cost not stated on the page; college admissions visits are normally free.",
+    "review_reasons": [
+      "no evidence quotes"
+    ]
+  },
+  {
+    "kind": "opportunity",
+    "type": "campus_visit",
+    "title": "Discover NYU: Tour and Information Session",
+    "provider": "New York University",
+    "url": "https://connect.nyu.edu/portal/nyuvisit_tours",
+    "summary": "Discover NYU offers an in-person event featuring an admissions counselor-led information session followed by a student ambassador-guided outdoor tour of NYU. The total time for the event is approximately 90 minutes.",
+    "school_levels": [],
+    "eligibility": {
+      "class_years": [],
+      "min_age": null,
+      "max_age": null,
+      "gender": [],
+      "identity_groups": [],
+      "residency": null,
+      "enrolled_at": []
+    },
+    "focus_tags": [
+      "admissions",
+      "campus tour"
+    ],
+    "start_date": null,
+    "end_date": null,
+    "application_deadline": null,
+    "recurring": false,
+    "location": {
+      "venue": "NYU",
+      "borough": null,
+      "address": null
+    },
+    "is_online": false,
+    "cost": null,
+    "covers": [],
+    "apply_effort": [],
+    "capacity": null,
+    "evidence": {
+      "date": null,
+      "cost": null,
+      "eligibility": null
+    },
+    "notes": "No event dates, costs, or explicit eligibility criteria are stated in the text.",
+    "source_url": "https://connect.nyu.edu/portal/nyuvisit_tours",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "cost_note": "Cost not stated on the page; college admissions visits are normally free.",
+    "review_reasons": [
+      "no date on the page (or no year) and not recurring",
+      "borough not identified (borough=None)",
+      "no evidence quotes"
+    ]
+  },
+  {
+    "kind": "opportunity",
+    "type": "workshop",
+    "title": "SBU in NYC: Seawolf Workshop (Regular Decision and EOP)",
+    "provider": "Stony Brook University",
+    "url": "https://enroll.stonybrook.edu/register/?id=b13b11d4-e19a-4655-b12a-48c2b435ebed",
+    "summary": "This Stony Brook University admissions workshop covers an introduction to SBU, the Regular Decision application process, the EOP program, and tips on applying.",
+    "school_levels": [],
+    "eligibility": {
+      "class_years": [],
+      "min_age": null,
+      "max_age": null,
+      "gender": [],
+      "identity_groups": [],
+      "residency": null,
+      "enrolled_at": []
+    },
+    "focus_tags": [
+      "admissions",
+      "college prep"
+    ],
+    "start_date": "2026-11-05",
+    "end_date": "2026-11-05",
+    "application_deadline": null,
+    "recurring": false,
+    "location": {
+      "venue": "SUNY Global Center",
+      "borough": "Manhattan",
+      "address": "116 E 55th St, New York, NY 10022"
+    },
+    "is_online": false,
+    "cost": null,
+    "covers": [],
+    "apply_effort": [
+      "short_form"
+    ],
+    "capacity": null,
+    "evidence": {
+      "date": "Thursday, November 5, 2026 at 6:00 PM until 7:00 PM",
+      "cost": null,
+      "eligibility": null
+    },
+    "notes": "",
+    "source_url": "https://enroll.stonybrook.edu/register/?id=b13b11d4-e19a-4655-b12a-48c2b435ebed",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "review_reasons": [
+      "cost not stated on the page"
+    ]
+  },
+  {
+    "kind": "opportunity",
+    "type": "workshop",
+    "title": "Complete your FAFSA/TAP with HESC!",
+    "provider": "Higher Education Services Corporation",
+    "url": "https://hesc.ny.gov/get-help/find-event/event-calendar/complete-your-fafsatap-hesc-12?featured_date=4191",
+    "summary": "Join HESC for a live virtual session offering expert advice and guidance on completing or updating FAFSA and TAP financial aid applications.",
+    "school_levels": [],
+    "eligibility": {
+      "class_years": [],
+      "min_age": null,
+      "max_age": null,
+      "gender": [],
+      "identity_groups": [],
+      "residency": null,
+      "enrolled_at": []
+    },
+    "focus_tags": [
+      "financial aid",
+      "fafsa",
+      "tap"
+    ],
+    "start_date": null,
+    "end_date": null,
+    "application_deadline": null,
+    "recurring": false,
+    "location": {
+      "venue": null,
+      "borough": null,
+      "address": null
+    },
+    "is_online": true,
+    "cost": null,
+    "covers": [],
+    "apply_effort": [],
+    "capacity": null,
+    "evidence": {
+      "date": "Tue. November 17",
+      "cost": null,
+      "eligibility": null
+    },
+    "notes": "The event date is given as 'Tue. November 17' without a year, so start_date is set to null.",
+    "source_url": "https://hesc.ny.gov/get-help/find-event/event-calendar/complete-your-fafsatap-hesc-12?featured_date=4191",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "review_reasons": [
+      "no date on the page (or no year) and not recurring",
+      "cost not stated on the page"
+    ]
+  },
+  {
+    "kind": "opportunity",
+    "type": "program",
+    "title": "Jane Street FOCUS (New York)",
+    "provider": "Jane Street",
+    "url": "https://www.janestreet.com/apply-focus-nyc",
+    "summary": "Jane Street FOCUS is an educational program hosted in NYC for university students from January 11 to January 14, 2027.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_age": null,
+      "max_age": null,
+      "gender": [],
+      "identity_groups": [],
+      "residency": null,
+      "enrolled_at": []
+    },
+    "focus_tags": [
+      "finance",
+      "stem"
+    ],
+    "start_date": "2027-01-11",
+    "end_date": "2027-01-14",
+    "application_deadline": "2026-11-15",
+    "recurring": false,
+    "location": {
+      "venue": null,
+      "borough": null,
+      "address": null
+    },
+    "is_online": false,
+    "cost": null,
+    "covers": [],
+    "apply_effort": [
+      "interview"
+    ],
+    "capacity": null,
+    "evidence": {
+      "date": "January 11th - January 14th, 2027",
+      "cost": null,
+      "eligibility": "\"category_filter\":[\"University\"]"
+    },
+    "notes": "",
+    "source_url": "https://www.janestreet.com/jobs/programs-endpoint.json",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "review_reasons": [
+      "cost not stated on the page",
+      "borough not identified (borough=None)"
+    ]
+  },
+  {
+    "kind": "opportunity",
+    "type": "program",
+    "title": "Jane Street FTTP – First-Year Trading and Technology Program (New York)",
+    "provider": "Jane Street",
+    "url": "https://www.janestreet.com/apply-fttp-nyc",
+    "summary": "Jane Street FTTP is a university program held in New York City from March 21 to March 25, 2027.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_age": null,
+      "max_age": null,
+      "gender": [],
+      "identity_groups": [],
+      "residency": null,
+      "enrolled_at": []
+    },
+    "focus_tags": [
+      "trading",
+      "technology",
+      "finance"
+    ],
+    "start_date": "2027-03-21",
+    "end_date": "2027-03-25",
+    "application_deadline": "2027-01-31",
+    "recurring": false,
+    "location": {
+      "venue": null,
+      "borough": null,
+      "address": null
+    },
+    "is_online": false,
+    "cost": null,
+    "covers": [],
+    "apply_effort": [],
+    "capacity": null,
+    "evidence": {
+      "date": "March 21st - March 25th, 2027",
+      "cost": null,
+      "eligibility": "\"category_filter\":[\"University\"]"
+    },
+    "notes": "",
+    "source_url": "https://www.janestreet.com/jobs/programs-endpoint.json",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "review_reasons": [
+      "cost not stated on the page",
+      "borough not identified (borough=None)"
+    ]
+  },
+  {
+    "kind": "opportunity",
+    "type": "program",
+    "title": "Jane Street INSIGHT (New York)",
+    "provider": "Jane Street",
+    "url": "https://www.janestreet.com/apply-insight-nyc",
+    "summary": "Jane Street INSIGHT is an in-person university program taking place in New York City with tracks in Software Engineering, Trading and Research, and Strategy and Product.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_age": null,
+      "max_age": null,
+      "gender": [],
+      "identity_groups": [],
+      "residency": null,
+      "enrolled_at": []
+    },
+    "focus_tags": [
+      "software engineering",
+      "trading",
+      "finance"
+    ],
+    "start_date": "2027-01-04",
+    "end_date": "2027-01-09",
+    "application_deadline": "2026-10-25",
+    "recurring": false,
+    "location": {
+      "venue": null,
+      "borough": null,
+      "address": null
+    },
+    "is_online": false,
+    "cost": null,
+    "covers": [],
+    "apply_effort": [],
+    "capacity": null,
+    "evidence": {
+      "date": "January 4th - January 9th, 2027",
+      "cost": null,
+      "eligibility": "\"category_filter\":[\"University\"]"
+    },
+    "notes": "",
+    "source_url": "https://www.janestreet.com/jobs/programs-endpoint.json",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "review_reasons": [
+      "cost not stated on the page",
+      "borough not identified (borough=None)"
+    ]
+  },
+  {
+    "kind": "opportunity",
+    "type": "hackathon",
+    "title": "NASA Space Apps Challenge NYC 2026",
+    "provider": "NASA",
+    "url": "https://www.spaceappschallenge.org/2026/local-events/new-york/",
+    "summary": "The NASA Space Apps Challenge is a global hackathon offering 14 challenges for participants to explore, form, or join teams.",
+    "school_levels": [],
+    "eligibility": {
+      "class_years": [],
+      "min_age": null,
+      "max_age": null,
+      "gender": [],
+      "identity_groups": [],
+      "residency": null,
+      "enrolled_at": []
+    },
+    "focus_tags": [
+      "hackathon",
+      "stem",
+      "space"
+    ],
+    "start_date": null,
+    "end_date": null,
+    "application_deadline": null,
+    "recurring": false,
+    "location": {
+      "venue": null,
+      "borough": "Manhattan",
+      "address": "New York, NY"
+    },
+    "is_online": false,
+    "cost": null,
+    "covers": [],
+    "apply_effort": [],
+    "capacity": null,
+    "evidence": {
+      "date": null,
+      "cost": null,
+      "eligibility": null
+    },
+    "notes": "Exact dates, cost, eligibility criteria, and venue address are not specified on the page.",
+    "source_url": "https://www.spaceappschallenge.org/2026/local-events/new-york/",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "review_reasons": [
+      "no date on the page (or no year) and not recurring",
+      "cost not stated on the page",
+      "no evidence quotes"
+    ]
+  }
+]

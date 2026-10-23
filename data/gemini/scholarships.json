@@ -1,0 +1,1708 @@
+[
+  {
+    "kind": "scholarship",
+    "title": "Donald I. Brownstein/John McDermott Scholarship in Humanities",
+    "provider": "CUNY Queens College",
+    "url": "https://qc-cuny.academicworks.com/opportunities/7565",
+    "summary": "Scholarships for undergraduate students at Queens College who are studying a humanities discipline, have earned at least 30 credits, and maintain a minimum 3.5 GPA.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": 3.5,
+      "citizenship": [],
+      "majors": [
+        "Philosophy",
+        "History",
+        "Art History",
+        "Languages and Literary Studies",
+        "Mathematics",
+        "Cultural Anthropology",
+        "Sociology",
+        "Economics",
+        "Political Theory",
+        "Humanistic Studies"
+      ],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": null,
+      "residency": null,
+      "enrolled_at": [
+        "CUNY Queens College"
+      ]
+    },
+    "focus_tags": [
+      "humanities"
+    ],
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "num_awards": null,
+    "deadline": "2026-10-25",
+    "rolling": false,
+    "requirements": {
+      "essay": true,
+      "recommendations": null,
+      "transcript": null,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "10/25/2026",
+      "amount": "$5,000",
+      "eligibility": "completed at least 30 credits with a GPA of 3.5 or above, pursuing a degree in the above disciplines, are eligible to apply."
+    },
+    "notes": "Recipients must register for and complete at least 15 credits in the semester for which they are funded.",
+    "source_url": "https://qc-cuny.academicworks.com/opportunities/7565",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "5347a3c15adf",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "Foster Care Initiative Scholarship",
+    "provider": "CUNY Queens College",
+    "url": "https://qc-cuny.academicworks.com/opportunities/7678",
+    "summary": "The Foster Care Initiative fund provides financial support toward the cost of education for part- or full-time students who are adopted, orphaned, or currently or previously in foster care.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [
+        "foster care",
+        "adopted",
+        "orphaned"
+      ],
+      "need_based": null,
+      "nyc_only": null,
+      "residency": null,
+      "enrolled_at": [
+        "CUNY Queens College"
+      ]
+    },
+    "focus_tags": [
+      "foster care"
+    ],
+    "amount_min": null,
+    "amount_max": null,
+    "num_awards": null,
+    "deadline": "2026-10-25",
+    "rolling": false,
+    "requirements": {
+      "essay": true,
+      "recommendations": null,
+      "transcript": null,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "10/25/2026",
+      "amount": "Award Amounts Vary",
+      "eligibility": "financial support to students previously in foster care, currently in foster care, adopted or orphaned. Students may be part or full-time."
+    },
+    "notes": "Page notes: 'If a student or students cannot be identified, the fund may support any student with financial need.'",
+    "source_url": "https://qc-cuny.academicworks.com/opportunities/7678",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "288570ab4993",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "The Immigrant to Immigrant Scholarship Fund",
+    "provider": "City College Of New York",
+    "url": "https://ccny.academicworks.com/opportunities/11583",
+    "summary": "This scholarship supports immigrant students and Dreamers with financial need who aspire to teach math or science.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [
+        "immigrants",
+        "undocumented"
+      ],
+      "need_based": true,
+      "nyc_only": null,
+      "residency": null,
+      "enrolled_at": [
+        "City College Of New York"
+      ]
+    },
+    "focus_tags": [
+      "education",
+      "teaching",
+      "stem",
+      "math",
+      "science"
+    ],
+    "amount_min": 3000,
+    "amount_max": 3000,
+    "num_awards": null,
+    "deadline": "2026-10-28",
+    "rolling": false,
+    "requirements": {
+      "essay": null,
+      "recommendations": null,
+      "transcript": true,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "10/28/2026",
+      "amount": "$3,000",
+      "eligibility": "Be aiming to teach math or science; Be an immigrant Have financial need."
+    },
+    "notes": "",
+    "source_url": "https://ccny.academicworks.com/opportunities/11583",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "82cad74c66d2",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "Paul & Daisy Soros Fellowships for New Americans (2027)",
+    "provider": "Paul & Daisy Soros Fellowships for New Americans",
+    "url": "https://pdsoros.org/apply/eligibility",
+    "summary": "The fellowship supports immigrants and children of immigrants who are pursuing a full-time graduate or professional degree program in the United States. Fellows receive stipend and tuition support over two years and attend an annual Fall Conference in New York City.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [
+        "immigrants",
+        "children of immigrants"
+      ],
+      "need_based": null,
+      "nyc_only": false,
+      "residency": null,
+      "enrolled_at": []
+    },
+    "focus_tags": [
+      "graduate study",
+      "fellowship",
+      "immigrants"
+    ],
+    "amount_min": null,
+    "amount_max": null,
+    "num_awards": 30,
+    "deadline": "2026-10-29",
+    "rolling": false,
+    "requirements": {
+      "essay": null,
+      "recommendations": null,
+      "transcript": true,
+      "interview": true,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "Requirements for the 2027 Fellowship, which will be due by October 29, 2026 at 2 pm Eastern Time.",
+      "amount": "The maximum PD Soros stipend is $25,000 per year, capping all stipend awards at $50,000 per year.",
+      "eligibility": "You must be 30 or younger as of the application deadline. There is no minimum age requirement. You are a New American"
+    },
+    "notes": "Funding covers 50% of tuition and fees up to $10,000 per semester (or $6,667 per quarter) and up to a $25,000 stipend per year for two years. Applicants must be 30 or younger by the application deadline.",
+    "source_url": "https://pdsoros.org/apply/eligibility",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "26de701fa14a",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "Ibrahim Scholarship",
+    "provider": "CUNY Queens College",
+    "url": "https://qc-cuny.academicworks.com/opportunities/7691",
+    "summary": "The Ibrahim Scholarship recognizes a high-achieving student involved with the Muslim Student Association (MSA) who has an interest in gender equality or entrepreneurship.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": null,
+      "residency": null,
+      "enrolled_at": [
+        "Queens College"
+      ]
+    },
+    "focus_tags": [
+      "gender equality",
+      "entrepreneurship"
+    ],
+    "amount_min": null,
+    "amount_max": null,
+    "num_awards": null,
+    "deadline": "2026-10-31",
+    "rolling": false,
+    "requirements": {
+      "essay": true,
+      "recommendations": 2,
+      "transcript": null,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "10/31/2026",
+      "amount": "Award \nVaries",
+      "eligibility": "seeks to recognize a high-achieving student that is involved with the Muslim Student Association ( MSA )."
+    },
+    "notes": "",
+    "source_url": "https://qc-cuny.academicworks.com/opportunities/7691",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "1d139f5006d3",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "Bronx Rising Initiative Scholarship",
+    "provider": "Hostos Community College",
+    "url": "https://hostos.academicworks.com/opportunities/5516",
+    "summary": "The Bronx Rising Initiative Scholarship provides two $1,250 awards and 10 hours a month of mentorship to matriculated freshman students in good academic standing. Preference is given to applicants who reside or resided in the Bronx.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [
+        "college 1"
+      ],
+      "min_gpa": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": false,
+      "nyc_only": null,
+      "residency": null,
+      "enrolled_at": [
+        "Hostos Community College"
+      ]
+    },
+    "focus_tags": [],
+    "amount_min": 1250,
+    "amount_max": 1250,
+    "num_awards": 2,
+    "deadline": "2026-11-15",
+    "rolling": false,
+    "requirements": {
+      "essay": true,
+      "recommendations": null,
+      "transcript": null,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "11/15/2026",
+      "amount": "two (2) $1,250 scholarships",
+      "eligibility": "matriculated freshman students who are in good academic standing."
+    },
+    "notes": "Preference is given to students who resided in the Bronx during their senior year of high school or presently reside in the Bronx. The award is granted without consideration of financial aid or immigrant status and includes 10 hours a month of mentorship.",
+    "source_url": "https://hostos.academicworks.com/opportunities/5516",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "69e12cb3c5f7",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "Isaacs, Betty Lewis and Julius Scholarship Fund",
+    "provider": "City College of New York",
+    "url": "https://ccny.academicworks.com/opportunities/11022",
+    "summary": "The Julius & Betty Lewis Isaacs Scholarship Program offers support for freshman and sophomore English majors at City College. Recipients join the English Honors Program and receive tuition support.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [
+        "college 1",
+        "college 2"
+      ],
+      "min_gpa": 3.3,
+      "citizenship": [],
+      "majors": [
+        "English",
+        "English literature"
+      ],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": null,
+      "residency": null,
+      "enrolled_at": [
+        "City College of New York"
+      ]
+    },
+    "focus_tags": [
+      "english",
+      "literature"
+    ],
+    "amount_min": 3000,
+    "amount_max": 3000,
+    "num_awards": null,
+    "deadline": "2026-11-15",
+    "rolling": false,
+    "requirements": {
+      "essay": true,
+      "recommendations": 2,
+      "transcript": true,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "11/15/2026",
+      "amount": "$3,000.00",
+      "eligibility": "You must be a freshman or sophomore at City College with a 3.3 GPA and a 3.5 GPA in English classes."
+    },
+    "notes": "Applicants must also have a minimum 3.5 GPA in English courses and cannot be pursuing a second degree.",
+    "source_url": "https://ccny.academicworks.com/opportunities/11022",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "f66026b7ef65",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "Overseas Press Club Foundation Scholar Awards (2027)",
+    "provider": "Overseas Press Club Foundation",
+    "url": "https://www.overseaspressclubfoundation.org/scholar-awards-program",
+    "summary": "The Overseas Press Club Foundation grants scholar awards to undergraduate and graduate students pursuing international journalism. Recipients receive either a $3,000 scholarship for independent work or a $4,000 fellowship to work in a foreign bureau of a major news organization.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [
+        "college 3",
+        "college 4",
+        "graduate"
+      ],
+      "min_gpa": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": false,
+      "residency": null,
+      "enrolled_at": []
+    },
+    "focus_tags": [
+      "journalism",
+      "photojournalism",
+      "writing"
+    ],
+    "amount_min": 3000,
+    "amount_max": 4000,
+    "num_awards": 18,
+    "deadline": "2026-11-15",
+    "rolling": false,
+    "requirements": {
+      "essay": true,
+      "recommendations": null,
+      "transcript": null,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "DEADLINE :\nSunday, November 15, 2026",
+      "amount": "Winners receive either a $3,000 scholarship for independent work or a $4,000 fellowship",
+      "eligibility": "An applicant should be a college junior, senior or graduate student enrolled in a full time degree program at the application deadline"
+    },
+    "notes": "Winners must attend a reception and a two-day series of training and networking events in New York City in March 2027.",
+    "source_url": "https://www.overseaspressclubfoundation.org/scholar-awards-program",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "20ccbef24bdc",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "The Frances M. Webb Endowed Scholarship for Student-Parents",
+    "provider": "Hostos Community College",
+    "url": "https://hostos.academicworks.com/opportunities/5525",
+    "summary": "Assists matriculated Hostos Community College students who are parenting children under 12 with college expenses, tuition, fees, and childcare.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": 2.0,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [
+        "parents"
+      ],
+      "need_based": true,
+      "nyc_only": null,
+      "residency": null,
+      "enrolled_at": [
+        "Hostos Community College"
+      ]
+    },
+    "focus_tags": [
+      "student-parents",
+      "childcare"
+    ],
+    "amount_min": null,
+    "amount_max": 500,
+    "num_awards": null,
+    "deadline": "2026-11-15",
+    "rolling": false,
+    "requirements": {
+      "essay": true,
+      "recommendations": null,
+      "transcript": null,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "11/15/2026",
+      "amount": "up to $500",
+      "eligibility": "Recipients must have a minimum cumulative GPA of 2.0. • Recipients must be parenting one or more children under 12 years of age."
+    },
+    "notes": "Available to part- or full-time, first-time or continuing matriculated Hostos Community College students without consideration of legal status.",
+    "source_url": "https://hostos.academicworks.com/opportunities/5525",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "58a0e59ea719",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "The Honorable Hector L. Diaz Scholarship",
+    "provider": "Hostos Community College",
+    "url": "https://hostos.academicworks.com/opportunities/5537",
+    "summary": "Provides tuition support of up to $2,500 to Hostos Community College students pursuing an associate degree who are entering their final semester and have exhausted other financial aid benefits.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": 2.3,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": true,
+      "nyc_only": null,
+      "residency": null,
+      "enrolled_at": [
+        "Hostos Community College"
+      ]
+    },
+    "focus_tags": [
+      "community service"
+    ],
+    "amount_min": null,
+    "amount_max": 2500,
+    "num_awards": null,
+    "deadline": "2026-11-30",
+    "rolling": false,
+    "requirements": {
+      "essay": true,
+      "recommendations": null,
+      "transcript": null,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "11/30/2026",
+      "amount": "Up to $2,500",
+      "eligibility": "Student must have a GPA of 2.3 or higher"
+    },
+    "notes": "Applicants must be entering their final semester, have exhausted all other financial aid benefits, and demonstrate a history of service or commitment to work/volunteer with underserved communities.",
+    "source_url": "https://hostos.academicworks.com/opportunities/5537",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "6995f7ca191b",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "Frank DellaFera Scholarship",
+    "provider": "St. John's University",
+    "url": "https://stjohns.academicworks.com/opportunities/13565",
+    "summary": "This scholarship supports students at St. John's University who are the children of active police officers or an active-duty police officer killed in the line of duty.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": null,
+      "residency": null,
+      "enrolled_at": [
+        "St. John's University"
+      ]
+    },
+    "focus_tags": [],
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "num_awards": null,
+    "deadline": "2026-12-01",
+    "rolling": false,
+    "requirements": {
+      "essay": null,
+      "recommendations": null,
+      "transcript": null,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "12/01/2026",
+      "amount": "$5,000",
+      "eligibility": "students who are the children of active police officers pursuing higher education opportunities at St. John’s University"
+    },
+    "notes": "",
+    "source_url": "https://stjohns.academicworks.com/opportunities/13565",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "d5e221e6c8ff",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "St. John's University General Scholarship Application (endowed scholarships)",
+    "provider": "St. John's University",
+    "url": "https://stjohns.academicworks.com/",
+    "summary": "St. John's University provides an online general scholarship application and school-based applications for students seeking endowed scholarship funds.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": null,
+      "residency": null,
+      "enrolled_at": [
+        "St. John's University"
+      ]
+    },
+    "focus_tags": [],
+    "amount_min": null,
+    "amount_max": null,
+    "num_awards": null,
+    "deadline": "2026-12-01",
+    "rolling": false,
+    "requirements": {
+      "essay": true,
+      "recommendations": null,
+      "transcript": null,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "Deadline 12/01/2026",
+      "amount": "Varies",
+      "eligibility": "you must first sign in with the same user name and password you use to access the MySJU login portal."
+    },
+    "notes": "Endowed scholarship award amounts vary. All opportunities listed in the application system show a deadline of 12/01/2026. Applicants must submit a statement of up to 200 words indicating how they meet award criteria.",
+    "source_url": "https://stjohns.academicworks.com/",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "20435fed55b9",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "Equitable Excellence Scholarship (2027)",
+    "provider": "Equitable Foundation",
+    "url": "https://equitable.com/foundation/equitable-excellence-scholarship",
+    "summary": "The Equitable Excellence Scholarship provides renewable funding for public high school seniors who demonstrate ambition, drive to be a force for good in their communities, and financial need. Recipients receive $5,000 per year for up to four years of undergraduate study along with access to development workshops.",
+    "school_levels": [
+      "HS"
+    ],
+    "eligibility": {
+      "class_years": [
+        "HS 12"
+      ],
+      "min_gpa": 2.5,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": true,
+      "nyc_only": false,
+      "residency": null,
+      "enrolled_at": []
+    },
+    "focus_tags": [
+      "leadership",
+      "community service"
+    ],
+    "amount_min": 5000,
+    "amount_max": 20000,
+    "num_awards": null,
+    "deadline": "2026-12-22",
+    "rolling": false,
+    "requirements": {
+      "essay": null,
+      "recommendations": null,
+      "transcript": null,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "active through Tuesday, December 22nd, 2026.",
+      "amount": "recipients will receive a $5,000 renewable scholarship for up to four years of their undergraduate study, for a total of $20,000",
+      "eligibility": "Be a current public high school senior that resides in one of the 50 U.S. states, District of Columbia or Puerto Rico"
+    },
+    "notes": "Applicants must be current public high school seniors planning to enroll full-time in an accredited two- or four-year college or university in the U.S.",
+    "source_url": "https://equitable.com/foundation/equitable-excellence-scholarship",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "6fe422c7acaa",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "The Aspira Capital Management and Wright Foundation Scholarship for Students Pursuing Degrees In STEM",
+    "provider": "Hostos Community College",
+    "url": "https://hostos.academicworks.com/opportunities/5557",
+    "summary": "This scholarship supports Hostos Community College STEM majors completing their penultimate semester who plan to pursue a STEM bachelor's degree after graduation. Preference is given to engineering majors.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": 3.0,
+      "citizenship": [
+        "citizen",
+        "permanent_resident"
+      ],
+      "majors": [
+        "Chemical Engineering",
+        "Civil Engineering",
+        "Electrical Engineering",
+        "Environmental Engineering",
+        "Mechanical Engineering",
+        "Mathematics",
+        "Computer Science",
+        "Liberal Arts and Science (Science)",
+        "Forensic Science",
+        "Engineering"
+      ],
+      "identity_groups": [],
+      "need_based": true,
+      "nyc_only": null,
+      "residency": null,
+      "enrolled_at": [
+        "Hostos Community College"
+      ]
+    },
+    "focus_tags": [
+      "stem",
+      "engineering",
+      "computer science",
+      "mathematics"
+    ],
+    "amount_min": null,
+    "amount_max": 6000,
+    "num_awards": null,
+    "deadline": "2026-12-30",
+    "rolling": false,
+    "requirements": {
+      "essay": true,
+      "recommendations": 1,
+      "transcript": null,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "12/30/2026",
+      "amount": "up to $6,000",
+      "eligibility": "Recipients must be enrolled in, and in the process of completing, their penultimate semester as a STEM major at Hostos"
+    },
+    "notes": "",
+    "source_url": "https://hostos.academicworks.com/opportunities/5557",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "dbef7fc24733",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "Jackie Robinson Foundation Scholarship",
+    "provider": "Jackie Robinson Foundation",
+    "url": "https://jackierobinson.org/apply/",
+    "summary": "The Jackie Robinson Foundation Scholarship provides multi-faceted support and financial assistance to graduating high school seniors who demonstrate academic excellence and financial need. Scholars also receive mentoring, leadership training, and career placement services throughout college.",
+    "school_levels": [
+      "HS"
+    ],
+    "eligibility": {
+      "class_years": [
+        "HS 12"
+      ],
+      "min_gpa": null,
+      "citizenship": [
+        "US Citizen"
+      ],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": true,
+      "nyc_only": false,
+      "residency": null,
+      "enrolled_at": []
+    },
+    "focus_tags": [
+      "leadership",
+      "community service"
+    ],
+    "amount_min": null,
+    "amount_max": null,
+    "num_awards": null,
+    "deadline": "2027-01-14",
+    "rolling": false,
+    "requirements": {
+      "essay": true,
+      "recommendations": true,
+      "transcript": true,
+      "interview": true,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "The application, letter of recommendation, and CSS Profile are due by 5:00 p.m. EST on Thursday, January 14, 2027.",
+      "amount": null,
+      "eligibility": "To be eligible for the Jackie Robinson Foundation Scholarship, applicants must:\n- Be a graduating high school senior;\n- Be a United States citizen;"
+    },
+    "notes": "",
+    "source_url": "https://jackierobinson.org/apply/",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "0dbaae92ee96",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "NYCUA Statewide Credit Union College Scholarship (2027)",
+    "provider": "New York Credit Union Association",
+    "url": "https://nycua.org/uniting/scholarship-program/college-scholarship-program-applicants",
+    "summary": "This scholarship is open to students in good standing with their credit union who will be attending an accredited 2-4 year educational institution, trade, or vocational school. Applicants must submit an essay and high school transcript.",
+    "school_levels": [
+      "HS"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": null,
+      "residency": null,
+      "enrolled_at": []
+    },
+    "focus_tags": [],
+    "amount_min": null,
+    "amount_max": null,
+    "num_awards": null,
+    "deadline": "2027-01-15",
+    "rolling": false,
+    "requirements": {
+      "essay": true,
+      "recommendations": null,
+      "transcript": true,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "Jan. 15, 2027: Deadline for students to submit applications",
+      "amount": null,
+      "eligibility": "Applicants must be in good standing with their credit union Applicants will be attending a 2-4 year accredited educational institution"
+    },
+    "notes": "",
+    "source_url": "https://nycua.org/uniting/scholarship-program/college-scholarship-program-applicants",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "64c7aec3b783",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "Spencer Educational Foundation Undergraduate Scholarship (2027)",
+    "provider": "Spencer Educational Foundation",
+    "url": "https://www.spencered.org/scholarships",
+    "summary": "Spencer awards scholarships between $5,000 and $10,000 to undergraduate students enrolled at accredited institutions in the U.S. or Canada who seek a career in risk management, insurance, or actuarial science. Applicants are also automatically considered for various named undergraduate awards.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": false,
+      "residency": null,
+      "enrolled_at": []
+    },
+    "focus_tags": [
+      "risk-management",
+      "insurance",
+      "actuarial-science"
+    ],
+    "amount_min": 5000,
+    "amount_max": 10000,
+    "num_awards": null,
+    "deadline": "2027-01-15",
+    "rolling": false,
+    "requirements": {
+      "essay": null,
+      "recommendations": null,
+      "transcript": null,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "2027 Application Deadline: January 15, 2027",
+      "amount": "Undergraduate scholarships are awarded in the amount of $7,500 , with limited $5,000 scholarships awarded to the highest-ranked freshman and sophomore applicants, and $10,000",
+      "eligibility": "Must seek a career in Risk Management, Insurance, and/or Actuarial Science. Must be enrolled at an accredited college/university in the United States and Canada"
+    },
+    "notes": "Program key 'Spencer' may be required to access the application form. Majoring or minoring in risk management, insurance, or a related field is preferred but not required.",
+    "source_url": "https://www.spencered.org/scholarships",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "51d9014901d4",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "Women's Forum of New York Education Fund Award (2027)",
+    "provider": "Women's Forum of New York",
+    "url": "https://www.womensforumny.org/?p=42920",
+    "summary": "The Education Fund Award recognizes women aged 25 and over residing in New York City who are pursuing their first Associate or Bachelor's degree. Recipients receive an unrestricted grant of $15,000 to assist with educational costs.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [
+        "women"
+      ],
+      "need_based": null,
+      "nyc_only": true,
+      "residency": "New York City",
+      "enrolled_at": []
+    },
+    "focus_tags": [
+      "women"
+    ],
+    "amount_min": 15000,
+    "amount_max": 15000,
+    "num_awards": null,
+    "deadline": "2027-02-01",
+    "rolling": false,
+    "requirements": {
+      "essay": null,
+      "recommendations": true,
+      "transcript": null,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "February 1, 2027 Online application including letters of recommendation must be complete and submitted.",
+      "amount": "Our unrestricted $15,000 grants are awarded directly to the recipient for any costs associated with advancing her education.",
+      "eligibility": "The Education Fund Award is open to women aged 25 and over. Applicants must reside in New York City"
+    },
+    "notes": "Applicants must be women aged 25 and over who are pursuing their first Associate or Bachelor's degree at a two-year or four-year institution.",
+    "source_url": "https://www.womensforumny.org/?p=42920",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "13743a71b1aa",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "Brooklyn College Undergraduate General Scholarship Application (Continuing Students)",
+    "provider": "Brooklyn College",
+    "url": "https://www.brooklyn.edu/admissions-aid/financial-aid-scholarships/scholarships/apply",
+    "summary": "Currently enrolled Brooklyn College undergraduate students can apply through the general application to be considered for scholarships and awards for fall 2027 and spring 2028.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": null,
+      "residency": null,
+      "enrolled_at": [
+        "Brooklyn College"
+      ]
+    },
+    "focus_tags": [],
+    "amount_min": null,
+    "amount_max": null,
+    "num_awards": null,
+    "deadline": "2027-02-11",
+    "rolling": false,
+    "requirements": {
+      "essay": null,
+      "recommendations": null,
+      "transcript": null,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "Deadline: February 11, 2027",
+      "amount": null,
+      "eligibility": "If you are currently enrolled at Brooklyn College and wish to be considered for scholarships and awards"
+    },
+    "notes": "",
+    "source_url": "https://www.brooklyn.edu/admissions-aid/financial-aid-scholarships/scholarships/apply",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "fdfea223c255",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "Columbus Citizens Foundation College Scholarship (2027-28)",
+    "provider": "Columbus Citizens Foundation",
+    "url": "https://columbuscitizens.org/scholarships/college-scholarships/",
+    "summary": "Scholarship for students of at least 25% Italian heritage who are entering their first year of an accredited college or university. Applicants must demonstrate financial need and have a minimum GPA of 3.5 or 88%.",
+    "school_levels": [
+      "HS"
+    ],
+    "eligibility": {
+      "class_years": [
+        "HS 12"
+      ],
+      "min_gpa": 3.5,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [
+        "Italian heritage"
+      ],
+      "need_based": true,
+      "nyc_only": null,
+      "residency": null,
+      "enrolled_at": []
+    },
+    "focus_tags": [
+      "italian heritage"
+    ],
+    "amount_min": null,
+    "amount_max": null,
+    "num_awards": null,
+    "deadline": "2027-02-11",
+    "rolling": false,
+    "requirements": {
+      "essay": true,
+      "recommendations": true,
+      "transcript": true,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "November 5, 2026 – February 11, 2027 for the 2027-28 academic year",
+      "amount": null,
+      "eligibility": "Applicants must be entering their first year of an accredited college/university. Applicants must be of at least 25% Italian heritage."
+    },
+    "notes": "",
+    "source_url": "https://columbuscitizens.org/scholarships/college-scholarships/",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "07181acc3818",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "Belle Zeller Scholarship (Undergraduate)",
+    "provider": "Belle Zeller Scholarship Trust Fund",
+    "url": "https://bellezeller.org/website/undergraduate-application/",
+    "summary": "The Belle Zeller Scholarship is a merit-based award for full-time CUNY undergraduate students who have completed at least 30 credits and demonstrate significant voluntary community service.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": 3.75,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": false,
+      "nyc_only": null,
+      "residency": null,
+      "enrolled_at": [
+        "CUNY"
+      ]
+    },
+    "focus_tags": [
+      "community service"
+    ],
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "num_awards": null,
+    "deadline": "2027-02-26",
+    "rolling": false,
+    "requirements": {
+      "essay": true,
+      "recommendations": 2,
+      "transcript": true,
+      "interview": true,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "Application Deadline: Completed applications must be received no later than midnight on February 26, 2027.",
+      "amount": "Awards are for one year in the amount of $5,000. Awards will be paid in two installments of $2,500",
+      "eligibility": "Applicants must be full-time CUNY undergraduate students and must have completed at least thirty (30) credits at a CUNY college with a cumulative GPA of 3.75"
+    },
+    "notes": "Awards are paid in two installments of $2,500 and require maintaining a 3.75 GPA, continuing community service, and not exceeding 120 earned credits by May 2028.",
+    "source_url": "https://bellezeller.org/website/undergraduate-application/",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "5748fc0760fd",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "Carmela and Milton Ackman Endowed Scholarship",
+    "provider": "City College Of New York",
+    "url": "https://ccny.academicworks.com/opportunities/12653",
+    "summary": "Offers $2,000 to $3,000 for undergraduate humanities students majoring in history, literature, art, or art history to support internships or other enrichment activities.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "citizenship": [],
+      "majors": [
+        "history",
+        "literature",
+        "art",
+        "art history"
+      ],
+      "identity_groups": [],
+      "need_based": false,
+      "nyc_only": null,
+      "residency": null,
+      "enrolled_at": [
+        "City College Of New York"
+      ]
+    },
+    "focus_tags": [
+      "humanities",
+      "arts",
+      "internships",
+      "research"
+    ],
+    "amount_min": 2000,
+    "amount_max": 3000,
+    "num_awards": null,
+    "deadline": "2027-02-26",
+    "rolling": false,
+    "requirements": {
+      "essay": true,
+      "recommendations": true,
+      "transcript": null,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "Deadline 02/26/2027",
+      "amount": "provides 2-3 scholarships of between $2,000 and $3,000 annually",
+      "eligibility": "Undergraduate humanities students of any standing majoring in history, literature, art, or art history are eligible."
+    },
+    "notes": "College reserves the right to consider financial need when selecting awardees.",
+    "source_url": "https://ccny.academicworks.com/opportunities/12653",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "55d751493ef1",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "Sydney and Helen Jacoff Scholarship Fund",
+    "provider": "City College of New York",
+    "url": "https://ccny.academicworks.com/opportunities/10786",
+    "summary": "The Division of Humanities and the Arts will award scholarships to graduating students pursuing master’s or doctoral degrees in the Humanities and Arts.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "citizenship": [],
+      "majors": [
+        "Humanities",
+        "Arts"
+      ],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": null,
+      "residency": null,
+      "enrolled_at": [
+        "City College of New York"
+      ]
+    },
+    "focus_tags": [
+      "humanities",
+      "arts"
+    ],
+    "amount_min": 10000,
+    "amount_max": 10000,
+    "num_awards": 4,
+    "deadline": "2027-03-12",
+    "rolling": false,
+    "requirements": {
+      "essay": true,
+      "recommendations": null,
+      "transcript": null,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "03/12/2027",
+      "amount": "$10,000 (4)",
+      "eligibility": "graduating students pursuing master’s or doctoral degrees in the Humanities and Arts."
+    },
+    "notes": "",
+    "source_url": "https://ccny.academicworks.com/opportunities/10786",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "b52bd35006a0",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "The Paper Endowed Scholarship Fund for Social Justice",
+    "provider": "City College of New York",
+    "url": "https://ccny.academicworks.com/opportunities/12131",
+    "summary": "This scholarship supports undergraduate students in the Division of Humanities and the Arts at CCNY who demonstrate strong academic performance and a sustained commitment to social justice. It provides funding for coursework, internships, or projects that create a positive impact.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": 3.0,
+      "citizenship": [],
+      "majors": [
+        "Humanities and the Arts"
+      ],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": null,
+      "residency": null,
+      "enrolled_at": [
+        "City College of New York"
+      ]
+    },
+    "focus_tags": [
+      "social justice",
+      "humanities",
+      "civic leadership",
+      "community engagement",
+      "journalism"
+    ],
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "num_awards": 2,
+    "deadline": "2027-03-19",
+    "rolling": false,
+    "requirements": {
+      "essay": true,
+      "recommendations": null,
+      "transcript": null,
+      "interview": true,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "Deadline 03/19/2027",
+      "amount": "$1,000.00 (2)",
+      "eligibility": "open to all undergraduate students enrolled in the Division of Humanities and the Arts at CCNY who demonstrate strong academic performance"
+    },
+    "notes": "",
+    "source_url": "https://ccny.academicworks.com/opportunities/12131",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "2e3ff2fd4695",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "Walter A. Hunt, Jr. Scholarship",
+    "provider": "Center for Architecture",
+    "url": "https://www.aiany.org/architecture/competitions-grants/filter/scholarships/",
+    "summary": "This scholarship promotes the study of architecture among New York City public high school students.",
+    "school_levels": [
+      "HS"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "citizenship": [],
+      "majors": [
+        "architecture"
+      ],
+      "identity_groups": [],
+      "need_based": null,
+      "nyc_only": true,
+      "residency": null,
+      "enrolled_at": []
+    },
+    "focus_tags": [
+      "architecture"
+    ],
+    "amount_min": null,
+    "amount_max": null,
+    "num_awards": null,
+    "deadline": "2027-05-10",
+    "rolling": false,
+    "requirements": {
+      "essay": null,
+      "recommendations": null,
+      "transcript": null,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "Walter A. Hunt, Jr. Scholarship \n May 10, 2027",
+      "amount": null,
+      "eligibility": "Promoting the study of architecture by New York City public high school students"
+    },
+    "notes": "",
+    "source_url": "https://www.aiany.org/architecture/competitions-grants/filter/scholarships/",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "285fec78d6a7",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "Tuition Assistance Program (TAP)",
+    "provider": "Higher Education Services Corporation",
+    "url": "https://www.hesc.ny.gov/find-aid/nys-grants-scholarships/tuition-assistance-program-tap",
+    "summary": "The Tuition Assistance Program (TAP) helps eligible New York State residents attending approved colleges or non-degree workforce programs cover tuition expenses. Award amounts range from $1,000 to $5,665 annually based on income, tuition cost, and family status.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "citizenship": [
+        "US citizen",
+        "eligible noncitizen",
+        "undocumented"
+      ],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": true,
+      "nyc_only": false,
+      "residency": "state",
+      "enrolled_at": []
+    },
+    "focus_tags": [
+      "tuition",
+      "nys aid",
+      "undergraduate"
+    ],
+    "amount_min": 1000,
+    "amount_max": 5665,
+    "num_awards": null,
+    "deadline": "2027-06-30",
+    "rolling": false,
+    "requirements": {
+      "essay": null,
+      "recommendations": null,
+      "transcript": null,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "06/30/2027 For Academic Year 2026-27",
+      "amount": "$1,000 to $5,665",
+      "eligibility": "Must be a legal NYS resident for 12 continuous months prior to enrolling or qualified under NYS DREAM Act."
+    },
+    "notes": "Deadline for the 2026-27 academic year is June 30, 2027; the deadline for the 2027-28 academic year is June 30, 2028.",
+    "source_url": "https://www.hesc.ny.gov/find-aid/nys-grants-scholarships/tuition-assistance-program-tap",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "4423d4687c8b",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "NYS Science, Technology, Engineering and Mathematics (STEM) Incentive Program",
+    "provider": "Higher Education Services Corporation (HESC)",
+    "url": "https://www.hesc.ny.gov/find-aid/nys-grants-scholarships/nys-science-technology-engineering-and-mathematics-stem-incentive",
+    "summary": "Provides full tuition coverage at a SUNY or CUNY college for students graduating in the top 10% of their NYS high school class pursuing an approved STEM degree. Recipients must agree to live and work in an approved STEM occupation in New York State for five years after graduation.",
+    "school_levels": [
+      "HS"
+    ],
+    "eligibility": {
+      "class_years": [
+        "HS 12"
+      ],
+      "min_gpa": null,
+      "citizenship": [],
+      "majors": [
+        "Science",
+        "Technology",
+        "Engineering",
+        "Mathematics"
+      ],
+      "identity_groups": [],
+      "need_based": false,
+      "nyc_only": false,
+      "residency": "New York State",
+      "enrolled_at": []
+    },
+    "focus_tags": [
+      "stem",
+      "science",
+      "technology",
+      "engineering",
+      "mathematics"
+    ],
+    "amount_min": null,
+    "amount_max": null,
+    "num_awards": null,
+    "deadline": "2027-08-16",
+    "rolling": false,
+    "requirements": {
+      "essay": null,
+      "recommendations": null,
+      "transcript": null,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "08/16/2027 For the 2027-28 Academic Year",
+      "amount": "Covers cost of tuition not to exceed the average tuition charged to NYS resident undergraduate students at a state-operated SUNY, or actual tuition, whichever is less.",
+      "eligibility": "Be in the top 10.0% of your NYS high school graduating class Must apply in your high school senior year"
+    },
+    "notes": "Recipients must attend a SUNY or CUNY college immediately following graduation and must live and work in an approved STEM occupation in NYS for 5 years, or the award converts into a 10-year loan plus interest.",
+    "source_url": "https://www.hesc.ny.gov/find-aid/nys-grants-scholarships/nys-science-technology-engineering-and-mathematics-stem-incentive",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "6daa344fcb6a",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "Aid to Native Americans",
+    "provider": "New York State Higher Education Services Corporation (HESC)",
+    "url": "https://www.hesc.ny.gov/find-aid/nys-grants-scholarships/aid-native-americans",
+    "summary": "Provides funding to enrolled members of a New York State tribe or their children pursuing full- or part-time postsecondary study in New York State. Recipients can receive up to $2,000 per year.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": 2.0,
+      "citizenship": [
+        "US Citizen",
+        "Eligible Noncitizen"
+      ],
+      "majors": [],
+      "identity_groups": [
+        "Native American"
+      ],
+      "need_based": false,
+      "nyc_only": false,
+      "residency": "state",
+      "enrolled_at": []
+    },
+    "focus_tags": [
+      "native american"
+    ],
+    "amount_min": null,
+    "amount_max": 2000,
+    "num_awards": null,
+    "deadline": null,
+    "rolling": true,
+    "requirements": {
+      "essay": null,
+      "recommendations": null,
+      "transcript": null,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "Open Year-Round More Information July 16 for the fall semester January 4 for the spring semester May 20 for the summer session",
+      "amount": "up to $2,000 per year ($1,000 per semester)",
+      "eligibility": "Enrolled members of a New York State tribe or their children Be a legal resident of NYS and have resided for 12 continuous months"
+    },
+    "notes": "Application is open year-round with semester postmark cutoffs lacking specific years: July 16 for fall, January 4 for spring, and May 20 for summer.",
+    "source_url": "https://www.hesc.ny.gov/find-aid/nys-grants-scholarships/aid-native-americans",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "455a9afeaca3",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "NYS Memorial Scholarship",
+    "provider": "Higher Education Services Corporation",
+    "url": "https://www.hesc.ny.gov/find-aid/nys-grants-scholarships/nys-memorial-scholarship",
+    "summary": "Provides funding up to the cost of attendance at a state-operated SUNY for children, spouses, and financial dependents of deceased firefighters, police officers, and emergency medical service workers who died in the line of duty.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "citizenship": [],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": false,
+      "nyc_only": false,
+      "residency": null,
+      "enrolled_at": []
+    },
+    "focus_tags": [],
+    "amount_min": null,
+    "amount_max": null,
+    "num_awards": null,
+    "deadline": null,
+    "rolling": true,
+    "requirements": {
+      "essay": null,
+      "recommendations": null,
+      "transcript": null,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "Open Year-Round",
+      "amount": "Covers cost of attendance at a state-operated SUNY or the actual cost of attendance, whichever is less.",
+      "eligibility": "Be a child, spouse or financial dependent of deceased firefighter, volunteer firefighter, police officer (including NYS Correction Officers), or emergency medical service worker"
+    },
+    "notes": "Applications are open year-round. Award covers cost of attendance up to SUNY rates for full-time undergraduate study.",
+    "source_url": "https://www.hesc.ny.gov/find-aid/nys-grants-scholarships/nys-memorial-scholarship",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "5996d69af4f0",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  },
+  {
+    "kind": "scholarship",
+    "title": "NYS World Trade Center Memorial Scholarship",
+    "provider": "New York State Higher Education Services Corporation",
+    "url": "https://www.hesc.ny.gov/find-aid/nys-grants-scholarships/world-trade-center-memorial-scholarship",
+    "summary": "Provides funding for undergraduate study in New York State for survivors and dependents of victims who died or were severely and permanently disabled as a result of the September 11, 2001 terrorist attacks. The award covers up to the cost of attendance at a state-operated SUNY.",
+    "school_levels": [
+      "college"
+    ],
+    "eligibility": {
+      "class_years": [],
+      "min_gpa": null,
+      "citizenship": [
+        "citizen",
+        "eligible noncitizen",
+        "undocumented"
+      ],
+      "majors": [],
+      "identity_groups": [],
+      "need_based": false,
+      "nyc_only": false,
+      "residency": null,
+      "enrolled_at": []
+    },
+    "focus_tags": [
+      "wtc",
+      "undergraduate"
+    ],
+    "amount_min": null,
+    "amount_max": null,
+    "num_awards": null,
+    "deadline": null,
+    "rolling": true,
+    "requirements": {
+      "essay": null,
+      "recommendations": null,
+      "transcript": null,
+      "interview": null,
+      "application_fee": null
+    },
+    "is_sweepstakes": false,
+    "published_applicants": null,
+    "evidence": {
+      "deadline": "Open Year-Round",
+      "amount": "Covers cost of attendance at a state-operated SUNY or the actual cost of attendance, whichever is less.",
+      "eligibility": "Be either a survivor, who is severely and permanently disabled as a result of injuries sustained in the attacks or subsequent rescue and recovery operations"
+    },
+    "notes": "Application is open year-round. Open to full-time undergraduate students studying at an approved post-secondary institution in New York State.",
+    "source_url": "https://www.hesc.ny.gov/find-aid/nys-grants-scholarships/world-trade-center-memorial-scholarship",
+    "extracted_by": "gemini:gemini-flash-latest",
+    "evidence_check": "all_found",
+    "id": "871163ead408",
+    "is_sample": false,
+    "extracted_at": "2026-10-23T19:13:18+00:00",
+    "trust": "web_verified",
+    "human_reviewed": false
+  }
+]
