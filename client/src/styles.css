@@ -150,12 +150,48 @@ table.review input, table.review select { padding: 6px 8px; font-size: 13px; }
 .listing .why { margin: 0; padding-top: 14px; border-top: 1px solid var(--line); font-size: 18px; line-height: 1.45; color: var(--ink-2); }
 .listing .why span { color: var(--muted-2); }
 
-/* ================= landing (index.html) ================= */
-@keyframes drift { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
-@keyframes bloom { 0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: .55; } 50% { transform: translate(-50%, -50%) scale(1.15); opacity: .85; } }
-.hero { position: relative; overflow: hidden; height: clamp(420px, 56vw, 760px); background-image: linear-gradient(90deg, #B7C8D2 0%, #E9CB8C 18%, #F4C26A 34%, #EFA458 56%, #E6743A 76%, #D9A48C 92%, #B7C8D2 100%); background-size: 200% 100%; animation: drift 22s ease-in-out infinite; display: flex; align-items: center; justify-content: center; }
-.hero .bloom { position: absolute; left: 50%; top: 50%; width: min(900px, 90vw); aspect-ratio: 1 / 1; border-radius: 50%; background: radial-gradient(circle, rgba(255,246,228,0.9) 0%, rgba(255,236,200,0.35) 35%, rgba(255,236,200,0) 65%); animation: bloom 9s ease-in-out infinite; }
-.hero .word { position: relative; margin: 0; display: flex; align-items: center; gap: clamp(16px, 2.4vw, 36px); color: #fff; font-size: clamp(64px, 11vw, 176px); font-weight: 500; letter-spacing: -0.045em; line-height: 1; }
+/* ================= landing — skyspace hero (myops design) ================= */
+
+/* day/night cycle keyframes */
+@keyframes dome   { 0%,100%{background-color:#2E1B33} 20.8%{background-color:#3E2440} 27%{background-color:#E3A07E} 37.5%{background-color:#EED2AC} 52%{background-color:#F2DFC0} 67%{background-color:#EDBE86} 77%{background-color:#DE7A38} 81%{background-color:#A9506A} 87.5%{background-color:#4C2648} }
+@keyframes dusk   { 0%,100%{opacity:.55} 20.8%{opacity:.5} 27%{opacity:.14} 37.5%{opacity:.04} 52%{opacity:0} 67%{opacity:.05} 77%{opacity:.12} 81%{opacity:.3} 87.5%{opacity:.48} }
+@keyframes sky    { 0%,100%{background-color:#0B1236} 20.8%{background-color:#1E2B62} 27%{background-color:#9AB2DC} 37.5%{background-color:#7AB6EE} 52%{background-color:#6DAEF2} 67%{background-color:#74A9E4} 77%{background-color:#5579CF} 81%{background-color:#2E3F9E} 87.5%{background-color:#121A55} }
+@keyframes skyGlow { 0%,100%{opacity:.25} 27%{opacity:.6} 52%{opacity:.9} 77%{opacity:.7} 87.5%{opacity:.3} }
+@keyframes cove   { 0%,100%{opacity:.75} 27%{opacity:.4} 52%{opacity:.18} 77%{opacity:.65} 87.5%{opacity:.85} }
+@keyframes ink    { 0%,25%,75%,100%{color:#FBF1DE} 31%,69%{color:#3A2416} }
+
+.cycle { animation-duration: var(--day, 40s); animation-timing-function: linear; animation-iteration-count: infinite; animation-delay: var(--offset, 0s); }
+.c-dome { animation-name: dome; } .c-dusk { animation-name: dusk; } .c-sky { animation-name: sky; }
+.c-glow { animation-name: skyGlow; } .c-cove { animation-name: cove; } .c-ink { animation-name: ink; }
+
+.skyspace { position: relative; overflow: hidden; height: clamp(520px, 62vw, 860px); background-color: #EED2AC; }
+.skyspace-atmo { position: absolute; inset: 0; background: radial-gradient(ellipse 70% 60% at 50% 16%, rgba(255,250,240,0.32) 0%, rgba(255,250,240,0.08) 45%, rgba(255,250,240,0) 70%), linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 58%, rgba(30,12,4,0.22) 80%, rgba(20,8,2,0.5) 100%); }
+.skyspace-glow { position: absolute; left: 50%; top: 22%; width: clamp(420px, 56vw, 820px); aspect-ratio: 1/1; transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(circle, rgba(255,248,232,0.55) 0%, rgba(255,244,224,0.18) 30%, rgba(255,240,220,0) 62%); }
+.skyspace-aperture { position: absolute; left: 50%; top: 22%; width: clamp(150px, 18vw, 260px); aspect-ratio: 1/1; border-radius: 50%; transform: translate(-50%, -50%); transition: transform 1.6s cubic-bezier(.2,.7,.2,1); background-color: #7AB6EE; background-image: radial-gradient(circle at 42% 38%, rgba(255,255,255,0.14) 0%, rgba(255,255,255,0) 55%); box-shadow: inset 0 0 26px rgba(10,20,60,0.18); }
+.skyspace-cove { position: absolute; left: -10%; right: -10%; top: 79%; height: 40px; transform: translateY(-50%); background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(255,214,160,0.9) 0%, rgba(255,200,140,0.35) 40%, rgba(255,200,140,0) 75%); filter: blur(6px); }
+.skyspace-dusk { position: absolute; inset: 0; background: #0C0710; pointer-events: none; }
+.skyspace-grain { position: absolute; inset: 0; opacity: 0.12; mix-blend-mode: overlay; pointer-events: none; }
+.skyspace-word { position: absolute; left: 0; right: 0; top: 52%; transform: translateY(-50%); margin: 0; display: flex; justify-content: center; align-items: center; gap: clamp(14px, 2vw, 30px); color: #3A2416; font-size: clamp(56px, 9vw, 144px); font-weight: 500; letter-spacing: -0.045em; line-height: 1; }
+
+/* talk section animated orbs */
+@keyframes speak  { 0%{transform:scale(1);opacity:.75} 5%{transform:scale(1.2);opacity:1} 9%{transform:scale(1.03);opacity:.82} 14%{transform:scale(1.24);opacity:1} 19%{transform:scale(1.06);opacity:.85} 24%{transform:scale(1.16);opacity:.95} 30%{transform:scale(1);opacity:.75} 44%{transform:scale(.98);opacity:.7} 49%{transform:scale(1.22);opacity:1} 53%{transform:scale(1.05);opacity:.84} 58%{transform:scale(1.28);opacity:1} 63%{transform:scale(1.04);opacity:.82} 68%{transform:scale(1.14);opacity:.92} 74%{transform:scale(1.02);opacity:.78} 79%{transform:scale(1.1);opacity:.88} 86%{transform:scale(1);opacity:.74} 100%{transform:scale(1);opacity:.75} }
+@keyframes wander { 0%,100%{transform:translate(0,0)} 25%{transform:translate(6%,-5%)} 50%{transform:translate(-4%,4%)} 75%{transform:translate(5%,6%)} }
+.speak { animation: speak 3.4s ease-in-out infinite; }
+.wander { animation: wander 14s ease-in-out infinite; }
+.talk-art { position: relative; overflow: hidden; aspect-ratio: 4/5; background: radial-gradient(ellipse 90% 70% at 50% 45%, #4A2230 0%, #24121A 60%, #140A10 100%); }
+.talk-orb { position: absolute; left: 8%; top: 18%; width: 84%; aspect-ratio: 1/1; }
+.talk-orb-inner { width: 100%; height: 100%; border-radius: 50%; filter: blur(28px); mix-blend-mode: screen; }
+.talk-art-grain { position: absolute; inset: 0; opacity: 0.14; mix-blend-mode: overlay; pointer-events: none; }
+
+/* scroll-driven slide animations */
+@keyframes slideL { from { opacity: 0; transform: translateX(-90px); } to { opacity: 1; transform: none; } }
+@keyframes slideR { from { opacity: 0; transform: translateX(140px); } to { opacity: 1; transform: none; } }
+@supports (animation-timeline: view()) {
+  .slide-l { animation: slideL linear both; animation-timeline: view(); animation-range: entry 0% cover 30%; }
+  .slide-r { animation: slideR linear both; animation-timeline: view(); animation-range: entry 5% cover 40%; }
+}
+
+/* sections */
 .section { max-width: var(--wrap); margin: 0 auto; padding: 120px var(--gutter) 40px; display: flex; flex-wrap: wrap; gap: 40px 64px; }
 .section > .lhs { flex: 1 1 420px; margin: 0; }
 .section > .rhs { flex: 1 1 560px; max-width: 720px; display: flex; flex-direction: column; gap: 28px; font-size: clamp(19px, 1.6vw, 24px); line-height: 1.42; color: var(--muted); }
@@ -170,8 +206,6 @@ table.review input, table.review select { padding: 6px 8px; font-size: 13px; }
 .band h2 { flex: 1 1 420px; margin: 0; font-size: clamp(32px, 3vw, 48px); font-weight: 500; letter-spacing: -0.02em; }
 .contents { flex: 1 1 520px; list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: clamp(32px, 3.2vw, 52px); font-weight: 500; letter-spacing: -0.025em; line-height: 1.2; }
 .contents span { color: var(--muted-3); }
-.photo { aspect-ratio: 4 / 5; background: linear-gradient(180deg, #E4E1DC 0%, #CFCAC3 100%); display: flex; align-items: center; justify-content: center; }
-.photo span { font-family: var(--mono); font-size: 13px; color: #5E5850; }
 .listen-art { aspect-ratio: 4 / 3; background: radial-gradient(ellipse at 50% 40%, #2A1A10 0%, #140D08 75%); display: flex; align-items: center; justify-content: center; }
 .listen-art > div { width: 46%; aspect-ratio: 1 / 1; border-radius: 50%; background: radial-gradient(circle, #F4C99A 0%, #E2A066 26%, #B8653A 44%, #6E2D17 62%, rgba(20,13,8,0) 78%); display: flex; align-items: center; justify-content: center; }
 .listen-art > div > div { width: 38%; aspect-ratio: 1 / 1; border-radius: 50%; background: #F3BFA4; box-shadow: 0 0 90px 20px rgba(255,200,150,0.5); }
@@ -188,7 +222,7 @@ table.review input, table.review select { padding: 6px 8px; font-size: 13px; }
 .auth .rhs { gap: 24px; }
 .auth .card { font-size: 16px; color: var(--ink); }
 
-@media (prefers-reduced-motion: reduce) { .hero, .hero .bloom { animation: none !important; } }
+@media (prefers-reduced-motion: reduce) { .skyspace, .cycle, .speak, .wander, .slide-l, .slide-r { animation: none !important; } }
 
 /* =====================================================================
    ROOM: the dark conversation theme (talk.html / talk.css)

@@ -33,8 +33,8 @@ function statusMap(events: TrackerEvent[]) {
 // ---------- Tracker bar ----------
 
 export function TrackerBar({ events }: { events: TrackerEvent[] }) {
-  const [goals, setGoals] = useState(() => ls("myopps.goals", { money: 5000, weekly: 2 }));
-  useEffect(() => { lsSet("myopps.goals", goals); }, [goals]);
+  const [goals, setGoals] = useState(() => ls("myops.goals", { money: 5000, weekly: 2 }));
+  useEffect(() => { lsSet("myops.goals", goals); }, [goals]);
   const weekAgo = Date.now() - 7 * 864e5;
   const appliedThisWeek = events.filter(e => e.status === "applied" && new Date(e.createdAt).getTime() > weekAgo).length;
   const won = events.filter(e => e.status === "won").reduce((s, e) => s + (e.amountWon ?? 0), 0);

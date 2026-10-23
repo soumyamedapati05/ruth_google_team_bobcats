@@ -1,4 +1,4 @@
-# MyOpps
+# myops
 
 Scholarships and free opportunities, matched to students, sourced by the community.
 Counselors and providers upload what they already have (a PDF handout, a spreadsheet, pasted text); students paste a statement and get ranked matches; providers see which opted-in students match and can invite them.

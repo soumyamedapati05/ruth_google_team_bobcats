@@ -1,7 +1,7 @@
 import type { Chips, MatchCard, TrackerEvent, Invite, TrackStatus, Me, StudentProfileInput, PartnerProfile, PartnerListingView, Role } from "../../../shared/types";
 
 // ---- session token (local accounts; swap for Firebase Auth later) ----
-const TOKEN_KEY = "myopps.token";
+const TOKEN_KEY = "myops.token";
 export function getToken() { try { return localStorage.getItem(TOKEN_KEY); } catch { return null; } }
 export function setToken(t: string | null) { try { t ? localStorage.setItem(TOKEN_KEY, t) : localStorage.removeItem(TOKEN_KEY); } catch { /* ignore */ } }
 
@@ -20,7 +20,7 @@ async function j<T>(url: string, init?: RequestInit): Promise<T> {
   const r = await fetch(url, { ...init, headers });
   if (!r.ok) {
     const msg = (await r.json().catch(() => ({})))?.error ?? `${r.status}`;
-    if (r.status === 401) { setToken(null); window.dispatchEvent(new Event("myopps:signout")); }
+    if (r.status === 401) { setToken(null); window.dispatchEvent(new Event("myops:signout")); }
     throw new ApiError(r.status, msg);
   }
   return r.json();

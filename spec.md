@@ -1,6 +1,6 @@
 # Spec: Personalized Scholarship & Opportunity Finder
 
-> Working name: **MyOpps**. Status: **draft v0.5, 2026-10-23.**
+> Working name: **myops**. Status: **draft v0.5, 2026-10-23.**
 > v0.5 descopes the project to a **5-hour prototype built in Google AI Studio with Gemini**, adds Common App as the main competitor, and moves the trained odds model, goals/tracker, and database to the roadmap.
 > Prototype scope: **New York City only.** This repo is a fresh start; no code or data carries over from earlier repos.
 
@@ -57,7 +57,7 @@ Profiles on most sites are also shallow (GPA, state, major), so a fencer who vol
 - **Prototype geography:** New York City (plus online opportunities).
 
 - **Primary:** high school students and undergrads (~14–22), especially first-generation and low-income students without a counselor doing this for them.
-- **Scouts (supply side):** trusted people who add listings in the MyOpps import view: our team for the prototype, then school counselors and local providers who want their scholarships and events to reach eligible students.
+- **Scouts (supply side):** trusted people who add listings in the myops import view: our team for the prototype, then school counselors and local providers who want their scholarships and events to reach eligible students.
 
 ## 5. Prototype scope (5 hours)
 
@@ -71,7 +71,7 @@ Profiles on most sites are also shallow (GPA, state, major), so a fencer who vol
 | Gemini ranking + "why you matched" | | Goals, progress bars, tracker, reminders |
 | Odds band from a formula (§6.2) | | Accounts and auth |
 | **"Almost eligible" card** (opportunity → scholarships it unlocks) | | Essay clustering, map, voice intake |
-| **MyOpps importer:** URL, PDF or flyer photo → Gemini → review → listing cards | | URL grounding "verify" button (stretch only) |
+| **myops importer:** URL, PDF or flyer photo → Gemini → review → listing cards | | URL grounding "verify" button (stretch only) |
 | Scholarships and Opportunities tabs | | Counselor view for many students |
 
 ### 5.1 Intake: "paste, don't fill out"
@@ -90,8 +90,8 @@ Profiles on most sites are also shallow (GPA, state, major), so a fencer who vol
 ### 5.3 "Almost eligible" (the demo's big moment)
 An opportunity card that links to scholarships it unlocks: *"Attend this free engineering day Nov 15 → qualifies you for 3 more scholarships worth $4,500."* For the prototype, these links are hand-authored in the data (3–4 of them). This joins the two tabs into one idea: the app doesn't just find money, it helps build the record that wins it.
 
-### 5.4 MyOpps import view: import listings (supply side)
-The website has two views: the **student view** (§5.1–5.3) and the **MyOpps import view**, where trusted people add listings. Scouts are our team today, and counselors and local providers later.
+### 5.4 myops import view: import listings (supply side)
+The website has two views: the **student view** (§5.1–5.3) and the **myops import view**, where trusted people add listings. Scouts are our team today, and counselors and local providers later.
 
 - **Import button:** paste a URL, or upload a PDF or a photo of a flyer.
 - **Gemini reads it** (URL context for links, multimodal input for files) and returns scholarship or opportunity records (§7.2), each with `evidence` quotes.
@@ -135,12 +135,12 @@ Unknown = `null` or `[]`. **Unknown never disqualifies** a student. Every listin
 
 **Opportunity-only:** `type` (`hackathon`, `campus_visit`, `program`, `workshop`, `info_session`, `company_event`, `competition`), `start_date`, `end_date`, `application_deadline`, `location` (venue, borough, address) or `is_online`, `cost` (0 = free), `covers` (`travel`, `food`, `lodging`, `stipend`), `apply_effort` (`short_form`, `essay`, `rec`, `first_come`, `interview`), `capacity`.
 
-### 7.3 Data pipeline: the MyOpps importer
+### 7.3 Data pipeline: the myops importer
 
-The dataset is built **inside the AI Studio app** with the MyOpps importer (§5.4), so all data work uses Gemini in AI Studio. Nothing scrapes in the student view.
+The dataset is built **inside the AI Studio app** with the myops importer (§5.4), so all data work uses Gemini in AI Studio. Nothing scrapes in the student view.
 
 1. **Pick sources by hand** following the sourcing rules (§7.4). Track them in a shared list (Google Sheet): URL, kind, institution, teammate, date added. Target ~25 sources.
-2. **Import each source** in the MyOpps import view: a URL, or for pages that load content with JavaScript (many event calendars), a PDF or screenshot of the page, or the calendar's iCal/RSS export.
+2. **Import each source** in the myops import view: a URL, or for pages that load content with JavaScript (many event calendars), a PDF or screenshot of the page, or the calendar's iCal/RSS export.
 3. **Gemini extracts** with structured output (the §7.2 schema, temperature 0) and these rules: use only what is on the page, no outside knowledge; unknown = empty; exact dates only (never guess the year); one listing per scholarship or event; `evidence` quotes required for deadline, amount, and eligibility, or the field stays empty.
 4. **Automatic checks** before review: required fields present, dates after today, end ≥ start, NYC or online, link works, no duplicates (URL + title). Failures are shown with the reason, not silently dropped.
 5. **Reviewer approves** each listing against its quotes and the source page.
@@ -148,7 +148,7 @@ The dataset is built **inside the AI Studio app** with the MyOpps importer (§5.
 7. **Spot-check:** a second teammate re-checks ~15 random listings plus every demo listing. Report the result in the pitch ("a person checked 15 of 15 listings, X errors"). Fix wrong results by changing a rule or the prompt and re-importing, not by hand-editing.
 8. **Re-import right before the demo** so deadlines are current.
 
-**Optional bulk path (outside code is allowed by the hackathon rules):** a Python script (`httpx` + `BeautifulSoup`, `Playwright` for JavaScript pages, the `google-genai` SDK) can run the same extraction in bulk, save a copy of every page, and check that each quote appears in it. Use it if importing one source at a time is too slow; the MyOpps importer stays the main path and the demo feature.
+**Optional bulk path (outside code is allowed by the hackathon rules):** a Python script (`httpx` + `BeautifulSoup`, `Playwright` for JavaScript pages, the `google-genai` SDK) can run the same extraction in bulk, save a copy of every page, and check that each quote appears in it. Use it if importing one source at a time is too slow; the myops importer stays the main path and the demo feature.
 
 ### 7.4 Sourcing rules
 
@@ -187,7 +187,7 @@ We have no counselor partner, so the team assembles the data from the sources ab
 - Set `is_sample: true` and show a **"Sample listing"** tag.
 - Realistic details: local amounts $500–$2,500, real-looking eligibility, upcoming deadlines.
 - **No dead links:** sample listings point to a placeholder page.
-- The **demo flyer** for the MyOpps import demo is made by us in Google Docs or Canva with an obviously fictional sponsor. Gemini's extraction of it is still real.
+- The **demo flyer** for the myops import demo is made by us in Google Docs or Canva with an obviously fictional sponsor. Gemini's extraction of it is still real.
 
 **Target:** ~40 scholarships + ~25 opportunities, with 3–4 "almost eligible" links. **Only synthesize** the persona and pool estimates (say they're estimated).
 
@@ -228,7 +228,7 @@ For offline-only listings, trust comes from the source: counselor upload date, p
 - **Three Gemini calls**, each with a JSON schema (structured output):
   1. Pasted story → profile JSON
   2. Filtered listings + profile → relevance + "why" per listing
-  3. MyOpps import: URL (URL context) or PDF / image → scholarship or opportunity JSON with evidence quotes
+  3. myops import: URL (URL context) or PDF / image → scholarship or opportunity JSON with evidence quotes
 - **Data:** approved listings stored in the app; exported to `data/*.json` in this repo as the backup and source of truth for the demo.
 
 **Build mode tips**
@@ -249,11 +249,11 @@ For offline-only listings, trust comes from the source: counselor upload date, p
 
 | Who | Owns |
 |---|---|
-| **Bianca:** design | Sketches of the 4 screens (intake, results with two tabs, MyOpps import, MyOpps review); UI prompts for the driver; card design incl. odds band, trust badge, "almost eligible" card |
-| **Rachel:** data | The NYC source list following the sourcing rules (§7.4), importing and approving listings in the MyOpps import view, exporting the two JSON files, organizing the spot-check; the demo flyer; "almost eligible" links; pool estimates; trust badges |
+| **Bianca:** design | Sketches of the 4 screens (intake, results with two tabs, myops import, myops review); UI prompts for the driver; card design incl. odds band, trust badge, "almost eligible" card |
+| **Rachel:** data | The NYC source list following the sourcing rules (§7.4), importing and approving listings in the myops import view, exporting the two JSON files, organizing the spot-check; the demo flyer; "almost eligible" links; pool estimates; trust badges |
 | **Person 3:** matching | Eligibility filter, ranking prompt + JSON schema, odds formula, expected-value sort, "almost eligible" logic. Tests prompts in AI Studio's prompt playground first |
 | **Person 4:** AI Studio driver | Owns the Build mode app; applies prompts, data and designs; Cloud Run publish; GitHub export; cached fallback |
-| **Person 5:** AI intake | Profile extraction prompt + schema, gap-question logic, MyOpps import extraction prompt, the demo persona (realistic first-gen student paragraph) |
+| **Person 5:** AI intake | Profile extraction prompt + schema, gap-question logic, myops import extraction prompt, the demo persona (realistic first-gen student paragraph) |
 
 **Presentation is shared.** Each person makes the slide(s) and demo segment for their part; the team assembles and rehearses together.
 
@@ -262,7 +262,7 @@ For offline-only listings, trust comes from the source: counselor upload date, p
 ### Timeline (5 hours)
 - **0:00–0:30, all together:** confirm schemas, write the persona. Driver gives Build mode the skeleton prompt: *"Scholarship matcher: paste-your-story intake → editable profile chips → ranked results with Scholarships and Opportunities tabs, using local JSON data."*
 - **0:30–2:30:** driver builds screens; Rachel curates data; Persons 3 and 5 refine prompts in the playground.
-- **2:30–3:30:** load real data and prompts; add "almost eligible" and the MyOpps importer.
+- **2:30–3:30:** load real data and prompts; add "almost eligible" and the myops importer.
 - **3:30:** publish to Cloud Run, export to GitHub.
 - **4:00: FEATURE FREEZE.** Anything not working by 3:30 gets hardcoded.
 - **4:00–5:00:** polish copy, record backup video, rehearse 3+ times.
@@ -273,12 +273,12 @@ For offline-only listings, trust comes from the source: counselor upload date, p
 2. **Intake (30s):** paste the persona → chips appear (robotics, food bank, first-gen, parent works at a credit union) → ZIP + grade.
 3. **Results (45s):** local awards on top: *"High odds (~1 in 10), county-only, matches robotics."* Contrast with Common App's "8 notifications."
 4. **Big moment (45s):** "almost eligible": free engineering day → 3 more scholarships worth $4,500.
-5. **MyOpps import (20s):** import a counselor flyer → listings with quotes appear → approve → they show up for students. *"We built our whole NYC dataset with this same tool. It's how we get the data nobody else has."*
+5. **myops import (20s):** import a counselor flyer → listings with quotes appear → approve → they show up for students. *"We built our whole NYC dataset with this same tool. It's how we get the data nobody else has."*
 6. **Close (10s):** the one-liner from §1. *"Built on Google AI Studio and Gemini."*
 
 ### Judge Q&A
 - **"How is this different from Common App?"** The one-liner + we cover 9th grade onward, opportunities, and the steps after a match.
-- **"Where does the data come from at scale?"** Counselors and providers import it in the MyOpps import view, as shown; every listing comes from an official page with quotes a person reviewed; Gemini grounding keeps it current.
+- **"Where does the data come from at scale?"** Counselors and providers import it in the myops import view, as shown; every listing comes from an official page with quotes a person reviewed; Gemini grounding keeps it current.
 - **"Is this data real?"** *"The opportunities and most scholarships are real, current listings. A few local ones are illustrative so the demo shows the full flow, and they're labeled. The extraction you saw is live."*
 - **"Are the odds real?"** *"A transparent estimate from eligible pool size; we never show a fake precise %. Real odds come from providers reporting winners, which is on the roadmap."*
 - **"How do you know listings are current?"** Trust badges, providers reconfirming each cycle, student flags.

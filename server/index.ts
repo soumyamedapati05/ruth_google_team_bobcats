@@ -27,5 +27,5 @@ if (db.listings.length === 0 && process.env.NO_AUTOSEED !== "1") {
 }
 const port = Number(process.env.PORT ?? 3030);
 app.listen(port, () => {
-  console.log(`myopps api on :${port}  listings=${db.listings.length}  data=${DATA_PATH}  llm=${MOCK ? "MOCK (set GEMINI_API_KEY to use Gemini)" : "gemini"}`);
+  console.log(`myops api on :${port}  listings=${db.listings.length}  data=${DATA_PATH}  llm=${MOCK ? "MOCK (set GEMINI_API_KEY to use Gemini)" : "gemini"}`);
 });

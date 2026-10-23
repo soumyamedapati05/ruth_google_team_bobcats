@@ -15,14 +15,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
   useEffect(() => {
     const h = () => setMe(null);
-    window.addEventListener("myopps:signout", h);
-    return () => window.removeEventListener("myopps:signout", h);
+    window.addEventListener("myops:signout", h);
+    return () => window.removeEventListener("myops:signout", h);
   }, []);
 
   const signOut = async () => {
     try { await api.logout(); } catch { /* ignore */ }
     setToken(null); setMe(null);
-    try { localStorage.removeItem("myopps.results"); } catch { /* ignore */ }
+    try { localStorage.removeItem("myops.results"); } catch { /* ignore */ }
   };
   return <Ctx.Provider value={{ me, loading, setMe, signOut }}>{children}</Ctx.Provider>;
 }

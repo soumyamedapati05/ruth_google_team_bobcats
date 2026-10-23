@@ -60,7 +60,7 @@ function SiteHeader() {
     <header className="site-head">
       <div className="wrap">
         <div className="head-top">
-          <Link to={me ? landingFor(me) : "/"} className="brand">MyOpps</Link>
+          <Link to={me ? landingFor(me) : "/"} className="brand">myops</Link>
           <div className="head-links">
             <MockBadge />
             {isPartner && <span>{me.org?.orgName}</span>}
@@ -102,7 +102,7 @@ export function RoomLayout() {
     <StatusCtx.Provider value={setStatus}>
       <div className="room">
         <header className="room-top">
-          <Link to={onboarded ? "/matches" : "/onboarding"} className="room-brand">MyOpps</Link>
+          <Link to={onboarded ? "/matches" : "/onboarding"} className="room-brand">myops</Link>
           <nav className="room-links" aria-label="Your account">
             <MockBadge />
             {status && <span className="room-status">{status}</span>}
