@@ -2,7 +2,7 @@
 
 > Working name: **TBD** (placeholder: "Scout"). Status: **draft v0.5, 2026-10-23.**
 > v0.5 descopes the project to a **5-hour prototype built in Google AI Studio with Gemini**, adds Common App as the main competitor, and moves the trained odds model, goals/tracker, and database to the roadmap.
-> Scrapers, data and the v0.4 full design live in [rachelchen24/ruth-google-team-10](https://github.com/rachelchen24/ruth-google-team-10) (`scrapers/`, `data/`, `rachel-progress.md`; v0.4 is `git show fa67d7b:spec.md` there).
+> Prototype scope: **New York City only.** This repo is a fresh start; no code or data carries over from earlier repos.
 
 ## 1. The idea in one line
 
@@ -54,6 +54,8 @@ Profiles on most sites are also shallow (GPA, state, major), so a fencer who vol
 
 ## 4. Users
 
+- **Prototype geography:** New York City (plus online opportunities).
+
 - **Primary:** high school students and undergrads (~14–22), especially first-generation and low-income students without a counselor doing this for them.
 - **Secondary (supply side):** school counselors and local providers who want their scholarships to reach eligible students.
 
@@ -63,7 +65,7 @@ Profiles on most sites are also shallow (GPA, state, major), so a fencer who vol
 
 | Keep (real, working) | Fake (hardcoded but believable) | Cut (roadmap, §12) |
 |---|---|---|
-| Paste → Gemini extracts profile chips (structured JSON output) | Applicant pool sizes (estimated by hand when not published) | Live scraping inside the app (Rachel's scrapers run offline, §7) |
+| Paste → Gemini extracts profile chips (structured JSON output) | Applicant pool sizes (estimated by hand when not published) | Live scraping inside the app (the data pipeline runs offline, §7.3) |
 | Confirm chips + 2–3 gap questions (ZIP, grade, optional GPA) | Trust badges (set by hand) | Embeddings, pgvector, database |
 | Hard eligibility filter | Demo persona | Synthetic students + trained odds model |
 | Gemini ranking + "why you matched" | | Goals, progress bars, tracker, reminders |
@@ -81,7 +83,7 @@ Profiles on most sites are also shallow (GPA, state, major), so a fencer who vol
 
 ### 5.2 Results
 - **Two tabs:** Scholarships and Opportunities (equal weight; opportunities are a key differentiator).
-- **Each card:** title, provider, amount (or cost and what's covered), deadline, effort (essay / recs / short form), **odds band**, **"why you matched"** line, **trust badge** (§7.4), source credit, apply link.
+- **Each card:** title, provider, amount (or cost and what's covered), deadline, effort (essay / recs / short form), **odds band**, **"why you matched"** line, **trust badge** (§7.6), source credit, apply link.
 - **Default sort by expected value:** amount × odds ÷ effort. This pushes a $500 county award with 15 applicants above a $10K national lottery.
 - **Sweepstakes / lead-gen awards hidden by default** (`is_sweepstakes`).
 
@@ -89,7 +91,7 @@ Profiles on most sites are also shallow (GPA, state, major), so a fencer who vol
 An opportunity card that links to scholarships it unlocks: *"Attend this free engineering day Nov 15 → qualifies you for 3 more scholarships worth $4,500."* For the prototype, these links are hand-authored in the data (3–4 of them). This joins the two tabs into one idea: the app doesn't just find money, it helps build the record that wins it.
 
 ### 5.4 Counselor upload (supply side)
-A counselor uploads a scholarship PDF or a photo of a flyer. Gemini reads it (multimodal input + structured output) and returns `Listing` records (§7.2) that appear as cards immediately. This is how the product gets the local data nobody else has. In the demo, **we play the counselor**.
+A counselor uploads a scholarship PDF or a photo of a flyer. Gemini reads it (multimodal input + structured output) and returns scholarship or opportunity records (§7.2) that appear as cards immediately. This is how the product gets the local data nobody else has. In the demo, **we play the counselor**.
 
 ## 6. Matching
 
@@ -99,47 +101,71 @@ A counselor uploads a scholarship PDF or a photo of a flyer. Gemini reads it (mu
 3. **Odds + expected value (code):** §6.2, then sort.
 
 ### 6.2 Odds (formula, no training)
-- **Estimated pool:** use `published_applicants` when present (Devpost registrations, provider-published counts). Otherwise start by scope (county ~40, state ~800, national ~5,000) and shrink for each extra restriction (specific activity, major, identity group, GPA floor).
+- **Estimated pool:** use `published_applicants` when present (provider-published applicant or registration counts). Otherwise start by scope (county ~40, state ~800, national ~5,000) and shrink for each extra restriction (specific activity, major, identity group, GPA floor).
 - `p ≈ num_awards / est_pool × fit adjustment` (default `num_awards = 1`).
 - **Show labels only:** Long shot / Fair / Good / High, e.g. *"High (~1 in 10)"*. Never a precise-looking %. Tooltip: *"Rough estimate from pool size and fit. Not a guarantee."*
 - First-come or no-selection opportunities show "Open: apply early" instead of odds.
 
-The v0.4 plan (synthetic applicants + trained, calibrated model) moves to the roadmap. A model trained on simulated data only learns the simulator's assumptions, which invites "so the odds are made up?" from judges. The formula shows the same idea transparently.
+An earlier plan (synthetic applicants + trained, calibrated model) moves to the roadmap. A model trained on simulated data only learns the simulator's assumptions, which invites "so the odds are made up?" from judges. The formula shows the same idea transparently.
 
 ## 7. Data
 
-### 7.1 What exists already (Rachel; see `rachel-progress.md`)
-- **Schema:** `scrapers/schema.py` → `Listing`. Scholarships and opportunities share one model, told apart by `kind`. Null / `[]` = unknown.
-- **Real data:** `data/listings.json`, 233 hackathons (70 MLH + 163 Devpost).
-- **Mock data:** `data/sample_listings.json`, 20 listings (12 fake, labeled "(FAKE)", plus 8 real hackathons).
-- **In progress:** Pathways to Science (105 pages scraped, waiting on LLM key), CareerOneStop (adapter written, needs token), hand-picked local pages (waiting on demo city).
-- **LLM provider decision:** **Gemini.** The extractor is OpenAI-compatible, so set `LLM_BASE_URL` to Gemini's OpenAI-compatible endpoint and `LLM_API_KEY` to an AI Studio key.
+### 7.1 Scope and the two lists
 
-The scrapers stay an **offline pipeline**: they produce JSON, and the AI Studio app loads that JSON. Nothing scrapes at runtime.
+- **Fresh start.** This repo starts from zero; no code or data carries over from earlier repos.
+- **Geography: New York City only** for the prototype (plus online opportunities open to NYC students).
+- **Two separate lists**, each its own file and schema:
+  - `data/scholarships.json`
+  - `data/opportunities.json`: hackathons, campus visits and open houses, free pre-college / STEM programs, workshops, info sessions, company student events, competitions
+- **Trusted sources only:** every listing comes from a page a teammate picked by hand from an official source: a university (.edu), government (.gov), or the program or sponsor's own site. Starting institutions: Columbia, NYU, Fordham, The New School / Parsons, CUNY, Cooper Union, plus NY State and NYC programs.
+- **Out of reach:** on-campus recruiting on Handshake needs a student login and is only for enrolled students, so we don't scrape it. Use companies' public "students / events" career pages instead.
 
-### 7.2 Prototype dataset
+### 7.2 Schemas
 
-We have no counselor partner, so the team assembles the data. **Use real listings wherever possible:**
-- **Opportunities (all real):** MLH + Devpost (done), Pathways to Science, outreach/event pages at 2–3 universities near the demo city. Filter to free and to HS-eligible where possible.
-- **Scholarships (~70% real):** search Google for public school lists (`"[county] high school" local scholarships pdf 2026`, `"scholarship bulletin" counseling [city]`), run them through Gemini extraction, plus national awards.
-- Keep only **upcoming deadlines (Nov 2026 to spring 2027)**. Skip CareerOneStop if the token hasn't arrived.
+Unknown = `null` or `[]`. **Unknown never disqualifies** a student. Every listing records where it came from.
+
+**Shared fields (both lists):** `id`, `title`, `provider`, `url` (the listing's own page), `source_url` (the page we extracted it from), `summary` (1–2 sentences), `school_levels` (`HS` / `college`), `eligibility` (`class_years`, `min_gpa`, `citizenship`, `majors`, `identity_groups`, `need_based`, `nyc_only`), `focus_tags`, `evidence` (short quotes from the page supporting the deadline and eligibility), `trust` (badge, §7.6), `is_sample` (true for made-up listings), `extracted_at`.
+
+**Scholarship-only:** `amount_min`, `amount_max`, `num_awards`, `deadline`, `requirements` (`essay`, `recommendations`, `transcript`, `interview`, `application_fee`), `is_sweepstakes`, `published_applicants`.
+
+**Opportunity-only:** `type` (`hackathon`, `campus_visit`, `program`, `workshop`, `info_session`, `company_event`, `competition`), `start_date`, `end_date`, `application_deadline`, `location` (venue, borough, address) or `is_online`, `cost` (0 = free), `covers` (`travel`, `food`, `lodging`, `stipend`), `apply_effort` (`short_form`, `essay`, `rec`, `first_come`, `interview`), `capacity`.
+
+### 7.3 Data pipeline (offline)
+
+The pipeline produces the two JSON files; the AI Studio app only loads them. Nothing scrapes at runtime.
+
+1. **Pick sources by hand** → `data/sources.json`: `{"url", "kind": "scholarship" | "opportunity", "institution", "note"}`. Target ~25 pages. Check each loads without a login.
+2. **Prefer feeds over scraping.** Many university event calendars have a Subscribe / iCal / RSS button; feeds give exact dates with no AI guessing.
+3. **Fetch** each page, save a cached copy, strip menus and scripts.
+4. **Extract with Gemini** (structured output with the §7.2 schema, temperature 0). Rules in the prompt: only use what is on the page; leave unknowns empty; one page can produce many listings; include `evidence` quotes for deadline and eligibility.
+5. **Validate in code:** working link, deadline after today, numeric amounts, NYC or online, dedupe by URL + title.
+6. **Spot-check by hand:** a teammate compares ~15 random listings with their source pages. Report the result in the pitch ("a person checked 15 of 15 listings, X errors").
+
+**No-code fallback:** AI Studio's URL context tool can read up to ~20 URLs in one prompt and return the same JSON. Fine for a first pass; weaker on calendars that load content dynamically or span several pages.
+
+### 7.4 Prototype dataset
+
+We have no counselor partner, so the team assembles the data from the sources above. **Use real listings wherever possible:**
+- **Opportunities (all real):** NYC hackathons, campus visit / open house pages, free pre-college and STEM programs, public university event calendars, company student-event pages. Filter to free or low-cost and open to outside students.
+- **Scholarships (~70% real):** NY State and NYC programs, CUNY, universities' "outside scholarships" pages, NYC community foundations, public NYC high school scholarship lists.
+- Keep only **upcoming deadlines (Nov 2026 to spring 2027)**.
 
 **Made-up listings, done honestly** (only to fill the demo story, e.g. the "almost eligible" chain):
 - **Made-up provider names** ("Riverside Community Foundation"). Never attach fake awards to real organizations.
-- Labeled **"Sample listing"** (keep Rachel's `(FAKE)` / `source: "sample"` convention).
+- Set `is_sample: true` and show a **"Sample listing"** tag.
 - Realistic details: local amounts $500–$2,500, real-looking eligibility, upcoming deadlines.
 - **No dead links:** sample listings point to a placeholder page.
 - The **demo flyer** for the counselor upload is made by us in Google Docs or Canva with an obviously fictional sponsor. Gemini's extraction of it is still real.
 
-**Target:** ~40 scholarships + ~20 local/online opportunities curated for the demo (plus the hackathon set), with 3–4 "almost eligible" links. **Only synthesize** the persona and pool estimates (say they're estimated).
+**Target:** ~40 scholarships + ~25 opportunities, with 3–4 "almost eligible" links. **Only synthesize** the persona and pool estimates (say they're estimated).
 
-### 7.3 Pipeline steps (one pipeline, not alternatives)
+### 7.5 How listings get in and stay current (one pipeline, not alternatives)
 
 ```
 STEP 1: Starting data        STEP 2: Adding listings       STEP 3: Keeping them current
 (team, before launch)        (counselors, ongoing)         (automatic)
 
-Scrapers + Google Sheet ──►  PDF / photo upload     ──►    URL context / grounding
+Pipeline + Google Sheet ──►  PDF / photo upload     ──►    URL context / grounding
 team curates listings        Gemini turns a flyer          Gemini checks provider pages
                              into cards                    for this year's deadline
                                      │
@@ -147,10 +173,10 @@ team curates listings        Gemini turns a flyer          Gemini checks provide
                    ONE LIST OF LISTINGS → students paste their story → matches
 ```
 
-- **Google Sheet:** a shared place for the team to hand-curate local listings (`data/manual_listings.json` after export). Not a user feature.
+- **Google Sheet:** a shared place for the team to hand-curate local listings (exported into the two JSON files). Not a user feature.
 - **Grounding** checks whether a listing is **current and complete** (this year's deadline, full eligibility, application link). It does **not** check whether a listing is publicly posted. Never drop a listing for having no web presence. If grounding conflicts with a counselor's upload, flag it; don't overwrite.
 
-### 7.4 Trust badges
+### 7.6 Trust badges
 
 | Badge | Meaning |
 |---|---|
@@ -168,7 +194,7 @@ For offline-only listings, trust comes from the source: counselor upload date, p
 - **Three Gemini calls**, each with a JSON schema (structured output):
   1. Pasted story → profile JSON
   2. Filtered listings + profile → relevance + "why" per listing
-  3. Counselor PDF / flyer image → `Listing` JSON
+  3. Counselor PDF / flyer image → scholarship or opportunity JSON
 - **Data:** listings JSON bundled into the app.
 
 **Build mode tips**
@@ -190,17 +216,17 @@ For offline-only listings, trust comes from the source: counselor upload date, p
 | Who | Owns |
 |---|---|
 | **Bianca:** design | Sketches of the 3 screens (intake, results with two tabs, counselor upload); UI prompts for the driver; card design incl. odds band, trust badge, "almost eligible" card |
-| **Rachel:** data | Running the scrapers with a Gemini key; demo-city curation (Sheet → `manual_listings.json`); a real local PDF; the demo flyer; "almost eligible" links; pool estimates; trust badges |
+| **Rachel:** data | The NYC source list (`data/sources.json`), the fetch → Gemini extraction → validation pipeline (§7.3), the two JSON files, the hand spot-check; the demo flyer; "almost eligible" links; pool estimates; trust badges |
 | **Person 3:** matching | Eligibility filter, ranking prompt + JSON schema, odds formula, expected-value sort, "almost eligible" logic. Tests prompts in AI Studio's prompt playground first |
 | **Person 4:** AI Studio driver | Owns the Build mode app; applies prompts, data and designs; Cloud Run publish; GitHub export; cached fallback |
 | **Person 5:** AI intake | Profile extraction prompt + schema, gap-question logic, counselor-upload extraction prompt, the demo persona (realistic first-gen student paragraph) |
 
 **Presentation is shared.** Each person makes the slide(s) and demo segment for their part; the team assembles and rehearses together.
 
-**Contracts (first 30 minutes):** listing schema = `scrapers/schema.py` (done). Person 5 commits the profile schema + 2 sample profiles. Person 3 and Person 5 hand finished prompts to Person 4 as text.
+**Contracts (first 30 minutes):** Rachel commits both listing schemas (§7.2) + 5 sample listings of each kind. Person 5 commits the profile schema + 2 sample profiles. Person 3 and Person 5 hand finished prompts to Person 4 as text.
 
 ### Timeline (5 hours)
-- **0:00–0:30, all together:** pick the demo city, confirm schemas, write the persona. Driver gives Build mode the skeleton prompt: *"Scholarship matcher: paste-your-story intake → editable profile chips → ranked results with Scholarships and Opportunities tabs, using local JSON data."*
+- **0:00–0:30, all together:** confirm schemas, write the persona. Driver gives Build mode the skeleton prompt: *"Scholarship matcher: paste-your-story intake → editable profile chips → ranked results with Scholarships and Opportunities tabs, using local JSON data."*
 - **0:30–2:30:** driver builds screens; Rachel curates data; Persons 3 and 5 refine prompts in the playground.
 - **2:30–3:30:** load real data and prompts; add "almost eligible" and counselor upload.
 - **3:30:** publish to Cloud Run, export to GitHub.
@@ -218,7 +244,7 @@ For offline-only listings, trust comes from the source: counselor upload date, p
 
 ### Judge Q&A
 - **"How is this different from Common App?"** The one-liner + we cover 9th grade onward, opportunities, and the steps after a match.
-- **"Where does the data come from at scale?"** Counselors and providers upload it (as shown), our scrapers cover public sources, and Gemini grounding keeps it current.
+- **"Where does the data come from at scale?"** Counselors and providers upload it (as shown), our pipeline extracts from official university and government pages, and Gemini grounding keeps it current.
 - **"Is this data real?"** *"The opportunities and most scholarships are real, current listings. A few local ones are illustrative so the demo shows the full flow, and they're labeled. The extraction you saw is live."*
 - **"Are the odds real?"** *"A transparent estimate from eligible pool size; we never show a fake precise %. Real odds come from providers reporting winners, which is on the roadmap."*
 - **"How do you know listings are current?"** Trust badges, providers reconfirming each cycle, student flags.
@@ -230,7 +256,7 @@ For offline-only listings, trust comes from the source: counselor upload date, p
 ## 12. Roadmap (pitch only, don't build)
 
 - **Two-sided local scholarship network:** counselors and providers post for free → students matched → **providers report winners** → real odds data.
-- **Trained odds model:** v0.4 §7.2 plan (synthetic pretraining, then real outcomes, calibrated), once outcome data exists.
+- **Trained odds model:** pretrain on simulated application rounds, then retrain and calibrate on real reported outcomes, once outcome data exists.
 - Goals, progress bars, pace check, applied/won tracker, deadline reminders.
 - Scheduled scraping, CareerOneStop national data, database + embeddings for scale.
 - Essay-prompt clustering ("one essay covers these 5 awards"), voice intake, resume upload.
@@ -240,7 +266,6 @@ For offline-only listings, trust comes from the source: counselor upload date, p
 ## 13. Open questions
 
 - Names for Persons 3–5.
-- Demo city (blocks Rachel's local curation).
-- Whose AI Studio account drives the app; Gemini key for the scrapers.
+- Whose AI Studio account drives the app; Gemini API key for the data pipeline.
 - Does AI Studio Build mode support shared editing?
 - Name and branding.
