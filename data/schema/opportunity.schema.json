@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "opportunity.schema.json",
+  "title": "Opportunity listing",
+  "description": "One free opportunity in data/opportunities.json (spec §7.2): hackathons, campus visits, free programs, workshops, info sessions, company events, competitions. Shared fields and $defs come from scholarship.schema.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "title", "provider", "url", "source_url", "summary", "school_levels", "eligibility",
+    "focus_tags", "evidence", "trust", "is_sample", "extracted_at",
+    "type", "start_date", "end_date", "application_deadline", "location", "is_online",
+    "cost", "covers", "apply_effort", "capacity", "unlocks"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^(opp|smp-opp)-[a-z0-9-]+$" },
+    "title": { "type": "string" },
+    "provider": { "type": "string" },
+    "url": { "type": "string" },
+    "source_url": { "type": ["string", "null"] },
+    "summary": { "type": "string", "maxLength": 400 },
+    "school_levels": { "$ref": "scholarship.schema.json#/$defs/school_levels" },
+    "eligibility": { "$ref": "scholarship.schema.json#/$defs/eligibility" },
+    "focus_tags": { "type": "array", "items": { "type": "string" } },
+    "evidence": { "$ref": "scholarship.schema.json#/$defs/evidence" },
+    "trust": { "$ref": "scholarship.schema.json#/$defs/trust" },
+    "is_sample": { "type": "boolean" },
+    "extracted_at": { "type": "string", "format": "date" },
+
+    "type": { "enum": ["hackathon", "campus_visit", "program", "workshop", "info_session", "company_event", "competition"] },
+    "start_date": { "type": ["string", "null"], "description": "YYYY-MM-DD. For a recurring visit window, the first day of the window." },
+    "end_date": { "type": ["string", "null"], "description": "YYYY-MM-DD, ≥ start_date." },
+    "application_deadline": { "type": ["string", "null"], "description": "YYYY-MM-DD, \"rolling\", or null when you just show up / register any time." },
+    "location": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["venue", "borough", "address"],
+      "properties": {
+        "venue": { "type": ["string", "null"] },
+        "borough": { "enum": ["Bronx", "Brooklyn", "Manhattan", "Queens", "Staten Island", null] },
+        "address": { "type": ["string", "null"] }
+      }
+    },
+    "is_online": { "type": "boolean" },
+    "cost": { "type": ["number", "null"], "description": "0 = free. Paid listings are excluded (§7.4), so every published listing has cost 0." },
+    "covers": { "type": "array", "items": { "enum": ["travel", "food", "lodging", "stipend"] } },
+    "stipend_amount": { "type": ["number", "null"], "description": "Dollars, when covers includes stipend." },
+    "apply_effort": { "type": "array", "items": { "enum": ["short_form", "essay", "rec", "first_come", "interview", "transcript", "project"] } },
+    "capacity": { "type": ["integer", "null"] },
+    "unlocks": {
+      "type": "array",
+      "description": "'Almost eligible' links (§5.3), hand-authored. Each points at a scholarship whose eligibility.prerequisites this opportunity satisfies.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["scholarship_id", "reason"],
+        "properties": {
+          "scholarship_id": { "type": "string" },
+          "reason": { "type": "string", "description": "One line shown on the card, e.g. 'Counts as the hands-on engineering event this award requires.'" }
+        }
+      }
+    }
+  }
+}
