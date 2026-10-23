@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>[Site name]</title>
+<title>myops</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 <style>
@@ -17,11 +17,38 @@ html{scroll-behavior:smooth}
 .bloom{animation:bloom 9s ease-in-out infinite}
 .bar{transition:box-shadow .4s ease,transform .4s ease}
 .bar:hover,.bar:focus-visible{transform:translate(-50%,-2px);box-shadow:0 18px 50px rgba(224,98,42,.22),0 2px 6px rgba(0,0,0,.08)}
-@media (prefers-reduced-motion: reduce){.drift,.bloom{animation:none!important}}
+@keyframes ganz{0%,100%{background-color:#3B2470}17%{background-color:#2A47A8}34%{background-color:#1F7E9C}51%{background-color:#E39A4C}68%{background-color:#D0567C}85%{background-color:#6A2C8C}}
+@keyframes ringhue{from{filter:hue-rotate(0deg)}to{filter:hue-rotate(360deg)}}
+@keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.035)}}
+.ganz{animation:ganz 60s ease-in-out infinite}
+.ringhue{animation:ringhue 60s linear infinite}
+.breathe{animation:breathe 10s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.drift,.bloom,.ganz,.ringhue,.breathe{animation:none!important}}
+@keyframes dome{0%,100%{background-color:#2E1B33}20.8%{background-color:#3E2440}27%{background-color:#E3A07E}37.5%{background-color:#EED2AC}52%{background-color:#F2DFC0}67%{background-color:#EDBE86}77%{background-color:#DE7A38}81%{background-color:#A9506A}87.5%{background-color:#4C2648}}
+@keyframes dusk{0%,100%{opacity:.55}20.8%{opacity:.5}27%{opacity:.14}37.5%{opacity:.04}52%{opacity:0}67%{opacity:.05}77%{opacity:.12}81%{opacity:.3}87.5%{opacity:.48}}
+@keyframes sky{0%,100%{background-color:#0B1236}20.8%{background-color:#1E2B62}27%{background-color:#9AB2DC}37.5%{background-color:#7AB6EE}52%{background-color:#6DAEF2}67%{background-color:#74A9E4}77%{background-color:#5579CF}81%{background-color:#2E3F9E}87.5%{background-color:#121A55}}
+@keyframes glow{0%,100%{opacity:.25}27%{opacity:.6}52%{opacity:.9}77%{opacity:.7}87.5%{opacity:.3}}
+@keyframes cove{0%,100%{opacity:.75}27%{opacity:.4}52%{opacity:.18}77%{opacity:.65}87.5%{opacity:.85}}
+@keyframes ink{0%,25%,75%,100%{color:#FBF1DE}31%,69%{color:#3A2416}}
+.cycle{animation-duration:var(--day,96s);animation-timing-function:linear;animation-iteration-count:infinite;animation-delay:var(--offset,0s)}
+.c-dome{animation-name:dome}.c-dusk{animation-name:dusk}.c-sky{animation-name:sky}.c-glow{animation-name:glow}.c-cove{animation-name:cove}.c-ink{animation-name:ink}
+@media (prefers-reduced-motion: reduce){.cycle{animation-play-state:paused}}
+@keyframes slideL{from{opacity:0;transform:translateX(-90px)}to{opacity:1;transform:none}}
+@keyframes slideR{from{opacity:0;transform:translateX(140px)}to{opacity:1;transform:none}}
+@supports (animation-timeline: view()){
+.slide-l{animation:slideL linear both;animation-timeline:view();animation-range:entry 0% cover 30%}
+.slide-r{animation:slideR linear both;animation-timeline:view();animation-range:entry 5% cover 40%}
+}
+@media (prefers-reduced-motion: reduce){.slide-l,.slide-r{animation:none!important}}
+@keyframes speak{0%{transform:scale(1);opacity:.75}5%{transform:scale(1.2);opacity:1}9%{transform:scale(1.03);opacity:.82}14%{transform:scale(1.24);opacity:1}19%{transform:scale(1.06);opacity:.85}24%{transform:scale(1.16);opacity:.95}30%{transform:scale(1);opacity:.75}44%{transform:scale(.98);opacity:.7}49%{transform:scale(1.22);opacity:1}53%{transform:scale(1.05);opacity:.84}58%{transform:scale(1.28);opacity:1}63%{transform:scale(1.04);opacity:.82}68%{transform:scale(1.14);opacity:.92}74%{transform:scale(1.02);opacity:.78}79%{transform:scale(1.1);opacity:.88}86%{transform:scale(1);opacity:.74}100%{transform:scale(1);opacity:.75}}
+@keyframes wander{0%,100%{transform:translate(0,0)}25%{transform:translate(6%,-5%)}50%{transform:translate(-4%,4%)}75%{transform:translate(5%,6%)}}
+.speak{animation:speak 3.4s ease-in-out infinite}
+.wander{animation:wander 14s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.speak,.wander{animation:none!important}}
 </style>
 </head>
 <body data-space-to-talk>
-<div style="position: relative; font-family: 'DM Sans', Inter, system-ui, sans-serif; color: #111111; background: #ffffff; -webkit-font-smoothing: antialiased; width: 100%">
+<div style="position: relative; overflow-x: clip; font-family: 'DM Sans', Inter, system-ui, sans-serif; color: #111111; background: #ffffff; -webkit-font-smoothing: antialiased; width: 100%">
   <div id="cursor-light" aria-hidden="true" style="position: fixed; inset: 0; z-index: 40; pointer-events: none; opacity: 0; transition: opacity 0.6s ease; background: radial-gradient(420px circle at 50% 35%, rgba(255,190,120,0.18) 0%, rgba(255,190,120,0.06) 40%, rgba(255,190,120,0) 70%)"></div>
 
   <!-- NAV -->
@@ -30,7 +57,7 @@ html{scroll-behavior:smooth}
       <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 18px 0; border-bottom: 1px solid #E6E6E6">
         <a href="#top" style="display: inline-flex; align-items: center; gap: 8px; font-size: 22px; font-weight: 500; letter-spacing: -0.02em; min-height: 44px">
           <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3.5" fill="currentColor" stroke="none"></circle></svg>
-          [Site name]
+          myops
         </a>
         <div style="display: flex; gap: 22px; font-size: 17px; color: #4A4A4A">
           <a href="#privacy" style="color: #4A4A4A; padding: 10px 0">For schools</a>
@@ -46,12 +73,17 @@ html{scroll-behavior:smooth}
     </div>
   </header>
 
-  <!-- HERO: light field -->
-  <section id="top" aria-label="[Site name]" class="drift" style="position: relative; overflow: hidden; height: clamp(420px, 56vw, 760px); background-image: linear-gradient(90deg, #B7C8D2 0%, #E9CB8C 18%, #F4C26A 34%, #EFA458 56%, #E6743A 76%, #D9A48C 92%, #B7C8D2 100%); display: flex; align-items: center; justify-content: center">
-    <div aria-hidden="true" class="bloom" style="position: absolute; left: 50%; top: 50%; width: min(900px, 90vw); aspect-ratio: 1 / 1; border-radius: 50%; background: radial-gradient(circle, rgba(255,246,228,0.9) 0%, rgba(255,236,200,0.35) 35%, rgba(255,236,200,0) 65%)"></div>
-    <p style="position: relative; margin: 0; display: flex; align-items: center; gap: clamp(16px, 2.4vw, 36px); color: #ffffff; font-size: clamp(64px, 11vw, 176px); font-weight: 500; letter-spacing: -0.045em; line-height: 1">
+  <!-- HERO: skyspace whose light moves through a day on its own -->
+  <section id="top" aria-label="myops" class="cycle c-dome" style="--day: 40s; position: relative; overflow: hidden; height: clamp(520px, 62vw, 860px); background-color: #EED2AC">
+    <div aria-hidden="true" style="position: absolute; inset: 0; background: radial-gradient(ellipse 70% 60% at 50% 16%, rgba(255,250,240,0.32) 0%, rgba(255,250,240,0.08) 45%, rgba(255,250,240,0) 70%), linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 58%, rgba(30,12,4,0.22) 80%, rgba(20,8,2,0.5) 100%)"></div>
+    <div aria-hidden="true" class="cycle c-glow" style="--day: 40s; position: absolute; left: 50%; top: 22%; width: clamp(420px, 56vw, 820px); aspect-ratio: 1 / 1; transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(circle, rgba(255,248,232,0.55) 0%, rgba(255,244,224,0.18) 30%, rgba(255,240,220,0) 62%)"></div>
+    <div aria-hidden="true" id="aperture" class="cycle c-sky" style="--day: 40s; position: absolute; left: 50%; top: 22%; width: clamp(150px, 18vw, 260px); aspect-ratio: 1 / 1; border-radius: 50%; transform: translate(-50%, -50%); transition: transform 1.6s cubic-bezier(.2,.7,.2,1); background-color: #7AB6EE; background-image: radial-gradient(circle at 42% 38%, rgba(255,255,255,0.14) 0%, rgba(255,255,255,0) 55%); box-shadow: inset 0 0 26px rgba(10,20,60,0.18)"></div>
+    <div aria-hidden="true" class="cycle c-cove" style="--day: 40s; position: absolute; left: -10%; right: -10%; top: 79%; height: 40px; transform: translateY(-50%); background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(255,214,160,0.9) 0%, rgba(255,200,140,0.35) 40%, rgba(255,200,140,0) 75%); filter: blur(6px)"></div>
+    <div aria-hidden="true" class="cycle c-dusk" style="--day: 40s; position: absolute; inset: 0; background: #0C0710; pointer-events: none"></div>
+    <svg aria-hidden="true" width="100%" height="100%" style="position: absolute; inset: 0; opacity: 0.12; mix-blend-mode: overlay; pointer-events: none"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"></feTurbulence></filter><rect width="100%" height="100%" filter="url(#grain)"></rect></svg>
+    <p class="cycle c-ink" style="--day: 40s; position: absolute; left: 0; right: 0; top: 52%; transform: translateY(-50%); margin: 0; display: flex; justify-content: center; align-items: center; gap: clamp(14px, 2vw, 30px); color: #3A2416; font-size: clamp(56px, 9vw, 144px); font-weight: 500; letter-spacing: -0.045em; line-height: 1">
       <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" style="width: 0.78em; height: 0.78em"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3.5" fill="currentColor" stroke="none"></circle></svg>
-      [Name]
+      myops
     </p>
   </section>
 
@@ -69,10 +101,10 @@ html{scroll-behavior:smooth}
     <div style="max-width: 1600px; margin: 0 auto; padding: 56px 40px 72px; display: flex; flex-wrap: wrap; gap: 32px 64px">
       <h2 style="flex: 1 1 420px; margin: 0; font-size: clamp(32px, 3vw, 48px); font-weight: 500; letter-spacing: -0.02em">How it works</h2>
       <ol style="flex: 1 1 520px; list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: clamp(32px, 3.2vw, 52px); font-weight: 500; letter-spacing: -0.025em; line-height: 1.2">
-        <li><a href="#talk"><span style="color: #8A8A8A">01</span> Talk</a></li>
-        <li><a href="#listen"><span style="color: #8A8A8A">02</span> We listen</a></li>
-        <li><a href="#match"><span style="color: #8A8A8A">03</span> Your matches</a></li>
-        <li><a href="#privacy"><span style="color: #8A8A8A">04</span> Privacy</a></li>
+        <li class="slide-l" style="animation-range: entry 0% cover 22%"><a href="#talk"><span style="color: #8A8A8A">01</span> Talk</a></li>
+        <li class="slide-l" style="animation-range: entry 10% cover 30%"><a href="#listen"><span style="color: #8A8A8A">02</span> We listen</a></li>
+        <li class="slide-l" style="animation-range: entry 20% cover 38%"><a href="#match"><span style="color: #8A8A8A">03</span> Your matches</a></li>
+        <li class="slide-l" style="animation-range: entry 30% cover 46%"><a href="#privacy"><span style="color: #8A8A8A">04</span> Privacy</a></li>
       </ol>
     </div>
   </section>
@@ -82,8 +114,20 @@ html{scroll-behavior:smooth}
     <h2 style="flex: 1 1 420px; margin: 0; font-size: clamp(48px, 5vw, 80px); line-height: 1.04; font-weight: 500; letter-spacing: -0.035em"><span style="color: #E0622A">01</span>&nbsp; Talk</h2>
     <div style="flex: 1 1 560px; max-width: 720px; display: flex; flex-direction: column; gap: 28px; font-size: clamp(19px, 1.6vw, 24px); line-height: 1.42; color: #555555">
       <p style="margin: 0">Hold Space, or tap the mic, and answer one question: tell me about yourself. Say whatever feels true. Where you're from, what you study, what you do after class.</p>
-      <div style="aspect-ratio: 4 / 5; background: linear-gradient(180deg, #E4E1DC 0%, #CFCAC3 100%); display: flex; align-items: center; justify-content: center">
-        <span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; color: #5E5850">[Photo: a student mid-sentence]</span>
+      <div class="slide-r" aria-hidden="true" style="position: relative; overflow: hidden; aspect-ratio: 4 / 5; background: radial-gradient(ellipse 90% 70% at 50% 45%, #4A2230 0%, #24121A 60%, #140A10 100%)">
+        <div class="wander" style="position: absolute; left: 8%; top: 18%; width: 84%; aspect-ratio: 1 / 1">
+          <div class="speak" style="width: 100%; height: 100%; border-radius: 50%; background: radial-gradient(circle, rgba(244,160,96,0.95) 0%, rgba(226,112,92,0.55) 38%, rgba(226,112,92,0) 70%); filter: blur(28px); mix-blend-mode: screen"></div>
+        </div>
+        <div class="wander" style="position: absolute; left: 22%; top: 34%; width: 60%; aspect-ratio: 1 / 1; animation-duration: 11s; animation-delay: -4s">
+          <div class="speak" style="width: 100%; height: 100%; border-radius: 50%; background: radial-gradient(circle, rgba(255,226,180,0.95) 0%, rgba(250,190,130,0.5) 40%, rgba(250,190,130,0) 72%); filter: blur(22px); mix-blend-mode: screen; animation-duration: 2.9s; animation-delay: -0.7s"></div>
+        </div>
+        <div class="wander" style="position: absolute; left: -10%; top: 46%; width: 70%; aspect-ratio: 1 / 1; animation-duration: 17s; animation-delay: -9s">
+          <div class="speak" style="width: 100%; height: 100%; border-radius: 50%; background: radial-gradient(circle, rgba(196,92,140,0.8) 0%, rgba(140,70,150,0.4) 42%, rgba(140,70,150,0) 72%); filter: blur(34px); mix-blend-mode: screen; animation-duration: 4.1s; animation-delay: -1.9s"></div>
+        </div>
+        <div class="wander" style="position: absolute; left: 44%; top: 4%; width: 64%; aspect-ratio: 1 / 1; animation-duration: 19s; animation-delay: -3s">
+          <div class="speak" style="width: 100%; height: 100%; border-radius: 50%; background: radial-gradient(circle, rgba(122,146,226,0.6) 0%, rgba(90,100,200,0.28) 45%, rgba(90,100,200,0) 72%); filter: blur(36px); mix-blend-mode: screen; animation-duration: 3.7s; animation-delay: -2.6s"></div>
+        </div>
+        <svg width="100%" height="100%" style="position: absolute; inset: 0; opacity: 0.14; mix-blend-mode: overlay; pointer-events: none"><filter id="grain-talk"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"></feTurbulence></filter><rect width="100%" height="100%" filter="url(#grain-talk)"></rect></svg>
       </div>
     </div>
   </section>
@@ -93,7 +137,7 @@ html{scroll-behavior:smooth}
     <h2 style="flex: 1 1 420px; margin: 0; font-size: clamp(48px, 5vw, 80px); line-height: 1.04; font-weight: 500; letter-spacing: -0.035em"><span style="color: #E0622A">02</span>&nbsp; We listen</h2>
     <div style="flex: 1 1 560px; max-width: 720px; display: flex; flex-direction: column; gap: 28px; font-size: clamp(19px, 1.6vw, 24px); line-height: 1.42; color: #555555">
       <p style="margin: 0">The light responds while you speak. When you finish, we ask one or two follow-ups to fill in what's missing, like your year or what you want to study.</p>
-      <div aria-hidden="true" style="aspect-ratio: 4 / 3; background: radial-gradient(ellipse at 50% 40%, #2A1A10 0%, #140D08 75%); display: flex; align-items: center; justify-content: center">
+      <div aria-hidden="true" class="slide-r" style="aspect-ratio: 4 / 3; background: radial-gradient(ellipse at 50% 40%, #2A1A10 0%, #140D08 75%); display: flex; align-items: center; justify-content: center">
         <div style="width: 46%; aspect-ratio: 1 / 1; border-radius: 50%; background: radial-gradient(circle, #F4C99A 0%, #E2A066 26%, #B8653A 44%, #6E2D17 62%, rgba(20,13,8,0) 78%); display: flex; align-items: center; justify-content: center">
           <div style="width: 38%; aspect-ratio: 1 / 1; border-radius: 50%; background: #F3BFA4; box-shadow: 0 0 90px 20px rgba(255,200,150,0.5)"></div>
         </div>
@@ -106,8 +150,8 @@ html{scroll-behavior:smooth}
     <h2 style="flex: 1 1 420px; margin: 0; font-size: clamp(48px, 5vw, 80px); line-height: 1.04; font-weight: 500; letter-spacing: -0.035em"><span style="color: #E0622A">03</span>&nbsp; Your matches</h2>
     <div style="flex: 1 1 560px; max-width: 720px; display: flex; flex-direction: column; gap: 28px; font-size: clamp(19px, 1.6vw, 24px); line-height: 1.42; color: #555555">
       <p style="margin: 0">You get a short list, not a database. Every match comes with the reason it fits, pulled from what you said.</p>
-      <article style="border: 1px solid #E6E6E6; display: flex; flex-direction: column; color: #111111">
-        <div aria-hidden="true" style="height: 160px; background: linear-gradient(90deg, #B7C8D2 0%, #F4C26A 40%, #E6743A 100%)"></div>
+      <article class="slide-r" style="border: 1px solid #E6E6E6; display: flex; flex-direction: column; color: #111111">
+        <div aria-hidden="true" style="height: 160px; background: radial-gradient(ellipse 120% 140% at 50% 120%, #F3B07C 0%, #D9708A 32%, #7A4FA0 62%, #2C2A62 100%)"></div>
         <div style="padding: 24px 28px 28px; display: flex; flex-direction: column; gap: 14px">
           <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px">
             <h3 style="margin: 0; font-size: 26px; font-weight: 500; letter-spacing: -0.02em">[Scholarship name]</h3>
@@ -131,7 +175,7 @@ html{scroll-behavior:smooth}
   <!-- FOOTER -->
   <footer style="border-top: 1px solid #E6E6E6">
     <div style="max-width: 1600px; margin: 0 auto; padding: 28px 40px 120px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 15px; color: #6B6B6B">
-      <span>© 2026 [Site name]</span>
+      <span>© 2026 myops</span>
       <span>[Contact email]</span>
     </div>
   </footer>
@@ -146,5 +190,6 @@ html{scroll-behavior:smooth}
   </a>
 </div>
 <script src="js/cursor-light.js"></script>
+<script src="js/home.js"></script>
 </body>
 </html>

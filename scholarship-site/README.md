@@ -1,4 +1,4 @@
-# [Site name]
+# myops
 
 A voice-first scholarship matcher. Students say who they are out loud, answer a couple of follow-ups, and get a short list of scholarships that fit them.
 
@@ -30,6 +30,7 @@ index.html          home page
 talk.html           voice conversation
 css/talk.css        conversation styles
 js/cursor-light.js  cursor light + Space shortcut on the home page
+js/home.js          skyspace hero: time-of-day light + cursor depth
 js/talk.js          conversation flow, mic, transcript, light
 js/match.js         matching stub (swap for your API)
 ```
