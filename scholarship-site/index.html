@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[Site name]</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#ffffff}
+a{color:#111111;text-decoration:none}a:hover{color:#E0622A}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@keyframes drift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@keyframes bloom{0%,100%{transform:translate(-50%,-50%) scale(1);opacity:.55}50%{transform:translate(-50%,-50%) scale(1.15);opacity:.85}}
+.drift{background-size:200% 100%;animation:drift 22s ease-in-out infinite}
+.bloom{animation:bloom 9s ease-in-out infinite}
+.bar{transition:box-shadow .4s ease,transform .4s ease}
+.bar:hover,.bar:focus-visible{transform:translate(-50%,-2px);box-shadow:0 18px 50px rgba(224,98,42,.22),0 2px 6px rgba(0,0,0,.08)}
+@media (prefers-reduced-motion: reduce){.drift,.bloom{animation:none!important}}
+</style>
+</head>
+<body data-space-to-talk>
+<div style="position: relative; font-family: 'DM Sans', Inter, system-ui, sans-serif; color: #111111; background: #ffffff; -webkit-font-smoothing: antialiased; width: 100%">
+  <div id="cursor-light" aria-hidden="true" style="position: fixed; inset: 0; z-index: 40; pointer-events: none; opacity: 0; transition: opacity 0.6s ease; background: radial-gradient(420px circle at 50% 35%, rgba(255,190,120,0.18) 0%, rgba(255,190,120,0.06) 40%, rgba(255,190,120,0) 70%)"></div>
+
+  <!-- NAV -->
+  <header style="position: sticky; top: 0; z-index: 30; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid #E6E6E6">
+    <div style="max-width: 1600px; margin: 0 auto; padding: 0 40px">
+      <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 18px 0; border-bottom: 1px solid #E6E6E6">
+        <a href="#top" style="display: inline-flex; align-items: center; gap: 8px; font-size: 22px; font-weight: 500; letter-spacing: -0.02em; min-height: 44px">
+          <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3.5" fill="currentColor" stroke="none"></circle></svg>
+          [Site name]
+        </a>
+        <div style="display: flex; gap: 22px; font-size: 17px; color: #4A4A4A">
+          <a href="#privacy" style="color: #4A4A4A; padding: 10px 0">For schools</a>
+          <a href="#privacy" style="color: #4A4A4A; padding: 10px 0">Contact</a>
+        </div>
+      </div>
+      <nav aria-label="Sections" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding: 14px 0; font-size: 17px; font-weight: 500">
+        <a href="#talk" style="padding: 8px 0">Talk<sup style="font-size: 11px; font-weight: 400; color: #6B6B6B; margin-left: 2px">01</sup></a>
+        <a href="#listen" style="padding: 8px 0">Listen<sup style="font-size: 11px; font-weight: 400; color: #6B6B6B; margin-left: 2px">02</sup></a>
+        <a href="#match" style="padding: 8px 0">Match<sup style="font-size: 11px; font-weight: 400; color: #6B6B6B; margin-left: 2px">03</sup></a>
+        <a href="#privacy" style="padding: 8px 0">Privacy<sup style="font-size: 11px; font-weight: 400; color: #6B6B6B; margin-left: 2px">04</sup></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO: light field -->
+  <section id="top" aria-label="[Site name]" class="drift" style="position: relative; overflow: hidden; height: clamp(420px, 56vw, 760px); background-image: linear-gradient(90deg, #B7C8D2 0%, #E9CB8C 18%, #F4C26A 34%, #EFA458 56%, #E6743A 76%, #D9A48C 92%, #B7C8D2 100%); display: flex; align-items: center; justify-content: center">
+    <div aria-hidden="true" class="bloom" style="position: absolute; left: 50%; top: 50%; width: min(900px, 90vw); aspect-ratio: 1 / 1; border-radius: 50%; background: radial-gradient(circle, rgba(255,246,228,0.9) 0%, rgba(255,236,200,0.35) 35%, rgba(255,236,200,0) 65%)"></div>
+    <p style="position: relative; margin: 0; display: flex; align-items: center; gap: clamp(16px, 2.4vw, 36px); color: #ffffff; font-size: clamp(64px, 11vw, 176px); font-weight: 500; letter-spacing: -0.045em; line-height: 1">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" style="width: 0.78em; height: 0.78em"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3.5" fill="currentColor" stroke="none"></circle></svg>
+      [Name]
+    </p>
+  </section>
+
+  <!-- INTRO -->
+  <section style="max-width: 1600px; margin: 0 auto; padding: 72px 40px 96px; display: flex; flex-wrap: wrap; gap: 40px 64px">
+    <h1 style="flex: 1 1 420px; margin: 0; font-size: clamp(48px, 5.4vw, 84px); line-height: 1.04; font-weight: 500; letter-spacing: -0.035em">Scholarships that fit who you are</h1>
+    <div style="flex: 2 1 560px; display: flex; flex-direction: column; gap: 28px; font-size: clamp(19px, 1.6vw, 24px); line-height: 1.42; color: #555555">
+      <p style="margin: 0">Most scholarship searches start with a form. This one starts with a conversation. You tell us about yourself out loud, we ask a couple of follow-up questions, and we show you the scholarships you actually qualify for.</p>
+      <p style="margin: 0">No accounts to set up first. No fifty-field profile. Just talk for a minute.</p>
+    </div>
+  </section>
+
+  <!-- CONTENTS -->
+  <section aria-label="Contents" style="border-top: 1px solid #E6E6E6; border-bottom: 1px solid #E6E6E6">
+    <div style="max-width: 1600px; margin: 0 auto; padding: 56px 40px 72px; display: flex; flex-wrap: wrap; gap: 32px 64px">
+      <h2 style="flex: 1 1 420px; margin: 0; font-size: clamp(32px, 3vw, 48px); font-weight: 500; letter-spacing: -0.02em">How it works</h2>
+      <ol style="flex: 1 1 520px; list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: clamp(32px, 3.2vw, 52px); font-weight: 500; letter-spacing: -0.025em; line-height: 1.2">
+        <li><a href="#talk"><span style="color: #8A8A8A">01</span> Talk</a></li>
+        <li><a href="#listen"><span style="color: #8A8A8A">02</span> We listen</a></li>
+        <li><a href="#match"><span style="color: #8A8A8A">03</span> Your matches</a></li>
+        <li><a href="#privacy"><span style="color: #8A8A8A">04</span> Privacy</a></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 01 TALK -->
+  <section id="talk" style="max-width: 1600px; margin: 0 auto; padding: 120px 40px 40px; display: flex; flex-wrap: wrap; gap: 40px 64px">
+    <h2 style="flex: 1 1 420px; margin: 0; font-size: clamp(48px, 5vw, 80px); line-height: 1.04; font-weight: 500; letter-spacing: -0.035em"><span style="color: #E0622A">01</span>&nbsp; Talk</h2>
+    <div style="flex: 1 1 560px; max-width: 720px; display: flex; flex-direction: column; gap: 28px; font-size: clamp(19px, 1.6vw, 24px); line-height: 1.42; color: #555555">
+      <p style="margin: 0">Hold Space, or tap the mic, and answer one question: tell me about yourself. Say whatever feels true. Where you're from, what you study, what you do after class.</p>
+      <div style="aspect-ratio: 4 / 5; background: linear-gradient(180deg, #E4E1DC 0%, #CFCAC3 100%); display: flex; align-items: center; justify-content: center">
+        <span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; color: #5E5850">[Photo: a student mid-sentence]</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 LISTEN -->
+  <section id="listen" style="max-width: 1600px; margin: 0 auto; padding: 120px 40px 40px; display: flex; flex-wrap: wrap; gap: 40px 64px">
+    <h2 style="flex: 1 1 420px; margin: 0; font-size: clamp(48px, 5vw, 80px); line-height: 1.04; font-weight: 500; letter-spacing: -0.035em"><span style="color: #E0622A">02</span>&nbsp; We listen</h2>
+    <div style="flex: 1 1 560px; max-width: 720px; display: flex; flex-direction: column; gap: 28px; font-size: clamp(19px, 1.6vw, 24px); line-height: 1.42; color: #555555">
+      <p style="margin: 0">The light responds while you speak. When you finish, we ask one or two follow-ups to fill in what's missing, like your year or what you want to study.</p>
+      <div aria-hidden="true" style="aspect-ratio: 4 / 3; background: radial-gradient(ellipse at 50% 40%, #2A1A10 0%, #140D08 75%); display: flex; align-items: center; justify-content: center">
+        <div style="width: 46%; aspect-ratio: 1 / 1; border-radius: 50%; background: radial-gradient(circle, #F4C99A 0%, #E2A066 26%, #B8653A 44%, #6E2D17 62%, rgba(20,13,8,0) 78%); display: flex; align-items: center; justify-content: center">
+          <div style="width: 38%; aspect-ratio: 1 / 1; border-radius: 50%; background: #F3BFA4; box-shadow: 0 0 90px 20px rgba(255,200,150,0.5)"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 MATCH -->
+  <section id="match" style="max-width: 1600px; margin: 0 auto; padding: 120px 40px 40px; display: flex; flex-wrap: wrap; gap: 40px 64px">
+    <h2 style="flex: 1 1 420px; margin: 0; font-size: clamp(48px, 5vw, 80px); line-height: 1.04; font-weight: 500; letter-spacing: -0.035em"><span style="color: #E0622A">03</span>&nbsp; Your matches</h2>
+    <div style="flex: 1 1 560px; max-width: 720px; display: flex; flex-direction: column; gap: 28px; font-size: clamp(19px, 1.6vw, 24px); line-height: 1.42; color: #555555">
+      <p style="margin: 0">You get a short list, not a database. Every match comes with the reason it fits, pulled from what you said.</p>
+      <article style="border: 1px solid #E6E6E6; display: flex; flex-direction: column; color: #111111">
+        <div aria-hidden="true" style="height: 160px; background: linear-gradient(90deg, #B7C8D2 0%, #F4C26A 40%, #E6743A 100%)"></div>
+        <div style="padding: 24px 28px 28px; display: flex; flex-direction: column; gap: 14px">
+          <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px">
+            <h3 style="margin: 0; font-size: 26px; font-weight: 500; letter-spacing: -0.02em">[Scholarship name]</h3>
+            <span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; color: #B5481A">Strong fit</span>
+          </div>
+          <p style="margin: 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; color: #6B6B6B">[$ Amount] · Due [Date]</p>
+          <p style="margin: 0; padding-top: 14px; border-top: 1px solid #E6E6E6; font-size: 18px; line-height: 1.45; color: #333333"><span style="color: #6B6B6B">Why you:</span> you want to go into public health.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 04 PRIVACY -->
+  <section id="privacy" style="max-width: 1600px; margin: 0 auto; padding: 120px 40px 200px; display: flex; flex-wrap: wrap; gap: 40px 64px">
+    <h2 style="flex: 1 1 420px; margin: 0; font-size: clamp(48px, 5vw, 80px); line-height: 1.04; font-weight: 500; letter-spacing: -0.035em"><span style="color: #E0622A">04</span>&nbsp; Privacy</h2>
+    <div style="flex: 1 1 560px; max-width: 720px; display: flex; flex-direction: column; gap: 28px; font-size: clamp(19px, 1.6vw, 24px); line-height: 1.42; color: #555555">
+      <p style="margin: 0">[What happens to the recording, how long anything is kept, and who can see it. Say it plainly. People are trusting you with their voice.]</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="border-top: 1px solid #E6E6E6">
+    <div style="max-width: 1600px; margin: 0 auto; padding: 28px 40px 120px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 15px; color: #6B6B6B">
+      <span>© 2026 [Site name]</span>
+      <span>[Contact email]</span>
+    </div>
+  </footer>
+
+  <!-- FLOATING VOICE BAR -->
+  <a href="talk.html" class="bar" aria-label="Tell me about yourself. Start talking" style="position: fixed; left: 50%; bottom: 28px; transform: translateX(-50%); z-index: 45; width: min(760px, calc(100% - 32px)); min-height: 72px; display: flex; align-items: center; gap: 16px; padding: 12px 12px 12px 28px; background: #ffffff; border: 1px solid #E6E6E6; border-radius: 980px; box-shadow: 0 12px 40px rgba(0,0,0,0.10), 0 2px 6px rgba(0,0,0,0.06); color: #111111">
+    <span style="flex: 1; font-size: 19px; color: #6B6B6B; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Tell me about yourself…</span>
+    <span style="display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: #6B6B6B; white-space: nowrap">hold <kbd style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; color: #111111; border: 1px solid #D6D6D6; border-bottom-width: 2px; border-radius: 6px; padding: 2px 8px">Space</kbd></span>
+    <span aria-hidden="true" style="width: 48px; height: 48px; flex-shrink: 0; border-radius: 50%; background: #E0622A; display: inline-flex; align-items: center; justify-content: center; color: #ffffff">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0"></path><path d="M12 18v3"></path></svg>
+    </span>
+  </a>
+</div>
+<script src="js/cursor-light.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Talk · [Site name]</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/talk.css">
+</head>
+<body>
+<div class="room">
+  <div id="cursor-light" aria-hidden="true" style="position: fixed; inset: 0; z-index: 50; pointer-events: none; opacity: 0; transition: opacity 0.6s ease; background: radial-gradient(460px circle at 50% 35%, rgba(255,214,160,0.2) 0%, rgba(255,214,160,0.07) 35%, rgba(255,214,160,0) 70%)"></div>
+
+  <header class="top">
+    <a href="index.html" class="brand">[Site name]</a>
+    <span id="progress" class="mono muted">1 / 3</span>
+  </header>
+
+  <main id="conversation" class="conversation">
+    <div id="dome" class="dome" aria-hidden="true">
+      <div id="orb" class="orb">
+        <div id="halo-wrap" class="halo-wrap"><div id="halo" class="halo halo-drift"></div></div>
+        <div id="sky" class="sky sky-idle"></div>
+      </div>
+    </div>
+
+    <p id="eyebrow" class="eyebrow mono">Question 1 of 3</p>
+    <h1 id="question" class="question" aria-live="polite">Tell me about yourself.</h1>
+    <p id="transcript" class="transcript" aria-live="polite">Talk for as long as you like. A minute is plenty.</p>
+
+    <div id="talk-controls" class="controls">
+      <button type="button" id="talk-btn" class="talk-btn lift" aria-pressed="false">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0"></path><path d="M12 18v3"></path></svg>
+        <span id="talk-label">Start talking</span>
+      </button>
+      <p class="hint">or hold <kbd>Space</kbd> to talk</p>
+      <p id="mode-note" class="hint small" hidden></p>
+    </div>
+  </main>
+
+  <section id="results" class="results" hidden>
+    <div class="results-head">
+      <div class="mini-orb" aria-hidden="true"></div>
+      <div>
+        <p class="eyebrow mono">Matched from your conversation</p>
+        <h1 class="question">Your best fits</h1>
+      </div>
+    </div>
+    <div class="heard">
+      <p class="muted">What we heard</p>
+      <div id="traits" class="traits"></div>
+    </div>
+    <div id="matches" class="matches"></div>
+    <div class="results-foot">
+      <button type="button" id="restart" class="ghost-btn lift">Talk again</button>
+      <span class="muted small">Matches update as you tell us more.</span>
+    </div>
+  </section>
+</div>
+<script src="js/cursor-light.js"></script>
+<script src="js/match.js"></script>
+<script src="js/talk.js"></script>
+</body>
+</html>
