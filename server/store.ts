@@ -1,14 +1,19 @@
 // Persistence. Today: one JSON file on disk with the same four "collections" the
 // Firestore version will have. Listings stay in memory with their embeddings.
 // TODO(next): swap this file for Firestore; keep the function signatures.
-import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, mkdirSync, copyFileSync } from "node:fs";
 import { dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { randomUUID } from "node:crypto";
-import type { Listing, StudentProfile, TrackerEvent, Invite, Student, Session } from "../shared/types";
+import type { Listing, StudentProfile, TrackerEvent, Invite, Student, Session } from "../shared/types.js";
 
 // fileURLToPath (not .pathname) so folders with spaces or special characters work.
-export const DATA_PATH = process.env.DATA_PATH ?? fileURLToPath(new URL("../data/db.json", import.meta.url));
+const BUNDLED_DB = fileURLToPath(new URL("../data/db.json", import.meta.url));
+// On Vercel the deployment is read-only and only /tmp is writable, so work on a copy there.
+// It is per-instance and ephemeral: writes are lost on cold starts until this moves to Firestore.
+const ON_VERCEL = !!process.env.VERCEL;
+export const DATA_PATH = process.env.DATA_PATH ?? (ON_VERCEL ? "/tmp/db.json" : BUNDLED_DB);
+if (ON_VERCEL && !existsSync(DATA_PATH) && existsSync(BUNDLED_DB)) copyFileSync(BUNDLED_DB, DATA_PATH);
 
 type DB = {
   listings: Listing[];
@@ -33,12 +38,17 @@ export function load() {
 }
 
 let saveTimer: NodeJS.Timeout | null = null;
+function writeNow() {
+  mkdirSync(dirname(DATA_PATH), { recursive: true });
+  writeFileSync(DATA_PATH, JSON.stringify(db, null, 0));
+}
 function save() {
+  // Serverless instances can freeze right after the response, so a debounced write may never run.
+  if (ON_VERCEL) return writeNow();
   if (saveTimer) return;
   saveTimer = setTimeout(() => {
     saveTimer = null;
-    mkdirSync(dirname(DATA_PATH), { recursive: true });
-    writeFileSync(DATA_PATH, JSON.stringify(db, null, 0));
+    writeNow();
   }, 150);
 }
 

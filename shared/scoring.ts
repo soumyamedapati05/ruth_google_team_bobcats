@@ -1,6 +1,6 @@
 // The only place match %, odds, and eligibility are computed.
 // Used in both directions: student -> listings and listing -> students.
-import type { Listing, Profile } from "./types";
+import type { Listing, Profile } from "./types.js";
 
 export function cosine(a: number[], b: number[]) {
   let dot = 0, na = 0, nb = 0;

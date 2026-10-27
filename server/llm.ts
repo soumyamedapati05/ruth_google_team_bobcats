@@ -1,7 +1,7 @@
 // All Gemini calls live here. With no GEMINI_API_KEY the mock implementations run,
 // so the whole app works offline for development and demos.
 import { GoogleGenAI, Type, type Schema } from "@google/genai";
-import type { Chips, Listing } from "../shared/types";
+import type { Chips, Listing } from "../shared/types.js";
 import { createHash } from "node:crypto";
 
 const apiKey = process.env.GEMINI_API_KEY;

@@ -2,8 +2,8 @@
 // TODO(next): replace with Firebase Auth; keep `requireStudent` so routes don't change.
 import { scryptSync, randomBytes, timingSafeEqual } from "node:crypto";
 import type { Request, Response, NextFunction } from "express";
-import { students, sessions } from "./store";
-import type { Student } from "../shared/types";
+import { students, sessions } from "./store.js";
+import type { Student } from "../shared/types.js";
 
 export function hashPassword(pw: string) {
   const salt = randomBytes(16).toString("hex");

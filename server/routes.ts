@@ -2,12 +2,12 @@ import { Router } from "express";
 import multer from "multer";
 import * as XLSX from "xlsx";
 import { createHash } from "node:crypto";
-import { listings, profiles, tracker, invites, students, sessions } from "./store";
-import { hashPassword, verifyPassword, newSession, requireAuth, requireStudent, requirePartner, publicStudent, type AuthedRequest } from "./auth";
-import { embed, extractChips, extractListings, explain, listingText, type ExtractedListing } from "./llm";
-import { rankListings, rankStudents, gpaBand } from "../shared/scoring";
-import { zipToState, zipPrefix } from "./zip";
-import type { Listing, Profile, MatchCard, AnonStudent, Chips, TrackStatus, Student, StudentProfileInput, Role, PartnerProfile } from "../shared/types";
+import { listings, profiles, tracker, invites, students, sessions } from "./store.js";
+import { hashPassword, verifyPassword, newSession, requireAuth, requireStudent, requirePartner, publicStudent, type AuthedRequest } from "./auth.js";
+import { embed, extractChips, extractListings, explain, listingText, type ExtractedListing } from "./llm.js";
+import { rankListings, rankStudents, gpaBand } from "../shared/scoring.js";
+import { zipToState, zipPrefix } from "./zip.js";
+import type { Listing, Profile, MatchCard, AnonStudent, Chips, TrackStatus, Student, StudentProfileInput, Role, PartnerProfile } from "../shared/types.js";
 
 export const api = Router();
 const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 15 * 1024 * 1024 } });

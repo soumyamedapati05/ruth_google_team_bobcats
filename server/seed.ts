@@ -5,12 +5,12 @@ import { randomUUID } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, resolve } from "node:path";
-import { load, resetTo, DATA_PATH } from "./store";
-import { embed, listingText } from "./llm";
-import { zipToState, zipPrefix } from "./zip";
-import { hashPassword } from "./auth";
-import type { Listing, StudentProfile, Student } from "../shared/types";
-import type { ExtractedListing } from "./llm";
+import { load, resetTo, DATA_PATH } from "./store.js";
+import { embed, listingText } from "./llm.js";
+import { zipToState, zipPrefix } from "./zip.js";
+import { hashPassword } from "./auth.js";
+import type { Listing, StudentProfile, Student } from "../shared/types.js";
+import type { ExtractedListing } from "./llm.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const dataDir = resolve(__dirname, "../data");

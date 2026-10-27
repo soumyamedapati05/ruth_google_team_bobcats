@@ -1,15 +1,10 @@
 import express from "express";
 import { existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
-import { api } from "./routes";
-import { load, purgeDemoAccounts, DATA_PATH } from "./store";
-import { MOCK } from "./llm";
-import { seedMockData } from "./seed";
-
-const app = express();
-app.use(express.json({ limit: "2mb" }));
-
-app.use("/api", api);
+import { app } from "./app.js";
+import { load, purgeDemoAccounts, DATA_PATH } from "./store.js";
+import { MOCK } from "./llm.js";
+import { seedMockData } from "./seed.js";
 
 // Serve the built client in production.
 const dist = fileURLToPath(new URL("../dist", import.meta.url));
